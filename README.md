@@ -13,7 +13,7 @@ They [Create the Characters](#create-the-characters) who inhabit that fictional 
 
 ## Objects and Aspects
 An _Object_ is a person, place, or thing that appears in the Story.
-An _Aspect_ is a word or short phrase that describes something noteworthy about an Object.
+An _Aspect_ is a word or short phrase that describes something noteworthy about a [Character](#create-the-characters) or an Object.
 Each aspect is _Attached_ to a single Object.
 
 ### Matching Aspects
@@ -86,13 +86,15 @@ This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Che
 ## Receive the Prophecy
 During this phase of the game, the Players receive a _Prophecy_ that describes a catastrophic future event that is destined to wreak havoc on some fictional world.
 
+To Receive the Prophecy, the Players ...
+
 ---
 
 ## Create the Characters
-During this phase of the game, the Players create a cast of _Characters_.
+During this phase of the game, the Players create _Characters_.
 Later in the game, the Players will assume the identities of these Characters when they [Perform Scenes](#performing-scenes).
 
-To create Characters, each Player will first choose a name for their Character and then Attach one [Aspect](#objects-and-aspects) from each of the following categories to their Character:
+To Create the Characters, each Player will first choose a name for their Character and then Attach one [Aspect](#objects-and-aspects) from each of the following categories to their Character:
    - __Occupation__ - An Aspect that describes a Character's profession, hobbies, or other interests.
    - __Physical or Mental Characteristic__ - An Aspect that describes a Character's body or mind.
    - __Psychological Characteristic__ - An Aspect that describes a Character's personality.
