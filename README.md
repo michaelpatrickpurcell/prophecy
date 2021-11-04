@@ -86,7 +86,7 @@ This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Che
 ## Receive the Prophecy
 During this phase of the game, the Players receive a _Prophecy_ that describes a catastrophic future event that is destined to wreak havoc on some fictional world.
 
-To Receive the Prophecy, the Players choose a [Fictional Worlds](#fictional-worlds) and roll d66 to select a random catastrophe from the corresponding [Catastrophe Table](#catastrophe-tables).
+To Receive the Prophecy, the Players choose a [Fictional World](#fictional-worlds) and roll d66 to select a random catastrophe from the corresponding [Catastrophe Table](#catastrophe-tables).
 
 ---
 
