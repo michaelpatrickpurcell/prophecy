@@ -6,8 +6,8 @@ A tabletop roleplaying game about a group of heroes who dare to defy fate.
 ## Overview
 Prophecy is a roleplaying game for three to six _Players_ that is designed to be playable in a single three-hour session.
 
-During the game, the Players [Receive the Prophecy](#receive-the-prophecy) that describes a catastrophic event that is destined to wreak havoc on some fictional world.
-They [Create the Characters](#create-the-characters) who inhabit that fictional world, [Write the Outline](#write-the-outline) that describes how their Characters' will try to prevent the prophesied catastrophe, and [Tell the Story](#tell-the-story) of their Characters' adventures as they try to enact their plan to save the world.
+During the game, the Players [Receive the Prophecy](#receive-the-prophecy) that describes a catastrophic event that is destined to wreak havoc on some [Fictional World](#fictional-wrolds).
+They [Create the Characters](#create-the-characters) who inhabit that Fictional World, [Write the Outline](#write-the-outline) that describes how their Characters' will try to prevent the prophesied catastrophe, and [Tell the Story](#tell-the-story) of their Characters' adventures as they try to enact their plan.
 
 ---
 
@@ -86,7 +86,7 @@ This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Che
 ## Receive the Prophecy
 During this phase of the game, the Players receive a _Prophecy_ that describes a catastrophic future event that is destined to wreak havoc on some fictional world.
 
-To Receive the Prophecy, the Players ...
+To Receive the Prophecy, the Players choose a [Fictional Worlds](#fictional-worlds) and roll d66 to select a random catastrophe from the corresponding [Catastrophe Table](#catastrophe-tables).
 
 ---
 
