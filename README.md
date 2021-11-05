@@ -58,7 +58,7 @@ To make a Check, the Players will:
       In addition, one die is added to the Dice Pool for each of the current Scene's [Precursors](#Precursors) that was resolved successfully.
    2. __Roll the Dice__ -
       The dice in the Dice Pool are _Exploding Dice_.
-      That is, for every die that yields a value of `6` one additional die is added to the Dice Pool and rolled.
+      That is, for every die that yields a value of `6` one additional die is added to the Dice Pool.
    3. __Compute the Result__ -
       Any die that yields a value of `1`, `2`, or `3` is a _Miss_.
       Any die that yields a value of `4`, `5`, or `6` is a _Hit_.
