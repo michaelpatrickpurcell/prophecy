@@ -27,22 +27,22 @@ A _Scene_ is a part of the [Story](#tell-the-story) that describes the events th
 Every Scene has the following components:
   - __Objective__ - A narrative description of what the [Characters](#create-characters) are trying to accomplish during the Scene.
   - __Setting__ - The time and place at which the Scene occurs. The Setting includes the [Objects and Aspects](#objects-and-aspects) that appear in the Scene.
-  - __Difficulty Rating__ - A number _1 <= d <= 4_ that describes how difficult it is for the Characters to succeed at the [Check](#checks) to determine the Outcome of the Scene.
+  - __Difficulty Rating__ - A number _1 <= d <= 4_ that describes how difficult it is for the Players to succeed at the [Check](#checks) to determine the Outcome of the Scene.
 
 <!-- #### Example
 The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_. -->
 
 ### Sketching Scenes
-The Players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how their Characters' will try to prevent the Catastrophe. To Sketch a Scene, the Players will define the Objective, establish the Setting, and assign the Difficulty Rating for the Scene.
+The Players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the Catastrophe. To Sketch a Scene, the Players will define the Objective, establish the Setting, and assign the Difficulty Rating for the Scene.
 
 ### Performing Scenes
-Players _Perform_ Scenes when they [Tell a Story](#tell-the-story) about their Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the Players will:
+Players _Perform_ Scenes when they [Tell a Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the Players will:
    1. __Investigate the Scene__ -
-      The Players describe [Objects and Aspects](#objects-and-aspects) that their Characters might encounter in the Scene.
+      The Players describe [Objects and Aspects](#objects-and-aspects) that the Characters might encounter in the Scene.
    2. __Identify Matching Aspects__ -
       The Players identify pairs of [Matching Aspects](#matching-aspects) and make a [Check](#checks) to determine the Outcome of the Scene.
    3. __Interpret the Outcome__ -
-      The Players describe their Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
+      The Players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
 
 ### Precursors
 One Scene is a _Precursor_ to another Scene if accomplishing the Objective in the first Scene makes it easier to accomplish the Objective in the second Scene. When Players [Write an Outline](#write-an-outline), each new Scene that they Sketch must be a Precursor to another Scene. When Players [Tell the Story](#tell-the-story), they must Perform all of a given Scene's Precursors before Performing that Scene.
