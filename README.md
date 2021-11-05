@@ -2,7 +2,7 @@
 Prophecy is a tabletop roleplaying game about a group of heroes who dare to defy fate. It is a game for three to six people that is designed to be playable in less than three hours.
 
 During the game, the Players [Receive a Prophecy](#receive-a-prophecy) that describes an impending Catastrophe for some Fictional World.
-They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how the Characters will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of their Characters' adventures as they try to enact their plan.
+They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how the Characters will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of the Characters' adventures as they try to enact their plan.
 
 ---
 
