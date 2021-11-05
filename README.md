@@ -1,5 +1,5 @@
 # Prophecy
-Prophecy is a tabletop roleplaying game about a group of heroes who dare to defy fate. 
+Prophecy is a tabletop roleplaying game about a group of heroes who dare to defy fate.
 During the game, the Players [Receive a Prophecy](#receive-a-prophecy) that describes an impending Catastrophe for some Fictional World.
 They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how the Characters will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of the Characters' adventures.
 
@@ -164,7 +164,7 @@ To encourage this kind of storytelling, the Players should adhere to the followi
 
 --- -->
 
-## Acknowledgements
+<!-- ## Acknowledgements
 Thanks to everyone who helped refine the design of Prophecy:
   - Keydan Bruce
   - Farzana Choudhury
@@ -175,4 +175,4 @@ Thanks to everyone who helped refine the design of Prophecy:
   - Kira Purcell
   - Luke Purcell
   - Jo Stephenson
-  - Brett Witty
+  - Brett Witty -->
