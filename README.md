@@ -36,7 +36,7 @@ The Characters want to cross the border between two neighbouring kingdoms. It is
 The Players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the Catastrophe. To Sketch a Scene, the Players will define the Objective, establish the Setting, and assign the Difficulty Rating for the Scene.
 
 ### Performing Scenes
-Players _Perform_ Scenes when they [Tell a Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the Players will:
+The Players _Perform_ Scenes when they [Tell a Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the Players will:
    1. __Investigate the Scene__ -
       The Players describe [Objects and Aspects](#objects-and-aspects) that the Characters might encounter in the Scene.
    2. __Identify Matching Aspects__ -
