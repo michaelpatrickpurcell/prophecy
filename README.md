@@ -4,8 +4,6 @@ Prophecy is a tabletop roleplaying game about a group of heroes who dare to defy
 During the game, the Players [Receive a Prophecy](#receive-a-prophecy) that describes an impending Catastrophe for some Fictional World.
 They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how the Characters will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of the Characters' adventures.
 
----
-
 ## Objects and Aspects
 An _Object_ is a person, place, or thing that appears in the [Story](#tell-the-story).
 An _Aspect_ is a word or short phrase that describes something noteworthy about a [Character](#create-characters) or Object.
@@ -78,8 +76,6 @@ When rolled, this die yields the value {`4`}.
 So, this roll yields the values {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
 The Result of this roll is five Hits.
 This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.    -->
-
----
 
 ## Receive a Prophecy
 During this phase of the game, the _Players_ receive a _Prophecy_ that describes a _Catastrophe_ that is destined to wreak havoc on some _Fictional World_.
@@ -159,8 +155,6 @@ During this phase of the game, the Players will tell a _Story_ about their Chara
 To Tell the Story, the players will [Perform the Scenes](#performing-scenes) described in the [Outline](#write-an-outline). Recall that during a [Check](#checks) to determine the Outcome of a Scene, one die is added to the Dice Pool for each of that Scene's [Precursors](#precursors) that was resolved successfully.
 So, a Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
 
----
-
 <!-- ## Time Limits
 The Story should be tightly focused on the Finale.
 To encourage this kind of storytelling, the Players should adhere to the following guiding principles:
@@ -183,5 +177,3 @@ Thanks to everyone who helped refine the design of Prophecy:
   - Luke Purcell
   - Jo Stephenson
   - Brett Witty
-
----
