@@ -1,10 +1,7 @@
 # Prophecy
-Prophecy is a tabletop roleplaying game for three to six people that is designed to be playable in less than three hours.
+Prophecy is a tabletop roleplaying game about a group of heroes who dare to defy fate. It is a game for three to six people that is designed to be playable in less than three hours.
 
----
-
-## Overview
-During the game, the Players [Receive the Prophecy](#receive-the-prophecy) that describes an impending Catastrophe for some Fictional World.
+During the game, the Players [Receive a Prophecy](#receive-a-prophecy) that describes an impending Catastrophe for some Fictional World.
 They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how their Characters' will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of their Characters' adventures as they try to enact their plan.
 
 ---
@@ -84,10 +81,10 @@ The Result of this roll is five Hits.
 This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.    -->
 
 ---
-## Receive the Prophecy
+## Receive a Prophecy
 During this phase of the game, the _Players_ receive a _Prophecy_ that describes a _Catastrophe_ that is destined to wreak havoc on some _Fictional World_.
 
-To Receive the Prophecy the Players describe the the Fictional World in which the Story is set and the nature of the impending Catastrophe.      The Players should create a situation that the Characters will be able to affect, but doing so will be both difficult and dangerous.
+To Receive a Prophecy the Players describe the the Fictional World in which the Story is set and the nature of the impending Catastrophe. The Players should create a situation that the Characters will be able to affect, but doing so will be both difficult and dangerous.
 
 <!-- To Receive the Prophecy, the Players will roll a six-sided die (1d6) to select a random Genre from the [Genre Table](#genre-table) and then roll a six-sided die (1d6) to select a random Catastrophe from the [Catastrophe Table](#catastrophe-table).
 
@@ -153,7 +150,7 @@ graph TB;
 ---
 
 ## Tell the Story
-During this phase of the game, the Players will tell a _Story_ about their Characters' adventures as they try to enact their plan to save the world.
+During this phase of the game, the Players will tell a _Story_ about their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
 
 To Tell the Story, the players will [Perform the Scenes](#performing-scenes) described in the [Outline](#write-an-outline). Recall that during a [Check](#checks) to determine the Outcome of a Scene, one die is added to the Dice Pool for each of that Scene's [Precursors](#precursors) that was resolved successfully.
 So, a Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
