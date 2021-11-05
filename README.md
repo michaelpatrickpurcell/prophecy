@@ -49,7 +49,7 @@ One Scene is a _Precursor_ to another Scene if accomplishing the Objective in th
 The players make a _Check_ to determine the _Outcome_ of each [Scene](#scenes).
 To make a Check, the Players will:
    1. __Assemble a Dice Pool__ -
-      A _Dice Pool_ is made up of one or more six-sided dice (d6s).
+      A _Dice Pool_ is made up of one or more six-sided dice.
       One die is added to the Dice Pool for each pair of [Matching Aspects](#matching-aspects) that characters could use to manipulate the scene to their advantage.
       In addition, one die is added to the Dice Pool for each of the current Scene's [Precursors](#Precursors) that was resolved successfully.
    2. __Roll the Dice__ -
