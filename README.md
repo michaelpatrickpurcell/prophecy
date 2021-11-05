@@ -61,7 +61,7 @@ To make a Check, the Players will:
       Any die that yields a value of `4`, `5`, or `6` is a _Hit_.
       The _Result_ of a roll is the total number of Hits.
    4. __Determine the Outcome__ -
-      If the result of the Players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the characters accomplish their objective, and we say that the Scene was resolved successfully.
+      If the Result of the Players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the characters accomplish their objective, and we say that the Scene was resolved successfully.
       Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their objective, and we say that the Scene was resolved unsuccessfully.
 
 <!-- #### Example
