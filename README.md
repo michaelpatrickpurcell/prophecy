@@ -12,7 +12,7 @@ An _Aspect_ is a word or short phrase that describes something noteworthy about 
 Each Aspect is _Attached_ to a single Character or Object.
 
 ### Matching Aspects
-A pair of _Matching Aspects_ is a set of two Aspects, one Attached to a Character and one attached to an Object, that together allow the Characters to manipulate a [Scene](#scenes) to their advantage.
+A pair of _Matching Aspects_ is a set of two Aspects, one Attached to a Character and one Attached to an Object, that together allow the Characters to manipulate a [Scene](#scenes) to their advantage.
 Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a [Check](#checks).
 
 <!-- #### Example
