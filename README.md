@@ -8,7 +8,7 @@ They [Create Characters](#create-characters) who inhabit that Fictional World, [
 
 ## Objects and Aspects
 An _Object_ is a person, place, or thing that appears in the [Story](#tell-the-story).
-An _Aspect_ is a word or short phrase that describes something noteworthy about a [Character](#create-characters) or an Object.
+An _Aspect_ is a word or short phrase that describes something noteworthy about a [Character](#create-characters) or Object.
 Each Aspect is _Attached_ to a single Character or Object.
 
 ### Matching Aspects
