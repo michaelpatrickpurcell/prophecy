@@ -37,12 +37,9 @@ The Players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) desc
 
 ### Performing Scenes
 The Players _Perform_ Scenes when they [Tell a Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the Players will:
-   1. __Investigate the Scene__ -
-      The Players describe [Objects and Aspects](#objects-and-aspects) that the Characters might encounter in the Scene.
-   2. __Identify Matching Aspects__ -
-      The Players identify pairs of [Matching Aspects](#matching-aspects) and make a [Check](#checks) to determine the Outcome of the Scene.
-   3. __Interpret the Outcome__ -
-      The Players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
+   1. __Investigate the Scene__ - The Players describe [Objects and Aspects](#objects-and-aspects) that the Characters might encounter in the Scene.
+   2. __Make a Check__ - The Players identify pairs of [Matching Aspects](#matching-aspects) and make a [Check](#checks) to determine the Outcome of the Scene.
+   3. __Interpret the Outcome__ - The Players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
 
 ### Precursors
 One Scene is a _Precursor_ to another Scene if accomplishing the Objective in the first Scene makes it easier to accomplish the Objective in the second Scene. When Players [Write an Outline](#write-an-outline), each new Scene that they Sketch must be a Precursor to another Scene. When Players [Tell the Story](#tell-the-story), they must Perform all of a given Scene's Precursors before Performing that Scene.
