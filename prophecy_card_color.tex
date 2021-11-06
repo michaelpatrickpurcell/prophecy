@@ -1,0 +1,15 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{fontspec}
+
+\begin{document}
+\begin{tikzpicture}
+	\setmainfont{QTGraphLite}
+	\node[text centered] (title) at (0,0) {\textcolor{red}{\Huge{PROPHECY}}};
+
+	\setmainfont{Arial}
+	\node[text centered, text width=6.0cm] (description) at (0,-1.25) {\small{A tabletop roleplaying game about a group of heroes who dare to defy fate}};
+
+	\path (-3.5,-2.125) to (3.5,0.875);
+\end{tikzpicture}
+\end{document}
