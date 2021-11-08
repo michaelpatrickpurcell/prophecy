@@ -1,12 +1,13 @@
 \documentclass{standalone}
 \usepackage[dvipsnames]{xcolor}
+\usepackage[skins]{tcolorbox}
 
 \usepackage{tikz}
 \usepackage{fontspec}
 \begin{document}
 \begin{tikzpicture}
-	\path[fill=black] (-3.5,-2.125) rectangle (3.5,0.875);
-
+%	\path[fill=black] (-3.5,-2.125) rectangle (3.5,0.875);
+	\path[fill stretch image=black_leather_texture.png] (-3.5,-2.125) rectangle (3.5,0.875);
 %    \setmainfont{QTGraphLite}	
     \setmainfont{Cinzel Decorative}
 	\node[text centered] (title) at (0,0) {\textcolor{violet!75}{\Huge{pROpHecY}}};
