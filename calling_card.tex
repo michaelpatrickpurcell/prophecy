@@ -6,15 +6,12 @@
 \usepackage{fontspec}
 \begin{document}
 \begin{tikzpicture}
-%	\path[fill=black] (-3.5,-2.125) rectangle (3.5,0.875);
-	\path[fill stretch image=black_leather_texture.png] (-3.5,-2.125) rectangle (3.5,0.875);
-%    \setmainfont{QTGraphLite}	
+	\path[fill overzoom image=Images/black_scales_texture.png] (-3.5,-2.125) rectangle (3.5,0.875);
+	
     \setmainfont{Cinzel Decorative}
 	\node[text centered] (title) at (0,0) {\textcolor{violet!75}{\Huge{pROpHecY}}};
 
-%    \setmainfont{Arial}
 	\setmainfont{URWClassico}
-%	\node[text centered, text width=6.0cm] (description) at (0,-1.25) {\textcolor{lightgray}{\small{A tabletop roleplaying game about a group of heroes who dare to defy fate}}};
 	\node[text centered, text width=6.0cm] (description) at (0,-1.25) {\textcolor{lightgray}{\small{A tabletop roleplaying game about fate and destiny}}};
 
 \end{tikzpicture}
