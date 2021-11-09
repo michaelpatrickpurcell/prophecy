@@ -4,8 +4,8 @@ During the game, the Players [Receive a Prophecy](#receive-a-prophecy) that desc
 They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how the Characters will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of the Characters' adventures.
 
 ## Objects and Aspects
-An _Object_ is a person, place, or thing that appears in the Story.
-An _Aspect_ is a word or short phrase that describes something noteworthy about a Character or Object.
+An _Object_ is a person, place, or thing that appears in the Story and is not a Character.
+An _Aspect_ is a word or short phrase that describes something noteworthy about a Character or an Object.
 Each Aspect is _Attached_ to a single Character or Object.
 
 ### Matching Aspects
