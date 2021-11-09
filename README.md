@@ -4,13 +4,13 @@ During the game, the Players [Receive a Prophecy](#receive-a-prophecy) that desc
 They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how the Characters will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of the Characters' adventures.
 
 ## Objects and Aspects
-An _Object_ is a person, place, or thing that appears in the [Story](#tell-the-story).
-An _Aspect_ is a word or short phrase that describes something noteworthy about a [Character](#create-characters) or Object.
+An _Object_ is a person, place, or thing that appears in the Story.
+An _Aspect_ is a word or short phrase that describes something noteworthy about a Character or Object.
 Each Aspect is _Attached_ to a single Character or Object.
 
 ### Matching Aspects
-A pair of _Matching Aspects_ is a set of two Aspects, one Attached to a Character and one Attached to an Object, that together allow the Characters to manipulate a [Scene](#scenes) to their advantage.
-Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a [Check](#checks).
+A pair of _Matching Aspects_ is a set of two Aspects, one Attached to a Character and one Attached to an Object, that together allow the Characters to manipulate a Scene to their advantage.
+Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a Check.
 
 <!-- #### Example
 Recall that in the previous example, the Characters were trying to convince a guard to let them through a checkpoint and that the Aspect "Sterling Reputation" is Attached to the guard who is on duty when the Characters arrive.
@@ -18,14 +18,14 @@ The Aspect "Silver Tongue" is Attached to one of the Characters.
 If the Players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage, perhaps by suggesting that he guard might be amenable to accepting a bribe offered by the Character, then together they would constitute a pair of Matching Aspects. -->
 
 ## Scenes
-A _Scene_ is a part of the [Story](#tell-the-story) that describes the events that happen at single time and place.
+A _Scene_ is a part of the Story that describes the events that happen at single time and place.
 Every Scene has the following components:
   - __Objective__ -
-    A narrative description of what the [Characters](#create-characters) are trying to accomplish during the Scene.
+    A narrative description of what the Characters are trying to accomplish during the Scene.
   - __Setting__ -
-    The time and place at which the Scene occurs. The Setting includes the [Objects and Aspects](#objects-and-aspects) that appear in the Scene.
+    The time and place at which the Scene occurs. The Setting includes the Objects and Aspects that appear in the Scene.
   - __Difficulty Rating__ -
-    A number _1 <= d <= 4_ that describes how difficult it is for the Players to succeed at the [Check](#checks) to determine the Outcome of the Scene.
+    A number _1 <= d <= 4_ that describes how difficult it is for the Players to succeed at the Check to determine the Outcome of the Scene.
 
 <!-- #### Example
 The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_. -->
@@ -36,22 +36,22 @@ The Players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) desc
 ### Performing Scenes
 The Players _Perform_ Scenes when they [Tell a Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the Players will:
    1. __Investigate the Scene__ -
-     The Players describe [Objects and Aspects](#objects-and-aspects) that the Characters might encounter in the Scene.
+     The Players describe the Objects and Aspects that the Characters might encounter in the Scene.
    2. __Make a Check__ -
-     The Players identify pairs of [Matching Aspects](#matching-aspects) and make a [Check](#checks) to determine the Outcome of the Scene.
+     The Players identify pairs of Matching Aspects and make a Check to determine the Outcome of the Scene.
    3. __Interpret the Outcome__ -
      The Players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
 
 ### Precursors
-One Scene is a _Precursor_ to another Scene if accomplishing the Objective in the first Scene makes it easier to accomplish the Objective in the second Scene. When Players [Write an Outline](#write-an-outline), each new Scene that they Sketch must be a Precursor to another Scene. When Players [Tell the Story](#tell-the-story), they must Perform all of a given Scene's Precursors before Performing that Scene.
+One Scene is a _Precursor_ to another Scene if accomplishing the Objective in the first Scene makes it easier to accomplish the Objective in the second Scene. When the Players [Write an Outline](#write-an-outline), each new Scene that they Sketch must be a Precursor to another Scene. When the Players [Tell the Story](#tell-the-story), they must Perform all of a given Scene's Precursors before Performing that Scene.
 
 ## Checks
-The players make a _Check_ to determine the _Outcome_ of each [Scene](#scenes).
+The players make a _Check_ to determine the _Outcome_ of each Scene.
 To make a Check, the Players will:
    1. __Assemble a Dice Pool__ -
       A _Dice Pool_ is made up of one or more six-sided dice.
-      One die is added to the Dice Pool for each pair of [Matching Aspects](#matching-aspects) that characters could use to manipulate the scene to their advantage.
-      In addition, one die is added to the Dice Pool for each of the current Scene's [Precursors](#Precursors) that was resolved successfully.
+      One die is added to the Dice Pool for each pair of Matching Aspects that characters could use to manipulate the scene to their advantage.
+      In addition, one die is added to the Dice Pool for each of the current Scene's Precursors that was resolved successfully.
    2. __Roll the Dice__ -
       The dice in the Dice Pool are _Exploding Dice_.
       That is, for every die that yields a value of `6` one additional die is added to the Dice Pool.
@@ -102,9 +102,9 @@ The Players should create a situation that the Characters will be able to affect
 
 ## Create Characters
 During this phase of the game, the Players create _Characters_.
-Later in the game, the Players will assume the identities of these Characters when they [Perform Scenes](#performing-scenes).
+Later in the game, the Players will assume the identities of these Characters when they Perform Scenes.
 
-To Create Characters, each Player will first choose a name for their Character and then Attach one [Aspect](#objects-and-aspects) from each of the following categories to their Character:
+To Create Characters, each Player will first choose a name for their Character and then Attach one Aspect from each of the following categories to their Character:
    - __Occupation__ -
      An Aspect that describes a Character's profession, hobbies, or other interests.
    - __Physical or Mental Characteristic__ -
@@ -120,9 +120,9 @@ During the game additional Aspects can be Attached to a Character and existing A
 
 ## Write an Outline
 During this phase of the game, the Players will write an _Outline_ that describes how their Characters will try to prevent the Catastrophe.
-The Outline describes a collection of [Scenes](#scenes) that are arranged in a hierarchical tree-like structure.
+The Outline describes a collection of Scenes that are arranged in a hierarchical tree-like structure.
 
-To Write the Outline, the Players will first [Sketch a Scene](#sketching-scenes) called the _Finale_.
+To Write the Outline, the Players will first Sketch a Scene called the _Finale_.
 The Finale will be the last Scene that the Players Perform when they [Tell the Story](#tell-the-story).
 The Objective of the Finale should describe how the Characters intend to prevent the prophesied catastrophe.
 The Difficulty Rating of the Finale is always _d = 4_.
@@ -151,7 +151,7 @@ graph TB;
 ## Tell the Story
 During this phase of the game, the Players will tell a _Story_ about their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
 
-To Tell the Story, the players will [Perform the Scenes](#performing-scenes) described in the [Outline](#write-an-outline). Recall that during a [Check](#checks) to determine the Outcome of a Scene, one die is added to the Dice Pool for each of that Scene's [Precursors](#precursors) that was resolved successfully.
+To Tell the Story, the players will Perform the Scenes described in the Outline. Recall that during a Check to determine the Outcome of a Scene, one die is added to the Dice Pool for each of that Scene's Precursors that was resolved successfully.
 So, a Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
 
 <!-- ## Time Limits
