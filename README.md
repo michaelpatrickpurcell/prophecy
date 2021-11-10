@@ -1,11 +1,11 @@
 # Prophecy
 Prophecy is a tabletop roleplaying game about fate and destiny.
-During the game, the players [Receive a Prophecy](#receive-a-prophecy) that describes an impending catastrophe for some fictional world.
-They [Create Characters](#create-characters) who inhabit that world, [Write an Outline](#write-an-outline) that describes how their characters will try to prevent the catastrophe, and [Tell the Story](#tell-the-story) of their characters' adventures.
+During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world.
+They create characters who inhabit that world, write an outline that describes how their characters will try to prevent the catastrophe, and tell the story of their characters' adventures.
 
 ## Mechanics
 Throughout these rules, a variety of common terms are used to describe how the game is played.
-These terms will be capitalised when they appear in the text and italicised when they are first introduced.
+These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced.
 
 ### Objects and Aspects
 An _Object_ is a person, place, or thing that appears in the story.
@@ -159,8 +159,7 @@ graph TB;
 ### Tell the Story
 During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the prophesied catastrophe.
 
-To Tell the Story, the players will Perform the Scenes described in the Outline. Recall that when making a Check to determine the Outcome of a Scene, one die is added to the dice pool for each of that Scene's Precursors that was resolved successfully.
-So, a Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
+To Tell the Story, the players will Perform the Scenes described in the Outline. A Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
 
 <!-- To Perform a Scene, the players will:
    1. __Investigate the Scene__ -
