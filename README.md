@@ -29,7 +29,7 @@ If the Players agree that this combination of Aspects might allow the characters
 A _Scene_ is a part of the story that describes the events that happen at single time and place. The players make a _Check_ to determine the _Outcome_ of each Scene.
 Every Scene has the following components:
   - ___Objective___ -
-    A narrative description of what the Characters are trying to accomplish during the Scene. If the Characters accomplish their Objective then the Outcome is a _Success_ and the Scene is resolved successfully. Otherwise the Outcome is a _Failure_ and the Scene is resolved unsuccessfully.
+    A narrative description of what the Characters are trying to accomplish during the Scene. If the Characters accomplish the Scene's Objective then the Outcome is a _Success_ and the Scene is resolved successfully. Otherwise the Outcome is a _Failure_ and the Scene is resolved unsuccessfully.
   - ___Setting___ -
     The time and place at which the Scene occurs. The Setting includes the Objects and Aspects that appear in the Scene.
   - ___Difficulty Rating___ -
@@ -54,8 +54,8 @@ The players make a Check to determine the Outcome of each Scene. To make a Check
       Any die that yields a value of `4`, `5`, or `6` is a _Hit_.
       The _Result_ of a roll is the total number of Hits.
    4. __Determine the Outcome__ -
-      If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish their objective, and the Scene is resolved successfully.
-      Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their objective, and the Scene is resolved unsuccessfully.
+      If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
+      Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
 
 <!-- #### Example
 The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of _d = 3_.
@@ -141,7 +141,7 @@ The Difficulty Rating of the Finale is always _d = 4_.
 
 Then, the Players will Sketch additional Scenes that describe the events that will lead to the Finale.
 Each new Scene must be a Precursor of an existing Scene.
-That is, accomplishing the Objective of the new Scene must make it easier for the Characters to accomplish their Objective in the existing Scene.
+That is, accomplishing the Objective of the new Scene must make it easier for the Characters to accomplish the Objective in the existing Scene.
 The Difficulty Rating of the new Scene is always one less than that of the existing Scene and must be greater than zero.
 
 
