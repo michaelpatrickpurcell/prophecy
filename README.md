@@ -26,38 +26,47 @@ The Aspect "Silver Tongue" is Attached to one of the Characters.
 If the Players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage, perhaps by suggesting that he guard might be amenable to accepting a bribe offered by the Character, then together they would constitute a pair of Matching Aspects. -->
 
 ### Scenes
-A _Scene_ is a part of the story that describes the events that happen at single time and place. The players make a _Check_ to determine the _Outcome_ of each Scene.
+A _Scene_ is a part of the story that describes the events that happen at single time and place.
 Every Scene has the following components:
-  - ___Objective___ -
-    A narrative description of what the Characters are trying to accomplish during the Scene. If the Characters accomplish the Scene's Objective then the Outcome is a _Success_ and the Scene is resolved successfully. Otherwise the Outcome is a _Failure_ and the Scene is resolved unsuccessfully.
   - ___Setting___ -
     The time and place at which the Scene occurs. The Setting includes the Objects and Aspects that appear in the Scene.
+  - ___Objective___ -
+    A narrative description of what the Characters are trying to accomplish during the Scene.
   - ___Difficulty Rating___ -
-    A number _1 <= d <= 4_ that describes how difficult it is for the players to succeed at the Check to determine the Outcome of the Scene.
+    A number _1 <= d <= 4_ that describes how difficult it is for the Characters to accomplish the Scene's Objective.
+  - ___Outcome___ -
+    A description of whether the Characters accomplish the Scene's Objective. If so, then the Outcome is a _Success_ and the Scene is resolved successfully. Otherwise, the Outcome is a _Failure_ and the Scene is resolved unsuccessfully.
   - ___Precursors___ -
     Other Scenes which, if resolved successfully, make it easier for the Characters to accomplish the Scene's Objective.
 
 <!-- #### Example
 The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_. -->
 
-#### Checks
-The players make a Check to determine the Outcome of each Scene. To make a Check, the players will:
-   1. __Assemble a Dice Pool__ -
-      A dice pool is made up of one or more six-sided dice.
-      One die is added to the dice pool for each pair of Matching Aspects that characters could use to manipulate the scene to their advantage.
-      In addition, one die is added to the dice pool for each of the current Scene's Precursors that was resolved successfully.
-   2. __Roll the Dice__ -
-      The dice in the dice pool are exploding dice.
-      That is, for every die that yields a value of `6` one additional die is added to the dice pool.
-   3. __Compute the Result__ -
-      Any die that yields a value of `1`, `2`, or `3` is a _Miss_.
-      Any die that yields a value of `4`, `5`, or `6` is a _Hit_.
-      The _Result_ of a roll is the total number of Hits.
-   4. __Determine the Outcome__ -
-      If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
-      Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
+#### Sketching Scenes
+The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene, the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
-<!-- #### Example
+#### Performing Scenes
+The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) of the Characters' adventures.
+To Perform a Scene, the players will describe what happens during the Scene, determine the Outcome of the Scene (see [Checks](#checks)), and describe the narrative consequences of the Characters' actions.
+
+### Checks
+The players make a _Check_ to determine the Outcome of each Scene. To make a Check, the players will:
+  1. __Assemble a Dice Pool__ -
+     A dice pool is made up of one or more six-sided dice.
+     One die is added to the dice pool for each pair of Matching Aspects that characters could use to manipulate the scene to their advantage.
+     In addition, one die is added to the dice pool for each of the current Scene's Precursors that was resolved successfully.
+  2. __Roll the Dice__ -
+     The dice in the dice pool are exploding dice.
+     That is, for every die that yields a value of `6` one additional die is added to the dice pool.
+  3. __Compute the Result__ -
+     Any die that yields a value of `1`, `2`, or `3` is a _Miss_.
+     Any die that yields a value of `4`, `5`, or `6` is a _Hit_.
+     The _Result_ of a roll is the total number of Hits.
+  4. __Determine the Outcome__ -
+     If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
+     Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
+
+<!-- ##### Example
 The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of _d = 3_.
 The Players have identified three pairs of [Matching Aspects](#objects-and-aspects) while Performing the Scene and earned two Reward Dice in the Scenes immediately upstream of the current Scene.
 Therefore, the Dice Pool consists of five dice.
@@ -69,19 +78,6 @@ When rolled, this die yields the value {`4`}.
 So, this roll yields the values {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
 The Result of this roll is five Hits.
 This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.    -->
-
-#### Sketching Scenes
-The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene, the players will define the Objective, establish the Setting, and assign the Difficulty Rating for the Scene.
-
-#### Performing Scenes
-The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the players will:
-   1. __Investigate the Scene__ -
-     The players describe the Objects and Aspects that the Characters might encounter in the Scene.
-   2. __Make a Check__ -
-     The players identify pairs of Matching Aspects and make a Check to determine the Outcome of the Scene.
-   3. __Interpret the Outcome__ -
-     The players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
-
 
 ## Gameplay
 The game is divided into four phases: Receive a Prophecy, Create Characters, Write an Outline, and Tell the Story.
@@ -163,8 +159,16 @@ graph TB;
 ### Tell the Story
 During this Phase, the Players will tell the story of their Characters' adventures as they try to enact their plan to prevent the prophesied catastrophe.
 
-To Tell the Story, the Players will Perform the Scenes described in the Outline. Recall that during a Check to determine the Outcome of a Scene, one die is added to the dice pool for each of that Scene's Precursors that was resolved successfully.
+To Tell the Story, the Players will Perform the Scenes described in the Outline. Recall that when making a Check to determine the Outcome of a Scene, one die is added to the dice pool for each of that Scene's Precursors that was resolved successfully.
 So, a Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
+
+<!-- To Perform a Scene, the players will:
+   1. __Investigate the Scene__ -
+     The players describe the Objects and Aspects that the Characters might encounter in the Scene.
+   2. __Make a Check__ -
+     The players identify pairs of Matching Aspects and make a Check to determine the Outcome of the Scene.
+   3. __Interpret the Outcome__ -
+     The players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of their actions.   -->
 
 <!-- ## Time Limits
 The Story should be tightly focused on the Finale.
