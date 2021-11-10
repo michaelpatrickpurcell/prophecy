@@ -28,23 +28,20 @@ If the Players agree that this combination of Aspects might allow the characters
 ### Scenes
 A _Scene_ is a part of the story that describes the events that happen at single time and place. The players make a _Check_ to determine the _Outcome_ of each Scene.
 Every Scene has the following components:
-  - __Objective__ -
-    A narrative description of what the Characters are trying to accomplish during the Scene.
-  - __Setting__ -
+  - ___Objective___ -
+    A narrative description of what the Characters are trying to accomplish during the Scene. If the Characters accomplish their Objective then the Outcome is a _Success_ and the Scene is resolved successfully. Otherwise the Outcome is a _Failure_ and the Scene is resolved unsuccessfully.
+  - ___Setting___ -
     The time and place at which the Scene occurs. The Setting includes the Objects and Aspects that appear in the Scene.
-  - __Difficulty Rating__ -
+  - ___Difficulty Rating___ -
     A number _1 <= d <= 4_ that describes how difficult it is for the players to succeed at the Check to determine the Outcome of the Scene.
+  - ___Precursors___ -
+    Other Scenes which, if resolved successfully, make it easier for the Characters to accomplish the Scene's Objective.
 
 <!-- #### Example
 The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_. -->
 
-#### Precursors
-One Scene is a _Precursor_ to another Scene if accomplishing the Objective in the first Scene makes it easier to accomplish the Objective in the second Scene.
-<!-- When the players [Write an Outline](#write-an-outline), each new Scene that they Sketch must be a Precursor to another Scene.
-When the players [Tell the Story](#tell-the-story), they must Perform all of a given Scene's Precursors before Performing that Scene. -->
-
 #### Checks
-To make a Check, the players will:
+The players make a Check to determine the Outcome of each Scene. To make a Check, the players will:
    1. __Assemble a Dice Pool__ -
       A dice pool is made up of one or more six-sided dice.
       One die is added to the dice pool for each pair of Matching Aspects that characters could use to manipulate the scene to their advantage.
