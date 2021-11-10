@@ -85,7 +85,7 @@ During the first three phases the players will determine their Characters' fate.
 In the fourth phase, the players will determine their Characters' destiny.
 
 ### Receive a Prophecy
-During this Phase, the players receive a prophecy that describes a catastrophe that is destined to wreak havoc on some fictional world.
+During this phase, the players receive a prophecy that describes a catastrophe that is destined to wreak havoc on some fictional world.
 
 To Receive a Prophecy the players describe the the world in which the story is set and the nature of the catastrophe.
 The Players should create a situation that the Characters will be able to affect, but doing so will be both difficult and dangerous.
@@ -109,7 +109,7 @@ The Players should create a situation that the Characters will be able to affect
   6. Climate Change -->
 
 ### Create Characters
-During this Phase, the Players create Characters.
+During this phase, the Players create Characters.
 Later in the game, the Players will assume the identities of these Characters when they Perform Scenes.
 
 To Create Characters, each Player will first choose a name for their Character and then Attach one Aspect from each of the following categories to their Character:
@@ -127,7 +127,7 @@ To Create Characters, each Player will first choose a name for their Character a
 During the game additional Aspects can be Attached to a Character and existing Aspects can be modified to reflect how a Character changes in response to the events that occur as the Players [Tell the Story](#tell-the-story).
 
 ### Write an Outline
-During this Phase, the Players will write an _Outline_ that describes how their Characters will try to prevent the prophesied catastrophe.
+During this phase, the Players will write an _Outline_ that describes how their Characters will try to prevent the prophesied catastrophe.
 The Outline describes a collection of Scenes that are arranged in a hierarchical tree-like structure.
 
 To Write the Outline, the Players will first Sketch a Scene called the _Finale_.
@@ -157,7 +157,7 @@ graph TB;
 --- -->
 
 ### Tell the Story
-During this Phase, the Players will tell the story of their Characters' adventures as they try to enact their plan to prevent the prophesied catastrophe.
+During this phase, the Players will tell the story of their Characters' adventures as they try to enact their plan to prevent the prophesied catastrophe.
 
 To Tell the Story, the Players will Perform the Scenes described in the Outline. Recall that when making a Check to determine the Outcome of a Scene, one die is added to the dice pool for each of that Scene's Precursors that was resolved successfully.
 So, a Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
