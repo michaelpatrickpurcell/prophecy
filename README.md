@@ -1,67 +1,64 @@
 # Prophecy
 Prophecy is a tabletop roleplaying game about fate and destiny.
-During the game, the Players [Receive a Prophecy](#receive-a-prophecy) that describes an impending Catastrophe for some Fictional World.
-They [Create Characters](#create-characters) who inhabit that Fictional World, [Write an Outline](#write-an-outline) that describes how the Characters will try to prevent the Catastrophe, and [Tell the Story](#tell-the-story) of the Characters' adventures.
+During the game, the players [Receive a Prophecy](#receive-a-prophecy) that describes an impending catastrophe for some fictional world.
+They [Create Characters](#create-characters) who inhabit that world, [Write an Outline](#write-an-outline) that describes how their characters will try to prevent the catastrophe, and [Tell the Story](#tell-the-story) of their characters' adventures.
 
-## Objects and Aspects
-An _Object_ is a person, place, or thing that appears in the Story and is not a Character.
-An _Aspect_ is a word or short phrase that describes something noteworthy about a Character or an Object.
-Each Aspect is _Attached_ to a single Character or Object.
+## Mechanics
+Throughout these rules, a variety of common terms are used to describe how the game is played.
+These terms will be capitalised when they appear in the text and italicised when they are first introduced.
 
-### Matching Aspects
-A pair of _Matching Aspects_ is a set of two Aspects, one Attached to a Character and one Attached to an Object, that together allow the Characters to manipulate a Scene to their advantage.
-Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a Check.
+### Objects and Aspects
+An _Object_ is a person, place, or thing that appears in the story.
+An _Aspect_ is a word or short phrase that describes something noteworthy about an Object.
+Each Aspect is _Attached_ to a single Object.
+
+#### Characters
+A _Character_ is a person who appears in the story and whose actions will be controlled by a single player throughout the game. Characters are Objects. As such, Aspects can be attached to Characters. An Aspect that is Attached to a Character is a _Character Aspect_.
+An Aspect that is Attached to any Object that is not a Character is an _Environment Aspect_.
+
+#### Matching Aspects
+A pair of _Matching Aspects_ is a set of two Aspects, one Character Aspect and one Environment Aspect, that together allow the Characters to manipulate a Scene to their advantage.
+<!-- Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a Check. -->
 
 <!-- #### Example
 Recall that in the previous example, the Characters were trying to convince a guard to let them through a checkpoint and that the Aspect "Sterling Reputation" is Attached to the guard who is on duty when the Characters arrive.
 The Aspect "Silver Tongue" is Attached to one of the Characters.
 If the Players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage, perhaps by suggesting that he guard might be amenable to accepting a bribe offered by the Character, then together they would constitute a pair of Matching Aspects. -->
 
-## Scenes
-A _Scene_ is a part of the Story that describes the events that happen at single time and place.
+### Scenes
+A _Scene_ is a part of the story that describes the events that happen at single time and place. The players make a _Check_ to determine the _Outcome_ of each Scene.
 Every Scene has the following components:
   - __Objective__ -
     A narrative description of what the Characters are trying to accomplish during the Scene.
   - __Setting__ -
     The time and place at which the Scene occurs. The Setting includes the Objects and Aspects that appear in the Scene.
   - __Difficulty Rating__ -
-    A number _1 <= d <= 4_ that describes how difficult it is for the Players to succeed at the Check to determine the Outcome of the Scene.
+    A number _1 <= d <= 4_ that describes how difficult it is for the players to succeed at the Check to determine the Outcome of the Scene.
 
 <!-- #### Example
 The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_. -->
 
-### Sketching Scenes
-The Players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the Catastrophe. To Sketch a Scene, the Players will define the Objective, establish the Setting, and assign the Difficulty Rating for the Scene.
+#### Precursors
+One Scene is a _Precursor_ to another Scene if accomplishing the Objective in the first Scene makes it easier to accomplish the Objective in the second Scene.
+<!-- When the players [Write an Outline](#write-an-outline), each new Scene that they Sketch must be a Precursor to another Scene.
+When the players [Tell the Story](#tell-the-story), they must Perform all of a given Scene's Precursors before Performing that Scene. -->
 
-### Performing Scenes
-The Players _Perform_ Scenes when they [Tell a Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the Players will:
-   1. __Investigate the Scene__ -
-     The Players describe the Objects and Aspects that the Characters might encounter in the Scene.
-   2. __Make a Check__ -
-     The Players identify pairs of Matching Aspects and make a Check to determine the Outcome of the Scene.
-   3. __Interpret the Outcome__ -
-     The Players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
-
-### Precursors
-One Scene is a _Precursor_ to another Scene if accomplishing the Objective in the first Scene makes it easier to accomplish the Objective in the second Scene. When the Players [Write an Outline](#write-an-outline), each new Scene that they Sketch must be a Precursor to another Scene. When the Players [Tell the Story](#tell-the-story), they must Perform all of a given Scene's Precursors before Performing that Scene.
-
-## Checks
-The players make a _Check_ to determine the _Outcome_ of each Scene.
-To make a Check, the Players will:
+#### Checks
+To make a Check, the players will:
    1. __Assemble a Dice Pool__ -
-      A _Dice Pool_ is made up of one or more six-sided dice.
-      One die is added to the Dice Pool for each pair of Matching Aspects that characters could use to manipulate the scene to their advantage.
-      In addition, one die is added to the Dice Pool for each of the current Scene's Precursors that was resolved successfully.
+      A dice pool is made up of one or more six-sided dice.
+      One die is added to the dice pool for each pair of Matching Aspects that characters could use to manipulate the scene to their advantage.
+      In addition, one die is added to the dice pool for each of the current Scene's Precursors that was resolved successfully.
    2. __Roll the Dice__ -
-      The dice in the Dice Pool are _Exploding Dice_.
-      That is, for every die that yields a value of `6` one additional die is added to the Dice Pool.
+      The dice in the dice pool are exploding dice.
+      That is, for every die that yields a value of `6` one additional die is added to the dice pool.
    3. __Compute the Result__ -
       Any die that yields a value of `1`, `2`, or `3` is a _Miss_.
       Any die that yields a value of `4`, `5`, or `6` is a _Hit_.
       The _Result_ of a roll is the total number of Hits.
    4. __Determine the Outcome__ -
-      If the Result of the Players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the characters accomplish their objective, and the Scene was resolved successfully.
-      Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their objective, and the Scene was resolved unsuccessfully.
+      If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish their objective, and the Scene is resolved successfully.
+      Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their objective, and the Scene is resolved unsuccessfully.
 
 <!-- #### Example
 The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of _d = 3_.
@@ -76,10 +73,28 @@ So, this roll yields the values {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
 The Result of this roll is five Hits.
 This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.    -->
 
-## Receive a Prophecy
-During this phase of the game, the _Players_ receive a _Prophecy_ that describes a _Catastrophe_ that is destined to wreak havoc on some _Fictional World_.
+#### Sketching Scenes
+The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene, the players will define the Objective, establish the Setting, and assign the Difficulty Rating for the Scene.
 
-To Receive a Prophecy the Players describe the the Fictional World in which the Story is set and the nature of the impending Catastrophe.
+#### Performing Scenes
+The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) about the Characters' adventures as they try to enact the plan described in the Outline. To Perform a Scene, the players will:
+   1. __Investigate the Scene__ -
+     The players describe the Objects and Aspects that the Characters might encounter in the Scene.
+   2. __Make a Check__ -
+     The players identify pairs of Matching Aspects and make a Check to determine the Outcome of the Scene.
+   3. __Interpret the Outcome__ -
+     The players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of that Outcome.  
+
+
+## Gameplay
+The game is divided into four phases: Receive a Prophecy, Create Characters, Write an Outline, and Tell the Story.
+During the first three phases the players will determine their Characters' fate.
+In the fourth phase, the players will determine their Characters' destiny.
+
+### Receive a Prophecy
+During this Phase, the players receive a prophecy that describes a catastrophe that is destined to wreak havoc on some fictional world.
+
+To Receive a Prophecy the players describe the the world in which the story is set and the nature of the catastrophe.
 The Players should create a situation that the Characters will be able to affect, but doing so will be both difficult and dangerous.
 
 <!-- To Receive the Prophecy, the Players will roll a six-sided die (1d6) to select a random Genre from the [Genre Table](#genre-table) and then roll a six-sided die (1d6) to select a random Catastrophe from the [Catastrophe Table](#catastrophe-table).
@@ -100,8 +115,8 @@ The Players should create a situation that the Characters will be able to affect
   5. Resource Depletion
   6. Climate Change -->
 
-## Create Characters
-During this phase of the game, the Players create _Characters_.
+### Create Characters
+During this Phase, the Players create Characters.
 Later in the game, the Players will assume the identities of these Characters when they Perform Scenes.
 
 To Create Characters, each Player will first choose a name for their Character and then Attach one Aspect from each of the following categories to their Character:
@@ -118,13 +133,13 @@ To Create Characters, each Player will first choose a name for their Character a
 
 During the game additional Aspects can be Attached to a Character and existing Aspects can be modified to reflect how a Character changes in response to the events that occur as the Players [Tell the Story](#tell-the-story).
 
-## Write an Outline
-During this phase of the game, the Players will write an _Outline_ that describes how their Characters will try to prevent the Catastrophe.
+### Write an Outline
+During this Phase, the Players will write an _Outline_ that describes how their Characters will try to prevent the prophesied catastrophe.
 The Outline describes a collection of Scenes that are arranged in a hierarchical tree-like structure.
 
 To Write the Outline, the Players will first Sketch a Scene called the _Finale_.
 The Finale will be the last Scene that the Players Perform when they [Tell the Story](#tell-the-story).
-The Objective of the Finale should describe how the Characters intend to prevent the prophesied catastrophe.
+The Objective of the Finale should describe how the Characters intend to prevent the catastrophe.
 The Difficulty Rating of the Finale is always _d = 4_.
 
 Then, the Players will Sketch additional Scenes that describe the events that will lead to the Finale.
@@ -148,10 +163,10 @@ graph TB;
 
 --- -->
 
-## Tell the Story
-During this phase of the game, the Players will tell a _Story_ about their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
+### Tell the Story
+During this Phase, the Players will tell the story of their Characters' adventures as they try to enact their plan to prevent the prophesied catastrophe.
 
-To Tell the Story, the players will Perform the Scenes described in the Outline. Recall that during a Check to determine the Outcome of a Scene, one die is added to the Dice Pool for each of that Scene's Precursors that was resolved successfully.
+To Tell the Story, the Players will Perform the Scenes described in the Outline. Recall that during a Check to determine the Outcome of a Scene, one die is added to the dice pool for each of that Scene's Precursors that was resolved successfully.
 So, a Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
 
 <!-- ## Time Limits
