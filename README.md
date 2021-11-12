@@ -8,7 +8,7 @@ These terms will be Capitalised when they appear in the text and _Italicised_ wh
 
 ## Mechanics    
 _Mechanics_ are the systems that govern how players interact with the game.
-They provide a way for players to describe a fictional world by populating it with [Objects and Aspects](#objects-and-aspects), compose a story set in that world that is comprised of [Scenes](#scenes), and decide how that story plays out by making [Checks](#checks).
+They provide a way for players to describe a fictional world by populating it with [Objects and Aspects](#objects-and-aspects), compose a story set in that world by describing [Scenes](#scenes), and determine how that story plays out by making [Checks](#checks).
 
 ### Objects and Aspects
 An _Object_ is a person, place, or thing that appears in the story.
