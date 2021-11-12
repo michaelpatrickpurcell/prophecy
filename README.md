@@ -124,7 +124,6 @@ The Difficulty Rating of the Finale is always _d = 4_.
 
 Then, the Players will Sketch additional Scenes that describe the events that will lead to the Finale.
 Each new Scene must be a Precursor of an existing Scene.
-That is, accomplishing the Objective of the new Scene must make it easier for the Characters to accomplish the Objective in the existing Scene.
 The Difficulty Rating of the new Scene is always one less than that of the existing Scene and must be greater than zero.
 
 
