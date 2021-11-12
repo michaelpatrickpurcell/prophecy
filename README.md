@@ -119,20 +119,20 @@ Later in the game, the players will assume the identities of these Characters wh
 
 To Create Characters, each player will first choose a name for their Character and then Attach one Aspect from each of the following categories to their Character:
    - __Occupation__ -
-     An Aspect that describes a Character's profession, hobbies, or other interests.
+     An Aspect that describes the Character's profession, hobbies, or other interests.
    - __Physical or Mental Characteristic__ -
-     An Aspect that describes a Character's body or mind.
+     An Aspect that describes the Character's body or mind.
    - __Psychological Characteristic__ -
-     An Aspect that describes a Character's personality.
+     An Aspect that describes the Character's personality.
    - __Relationship__ -
-     An Aspect that describes a Character's connection with another Character.
+     An Aspect that describes the Character's connection with another Character.
    - __Affiliation__ -
-     An Aspect that describes a Character's connection with an organisation.
+     An Aspect that describes the Character's connection with an organisation.
 
 During the game additional Aspects can be Attached to a Character and existing Aspects can be modified to reflect how a Character changes in response to the events that occur as the players [Tell the Story](#tell-the-story).
 
 ### Write an Outline
-During this phase, the players will write an _Outline_ that describes how their Characters will try to prevent the Catastrophe.
+During this phase, the players will write an _Outline_ that describes how the Characters will try to prevent the Catastrophe.
 The Outline describes a collection of Scenes that are arranged in a hierarchical tree-like structure.
 
 To Write an Outline, the players will first Sketch a Scene called the _Finale_.
