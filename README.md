@@ -29,7 +29,7 @@ The Aspect "Silver Tongue" is Attached to one of the Characters.
 If the Players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage, perhaps by suggesting that he guard might be amenable to accepting a bribe offered by the Character, then together they would constitute a pair of Matching Aspects. -->
 
 ### Scenes
-A _Scene_ is a part of the story that describes the events that happen at single time and place.
+A _Scene_ is a part of the story that describes the events that happen at a single time and place.
 Every Scene has the following components:
   - ___Setting___ -
     The time and place at which the Scene occurs. The Setting includes the Objects and Aspects that appear in the Scene.
