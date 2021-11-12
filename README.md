@@ -3,9 +3,12 @@ Prophecy is a tabletop roleplaying game about fate and destiny.
 During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world.
 They create characters who inhabit that world, write an outline that describes how their characters will try to prevent the catastrophe, and tell the story of their characters' adventures.
 
-## Mechanics
-Throughout these rules, a variety of common terms are used to describe how the game is played.
+Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
 These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced.
+
+## Mechanics    
+_Mechanics_ are the systems that govern how players interact with the game.
+They provide a way for players to describe a fictional world by populating it with [Objects and Aspects](#objects-and-aspects), compose a story set in that world that is comprised of [Scenes](#scenes), and decide how that story plays out by making [Checks](#checks).
 
 ### Objects and Aspects
 An _Object_ is a person, place, or thing that appears in the story.
@@ -43,11 +46,11 @@ Every Scene has the following components:
 The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_. -->
 
 #### Sketching Scenes
-The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene, the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
+The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
 #### Performing Scenes
 The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) of the Characters' adventures.
-To Perform a Scene, the players will describe what happens during the Scene, determine the Outcome of the Scene (see [Checks](#checks)), and describe the narrative consequences of the Characters' actions.
+To Perform a Scene the players will describe what happens during the Scene, determine the Outcome of the Scene (see [Checks](#checks)), and describe the narrative consequences of the Characters' actions.
 
 ### Checks
 The players make a _Check_ to determine the Outcome of each Scene. To make a Check, the players will:
@@ -80,14 +83,16 @@ The Result of this roll is five Hits.
 This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.    -->
 
 ## Gameplay
-The game is divided into four phases: Receive a Prophecy, Create Characters, Write an Outline, and Tell the Story.
-During the first three phases the players will determine their Characters' fate.
-In the fourth phase, the players will determine their Characters' destiny.
+The game is divided into four phases.
+The first three phases are about fate.
+The players will [Receive a Prophecy](#receive-a-prophecy) that describes an impending catastrophe for some fictional world, [Create Characters](#create-characters) who inhabit that world, and [Write an Outline](#write-an-outline) of the story that they will tell about those characters.
+The fourth phase is about destiny.
+The players will [Tell the Story](#tell-the-story) of the Characters' adventures and discover how that story ends.
 
 ### Receive a Prophecy
-During this phase, the players receive a prophecy that describes a catastrophe that is destined to wreak havoc on some fictional world.
+During this phase, the players receive a _Prophecy_ that describes a _Catastrophe_ that is destined to wreak havoc on some fictional world.
 
-To Receive a Prophecy the players describe the the world in which the story is set and the nature of the catastrophe.
+To Receive a Prophecy the players describe the the world in which the story is set and the nature of the Catastrophe.
 The players should create a situation that the Characters will be able to affect, but doing so will be both difficult and dangerous.
 
 <!-- To Receive the Prophecy, the Players will roll a six-sided die (1d6) to select a random Genre from the [Genre Table](#genre-table) and then roll a six-sided die (1d6) to select a random Catastrophe from the [Catastrophe Table](#catastrophe-table).
@@ -127,15 +132,15 @@ To Create Characters, each player will first choose a name for their Character a
 During the game additional Aspects can be Attached to a Character and existing Aspects can be modified to reflect how a Character changes in response to the events that occur as the players [Tell the Story](#tell-the-story).
 
 ### Write an Outline
-During this phase, the players will write an outline that describes how their Characters will try to prevent the prophesied catastrophe.
+During this phase, the players will write an _Outline_ that describes how their Characters will try to prevent the Catastrophe.
 The Outline describes a collection of Scenes that are arranged in a hierarchical tree-like structure.
 
-To Write an Outline, the players will first Sketch a Scene called the finale.
-The finale will be the last Scene that the players Perform when they [Tell the Story](#tell-the-story).
-The Objective of the finale should describe how the Characters intend to prevent the catastrophe.
-The Difficulty Rating of the finale is always _d = 4_.
+To Write an Outline, the players will first Sketch a Scene called the _Finale_.
+The Finale will be the last Scene that the players Perform when they [Tell the Story](#tell-the-story).
+The Objective of the Finale should describe how the Characters intend to prevent the Catastrophe.
+The Difficulty Rating of the Finale is always _d = 4_.
 
-Then, the Players will Sketch additional Scenes that describe the events that will lead to the finale.
+Then, the Players will Sketch additional Scenes that describe the events that will lead to the Finale.
 Each new Scene must be a Precursor of an existing Scene.
 That is, accomplishing the Objective of the new Scene must make it easier for the Characters to accomplish the Objective in the existing Scene.
 The Difficulty Rating of the new Scene is always one less than that of the existing Scene and must be greater than zero.
@@ -157,7 +162,7 @@ graph TB;
 --- -->
 
 ### Tell the Story
-During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the prophesied catastrophe.
+During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
 
 To Tell the Story, the players will Perform the Scenes described in the Outline. A Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
 

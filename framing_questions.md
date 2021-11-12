@@ -33,3 +33,16 @@
   17. __Where does your game take the players that other games can’t, don’t, or won’t?__
   18. __What are your publishing goals for your game?__
   19. __Who is your target audience?__
+
+## Board Game Equity Pyramid
+
+  - __Game Title__
+     - __Why?__
+        - __Core Fantasy__ - The compelling experience you want your players to have.
+     - __How?__
+        - __Theme: Tone__ - Adjectives that capture the tone of your game.
+        - __Gameplay: Structure__ - A description of the type of game the players should expect.
+     - __What?__
+        - __Theme: Setting/Story__ - Highlights from the world that you're inviting the player to inhabit.
+        - __Gameplay: Hooks__ - The unique or iconic mechanics that set your game apart.
+  - __Notes__ - 
