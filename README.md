@@ -167,7 +167,7 @@ To encourage this kind of storytelling, the Players should adhere to the followi
 
 --- -->
 
-<!-- ## Acknowledgements
+## Acknowledgements
 Thanks to everyone who helped refine the design of Prophecy:
   - Keydan Bruce
   - Farzana Choudhury
@@ -178,4 +178,4 @@ Thanks to everyone who helped refine the design of Prophecy:
   - Kira Purcell
   - Luke Purcell
   - Jo Stephenson
-  - Brett Witty -->
+  - Brett Witty
