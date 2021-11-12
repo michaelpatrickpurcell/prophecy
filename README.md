@@ -95,24 +95,6 @@ During this phase, the players receive a _Prophecy_ that describes a _Catastroph
 To Receive a Prophecy the players describe the the world in which the story is set and the nature of the Catastrophe.
 The players should create a situation that the Characters will be able to affect, but doing so will be both difficult and dangerous.
 
-<!-- To Receive the Prophecy, the Players will roll a six-sided die (1d6) to select a random Genre from the [Genre Table](#genre-table) and then roll a six-sided die (1d6) to select a random Catastrophe from the [Catastrophe Table](#catastrophe-table).
-
-### Genre Table
-  1. Fantasy
-  2. Science Fiction
-  3. Horror
-  4. Romance
-  5. Adventure
-  6. Mystery
-
-### Catastrophe Table
-  1. War
-  2. Revolution
-  3. Disease
-  4. Natural Disaster
-  5. Resource Depletion
-  6. Climate Change -->
-
 ### Create Characters
 During this phase, the players create Characters.
 Later in the game, the players will assume the identities of these Characters when they Perform Scenes.
@@ -163,16 +145,18 @@ graph TB;
 
 ### Tell the Story
 During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
+While the overall structure of the story is established when the players [Write an Outline](#write-an-outline), when they Perform Scenes the players discover how the story unfolds and how the Characters are affected.
 
-To Tell the Story, the players will Perform the Scenes described in the Outline. A Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
+To Tell the Story, the players will Perform the Scenes described in the Outline.
+A Scene cannot be Performed until after all of its Precursors have been Performed. Other than this restriction, however, the Scenes can be Performed in any order.
 
-<!-- To Perform a Scene, the players will:
-   1. __Investigate the Scene__ -
-     The players describe the Objects and Aspects that the Characters might encounter in the Scene.
-   2. __Make a Check__ -
-     The players identify pairs of Matching Aspects and make a Check to determine the Outcome of the Scene.
-   3. __Interpret the Outcome__ -
-     The players describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of their actions.   -->
+Before they make a Check to determine the Outcome of a Scene, the players should roleplay interactions between the Characters and the Objects that populate the Scene.
+This is the players' opportunity to add new Objects to the Scene and Attach new Aspects to existing Objects.
+
+After the Outcome of a Scene has been determined, the players should describe the Characters' actions in the Scene, how they led to the specified Outcome, and the narrative consequences of their actions.
+This description should be informed by the pairs of Matching Aspects that the Characters attempted to use to manipulate the Scene to their advantage.
+If the Scene was resolved successfully, then the players should describe which pairs of Matching Aspects they were able to exploit.
+Otherwise, the players should describe what went wrong.
 
 <!-- ## Time Limits
 The Story should be tightly focused on the Finale.
