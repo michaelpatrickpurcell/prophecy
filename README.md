@@ -154,7 +154,7 @@ A Scene that is a Precursor of a Secondary Scene is a _Tertiary Scene_.
 
 __Example__
 
-The players first Sketch the Finale.
+<!-- The players first Sketch the Finale.
 Because it is the Finale, its Difficulty Rating is _d = 4_.
 
 The players Sketch two Precursors of the Finale called `Primary Scene 1` and `Primary Scene 2`.
@@ -173,9 +173,9 @@ They Sketch a third Primary Scene called `Primary Scene 3`.
 Because it is a Primary Scene, its Difficulty Rating is _d = 3_.
 
 Lastly, the players Sketch a Precursor of `Primary Scene 3` called `Secondary Scene 3.1`.
-Because it is a Secondary Scene, its Difficulty Rating is _d = 2_.
+Because it is a Secondary Scene, its Difficulty Rating is _d = 2_. -->
 
-A tree view of the resulting Outline is:
+A tree view of one possible Outline is:
 ```
 Finale (4)
 |- Primary Scene 1 (3)
