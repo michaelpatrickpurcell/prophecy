@@ -4,7 +4,7 @@ During the game, the players receive a prophecy that describes an impending cata
 They create characters who inhabit that world, write an outline that describes how their characters will try to prevent the catastrophe, and tell the story of their characters' adventures.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
-These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to rules described in another section. When this happens, the reference will consist of a [hyperlink]() to the target section. The link text will be the title of the target section.
+These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to rules described in another section. When this happens, the reference will consist of a [hyperlink](#prophecy) to the target section. The link text will be the title of the target section.
 
 ## Mechanics    
 _Mechanics_ are the systems that govern how players interact with the game.
@@ -24,9 +24,9 @@ Alternatively, it might indicate that he is independently wealthy. It might even
 A _Character_ is a person who appears in the story and whose actions will be controlled by a single player throughout the game. Characters are Objects. As such, Aspects can be attached to Characters. An Aspect that is Attached to a Character is a _Character Aspect_.
 An Aspect that is Attached to any Object that is not a Character is an _Environment Aspect_.
 
-__Example__
+<!-- __Example__
 
-Ruth is a Character. If the Aspect "Silver Tongued" was attached to her, it would be a Character Aspect that might indicate that she is particularly persuasive. Alternatively, it might suggest that she is charming, eloquent, or even deceitful.
+Ruth is a Character. If the Aspect "Silver Tongued" was attached to her, it would be a Character Aspect that might indicate that she is particularly persuasive. Alternatively, it might suggest that she is charming, eloquent, or even deceitful. -->
 
 #### Matching Aspects
 A pair of _Matching Aspects_ is a set of two Aspects, one Character Aspect and one Environment Aspect, that together allow the Characters to manipulate a Scene to their advantage.
@@ -175,7 +175,7 @@ Because it is a Primary Scene, its Difficulty Rating is _d = 3_.
 Lastly, the players Sketch a Precursor of `Primary Scene 3` called `Secondary Scene 3.1`.
 Because it is a Secondary Scene, its Difficulty Rating is _d = 2_. -->
 
-A tree view of one possible Outline is:
+A tree view of one possible Outline generated this way is:
 ```
 Finale (4)
 |- Primary Scene 1 (3)
@@ -186,6 +186,7 @@ Finale (4)
 |- Primary Scene 3 (3)
    |- Secondary Scene 3.1 (2)
 ```
+The number in parentheses indicates the Difficulty Rating of the corresponding Scene.
 
 ### Tell the Story
 During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
@@ -202,15 +203,13 @@ This description should be informed by the pairs of Matching Aspects that the Ch
 If the Scene was resolved successfully, then the players should describe which pairs of Matching Aspects they were able to exploit.
 Otherwise, the players should describe what went wrong.
 
-<!-- ## Time Limits
-The Story should be tightly focused on the Finale.
-To encourage this kind of storytelling, the Players should adhere to the following guiding principles:
+## Time Limits
+The story should be tightly focused on the Finale.
+To encourage this kind of storytelling, the players should adhere to the following guiding principles:
    - __Short Scenes__ -
      Each Scene should be Performed in no more than eight minutes of real time.
    - __Simple Structures__ -
-     The [Outline](#outline) should consist of no more than eight [Scenes](#scenes).
-
---- -->
+     The Outline should consist of no more than eight Scenes.
 
 ## Acknowledgements
 Thanks to everyone who helped refine the design of Prophecy:
