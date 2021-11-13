@@ -23,12 +23,13 @@ An Aspect that is Attached to any Object that is not a Character is an _Environm
 A pair of _Matching Aspects_ is a set of two Aspects, one Character Aspect and one Environment Aspect, that together allow the Characters to manipulate a Scene to their advantage.
 <!-- Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a Check. -->
 
-__Example__<br>
+__Example__
+
 The Characters are trying to convince a guard to let them through a checkpoint.
 The Aspect "Silver Tongue" is Attached to one of the Characters.
 The Aspect "Sterling Reputation" is Attached to the guard who is on duty when the Characters arrive.
 If the players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage,
-perhaps by suggesting that he guard might be amenable to accepting a bribe offered by the Character,
+perhaps by suggesting that he guard might be willing to accept a bribe offered by the Character,
 then together they would constitute a pair of Matching Aspects.
 
 ### Scenes
@@ -48,7 +49,8 @@ Every Scene has the following components:
 #### Sketching Scenes
 The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
-__Example__<br>
+__Example__
+
 The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_.
 
 #### Performing Scenes
@@ -72,7 +74,8 @@ The players make a _Check_ to determine the Outcome of each Scene. To make a Che
      If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
      Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
 
-__Example__<br>
+__Example__
+
 The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of _d = 3_.
 The Players have identified three pairs of Matching Aspects while Performing the Scene.
 Two of the Scene's precursors were resolved successfully.
@@ -130,18 +133,19 @@ Then, the Players will Sketch additional Scenes that describe the events that wi
 Each new Scene must be a Precursor of an existing Scene.
 The Difficulty Rating of the new Scene is always one less than that of the existing Scene and must be greater than zero.
 
-__Example__<br>
-```mermaid
-graph TB;
-  n0("Destroy the Death Star (4)");
-  n0 ---- n1("Engage the enemy fighters (3)");
-  n0 ----- n2("Find a critical weakness (3)");
-           n2 --- n4("Rescue Princess Leia (2)");
-           n2 ---- n5("Deliver the schematics to the rebels (2)");
-                   n5 ---- n7("Find Obi-Wan Kenobi (1)");
-  n0 --- n3("Use The Force (3)");
-         n3 ------- n6("Train to become a Jedi (2)");
+__Example__
+
 ```
+Destroy the Death Star (4)
+|- Engage the enemy fighters (3)
+|- Use The Force (3)
+|  |- Train to become a Jedi (2)
+|- Find a critical weakness (3)
+   |- Rescue Princess Leia (2)
+   |- Deliver the schematics to the rebels (2)
+      |- Find Obi-Wan Kenobi (1)
+```
+
 
 ### Tell the Story
 During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
