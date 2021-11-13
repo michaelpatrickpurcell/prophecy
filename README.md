@@ -4,7 +4,7 @@ During the game, the players receive a prophecy that describes an impending cata
 They create characters who inhabit that world, write an outline that describes how their characters will try to prevent the catastrophe, and tell the story of their characters' adventures.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
-These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced.
+These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to the rules described in another section. When this happens, the reference will consist of a [hyperlink]() to the target section where the rules are described. The link text will be the title of the target section.
 
 ## Mechanics    
 _Mechanics_ are the systems that govern how players interact with the game.
@@ -23,10 +23,13 @@ An Aspect that is Attached to any Object that is not a Character is an _Environm
 A pair of _Matching Aspects_ is a set of two Aspects, one Character Aspect and one Environment Aspect, that together allow the Characters to manipulate a Scene to their advantage.
 <!-- Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a Check. -->
 
-<!-- #### Example
-Recall that in the previous example, the Characters were trying to convince a guard to let them through a checkpoint and that the Aspect "Sterling Reputation" is Attached to the guard who is on duty when the Characters arrive.
+__Example__<br>
+The Characters are trying to convince a guard to let them through a checkpoint.
 The Aspect "Silver Tongue" is Attached to one of the Characters.
-If the Players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage, perhaps by suggesting that he guard might be amenable to accepting a bribe offered by the Character, then together they would constitute a pair of Matching Aspects. -->
+The Aspect "Sterling Reputation" is Attached to the guard who is on duty when the Characters arrive.
+If the players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage,
+perhaps by suggesting that he guard might be amenable to accepting a bribe offered by the Character,
+then together they would constitute a pair of Matching Aspects.
 
 ### Scenes
 A _Scene_ is a part of the story that describes the events that happen at a single time and place.
@@ -42,11 +45,11 @@ Every Scene has the following components:
   - ___Precursors___ -
     Other Scenes which, if resolved successfully, make it easier for the Characters to accomplish the Scene's Objective.
 
-<!-- #### Example
-The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_. -->
-
 #### Sketching Scenes
 The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
+
+__Example__<br>
+The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_.
 
 #### Performing Scenes
 The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) of the Characters' adventures.
@@ -69,9 +72,10 @@ The players make a _Check_ to determine the Outcome of each Scene. To make a Che
      If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
      Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
 
-<!-- ##### Example
+__Example__<br>
 The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of _d = 3_.
-The Players have identified three pairs of [Matching Aspects](#objects-and-aspects) while Performing the Scene and earned two Reward Dice in the Scenes immediately upstream of the current Scene.
+The Players have identified three pairs of Matching Aspects while Performing the Scene.
+Two of the Scene's precursors were resolved successfully.
 Therefore, the Dice Pool consists of five dice.
 When rolled, these dice yield the values {`3`, `6`, `5`, `1`, `6`}.
 Because two of the dice yielded a value of `6`, two additional dice are added to the pool.
@@ -80,7 +84,7 @@ Because one of the dice yielded a value of `6`, one additional die is added to t
 When rolled, this die yields the value {`4`}.
 So, this roll yields the values {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
 The Result of this roll is five Hits.
-This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.    -->
+This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.   
 
 ## Gameplay
 The game is divided into four phases.
@@ -126,8 +130,7 @@ Then, the Players will Sketch additional Scenes that describe the events that wi
 Each new Scene must be a Precursor of an existing Scene.
 The Difficulty Rating of the new Scene is always one less than that of the existing Scene and must be greater than zero.
 
-
-<!-- #### Example
+__Example__<br>
 ```mermaid
 graph TB;
   n0("Destroy the Death Star (4)");
@@ -139,8 +142,6 @@ graph TB;
   n0 --- n3("Use The Force (3)");
          n3 ------- n6("Train to become a Jedi (2)");
 ```
-
---- -->
 
 ### Tell the Story
 During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
