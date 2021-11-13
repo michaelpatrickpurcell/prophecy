@@ -148,10 +148,8 @@ Each new Scene must be a Precursor of an existing Scene.
 The Difficulty Rating of the new Scene is always one less than that of the existing Scene and must be greater than zero.
 
 A Scene that is a Precursor of the Finale is a _Primary Scene_.
-The Difficulty Rating of a Primary Scene is _d = 3_.
 A Scene that is a Precursor of a Primary Scene is a _Secondary Scene_.
-The Difficulty Rating of a Secondary Scene is _d = 2_.
-A Scene that is a Precursor of a Secondary Scene is a Tertiary Scene. The Difficulty Rating of a Tertiary Scene is _d = 1_.
+A Scene that is a Precursor of a Secondary Scene is a _Tertiary Scene_.
 
 __Example__
 
