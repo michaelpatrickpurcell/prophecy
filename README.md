@@ -156,7 +156,7 @@ __Example__
 The players first Sketch the Finale.
 Because it is the Finale, its Difficulty Rating is _d = 4_.
 
-The players Sketch two Primary Scenes called `Primary Scene 1` and `Primary Scene 2`.
+The players Sketch two Precursors of the Finale called `Primary Scene 1` and `Primary Scene 2`.
 Because they are Primary Scenes, their Difficulty Ratings are _d = 3_.
 
 The players decide to dig a bit deeper.
