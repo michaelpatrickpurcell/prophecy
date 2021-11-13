@@ -101,6 +101,7 @@ When rolled, this die yields the value {`4`}.
 So, this roll yields the values {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
 
 The Result of this roll is five Hits.
+
 This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.   
 
 ## Gameplay
