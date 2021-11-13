@@ -186,7 +186,7 @@ Finale (4)
 |- Primary Scene 3 (3)
    |- Secondary Scene 3.1 (2)
 ```
-The number in parentheses indicates the Difficulty Rating of the corresponding Scene.
+The numbers in parentheses indicate the Difficulty Rating of the corresponding Scenes.
 
 ### Tell the Story
 During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
