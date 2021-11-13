@@ -4,7 +4,7 @@ During the game, the players receive a prophecy that describes an impending cata
 They create characters who inhabit that world, write an outline that describes how their characters will try to prevent the catastrophe, and tell the story of their characters' adventures.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
-These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to the rules described in another section. When this happens, the reference will consist of a [hyperlink](#prophecy) to the target section where the rules are described. The link text will be the title of the target section.
+These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to rules described in another section. When this happens, the reference will consist of a [hyperlink]() to the target section where the rules are described. The link text will be the title of the target section.
 
 ## Mechanics    
 _Mechanics_ are the systems that govern how players interact with the game.
@@ -92,12 +92,14 @@ The Players are making a Check to determine the Outcome of a Scene that has a Di
 The Players have identified three pairs of Matching Aspects while Performing the Scene.
 Two of the Scene's precursors were resolved successfully.
 Therefore, the Dice Pool consists of five dice.
+
 When rolled, these dice yield the values {`3`, `6`, `5`, `1`, `6`}.
 Because two of the dice yielded a value of `6`, two additional dice are added to the pool.
 When rolled, these dice yield the values {`2`,`6`}.
 Because one of the dice yielded a value of `6`, one additional die is added to the pool.
 When rolled, this die yields the value {`4`}.
 So, this roll yields the values {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
+
 The Result of this roll is five Hits.
 This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.   
 
