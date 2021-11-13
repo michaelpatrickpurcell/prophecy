@@ -4,7 +4,7 @@ During the game, the players receive a prophecy that describes an impending cata
 They create characters who inhabit that world, write an outline that describes how their characters will try to prevent the catastrophe, and tell the story of their characters' adventures.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
-These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to the rules described in another section. When this happens, the reference will consist of a [hyperlink](#prophecy) to the target section where the rules are described. The link text will be the title of the target section.
+These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to the rules described in another section. When this happens, the reference will consist of a [hyperlink](#) to the target section where the rules are described. The link text will be the title of the target section.
 
 ## Mechanics    
 _Mechanics_ are the systems that govern how players interact with the game.
