@@ -153,23 +153,6 @@ A Scene that is a Precursor of a Secondary Scene is a _Tertiary Scene_.
 
 __Example__
 
-<!-- After they [Receive a Prophecy](#receive-a-prophecy), The players [Write an Outline](#write-an-outline).
-  - The players first Sketch the Finale.
-    Because it is the Finale, its Difficulty Rating is _d = 4_.
-     -  The players Sketch two Primary Scenes called `Primary Scene 1` and
-        `Primary Scene 2`. Both Scenes are Primary Scenes, so the Difficulty Rating of both Scenes is _d = 3_.
-        - The players decide to dig a bit deeper.
-          They Sketch two Precursors of `Primary Scene 2` called `Secondary Scene 2.1` and `Secondary Scene 2.2`.
-          Both Scenes are Secondary Scenes, so the Difficulty Rating of both Scenes is _d = 2_.
-           - Again, the players decide to dig deeper.
-             They Sketch a Precursor of `Secondary Scene 2.2` called `Tertiary Scene 2.2.1`.   
-             Because it is a Tertiary Scene, its Difficulty Rating is _d = 1_.
-     - The players then return their attention to the Finale.
-       They Sketch a third Primary Scene called `Primary Scene 3`.
-       Because it is a Primary Scene, its Difficulty Rating is _d = 3_.
-        - Lastly, the players Sketch a Precursor of `Primary Scene 3` called `Secondary Scene 3.1`.
-          Because it is a Secondary Scene, its difficulty is _d = 2_. -->
-
 The players first Sketch the Finale.
 Because it is the Finale, its Difficulty Rating is _d = 4_.
 
