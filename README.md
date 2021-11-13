@@ -15,22 +15,30 @@ An _Object_ is a person, place, or thing that appears in the story.
 An _Aspect_ is a word or short phrase that describes something noteworthy about an Object.
 Each Aspect is _Attached_ to a single Object.
 
+<!-- __Example__
+
+A guard who appears in the story is an Object. If the Aspect "Sterling Reputation" was Attached to him, it might indicate that he is highly regarded.
+Alternatively, it might indicate that he is independently wealthy. It might even be used ironically to indicate that he is known to accept bribes. -->
+
 #### Characters
 A _Character_ is a person who appears in the story and whose actions will be controlled by a single player throughout the game. Characters are Objects. As such, Aspects can be attached to Characters. An Aspect that is Attached to a Character is a _Character Aspect_.
 An Aspect that is Attached to any Object that is not a Character is an _Environment Aspect_.
+
+__Example__
+
+Ruth is a Character. If the Aspect "Silver Tongued" was attached to her, it would be a Character Aspect that might indicate that she is particularly persuasive. Alternatively, it might suggest that she is charming, eloquent, or even deceitful.
 
 #### Matching Aspects
 A pair of _Matching Aspects_ is a set of two Aspects, one Character Aspect and one Environment Aspect, that together allow the Characters to manipulate a Scene to their advantage.
 <!-- Pairs of Matching Aspects are used to determine the size of the Dice Pool when making a Check. -->
 
-__Example__
+<!-- __Example__
 
-The Characters are trying to convince a guard to let them through a checkpoint.
-The Aspect "Silver Tongue" is Attached to one of the Characters.
-The Aspect "Sterling Reputation" is Attached to the guard who is on duty when the Characters arrive.
-If the players agree that this combination of Aspects might allow the characters to manipulate the Scene to their advantage,
-perhaps by suggesting that he guard might be willing to accept a bribe offered by the Character,
-then together they would constitute a pair of Matching Aspects.
+Ruth is trying to convince a guard to let her through a checkpoint.
+The Aspect "Silver Tongued" is attached to Ruth and the Aspect "Sterling Reputation" is Attached to the guard.
+If the players agree that this pair of Aspects might allow the Ruth to manipulate the Scene to her advantage,
+perhaps by suggesting that she might be able to bribe the guard,
+then together they would constitute a pair of Matching Aspects. -->
 
 ### Scenes
 A _Scene_ is a part of the story that describes the events that happen at a single time and place.
@@ -49,13 +57,17 @@ Every Scene has the following components:
 #### Sketching Scenes
 The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
-__Example__
+<!-- __Example__
 
-The Characters want to cross the border between two neighbouring kingdoms. It is dusk when they make their way to a "Remote" border crossing on the outskirts of a small town. The border is patrolled by a detachment of soldiers from the "Local Militia". The soldier on duty when the Characters arrive is well-known in town to have a "Sterling Reputation". The guards are on "High Alert" and it will be fairly difficult for the Characters to convince the guard on duty to let them through the checkpoint. The Difficulty Rating of the scene is _d = 3_.
+Ruth wants to cross the border between two neighbouring kingdoms. It is "Dusk" when she makes her way to a "Remote" border crossing on the outskirts of a small town. The border is defended by a garrison of soldiers from the "Local Militia" and the guard on duty when Ruth arrives is well-known to have a "Sterling Reputation". The garrison is on "High Alert" and it will be fairly difficult for Ruth to convince the guard to let her pass. The Difficulty Rating of the scene is _d = 3_. -->
 
 #### Performing Scenes
 The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) of the Characters' adventures.
 To Perform a Scene the players will describe what happens during the Scene, determine the Outcome of the Scene (see [Checks](#checks)), and describe the narrative consequences of the Characters' actions.
+
+<!-- __Example__
+
+Test -->
 
 ### Checks
 The players make a _Check_ to determine the Outcome of each Scene. To make a Check, the players will:
@@ -129,23 +141,68 @@ The Finale will be the last Scene that the players Perform when they [Tell the S
 The Objective of the Finale should describe how the Characters intend to prevent the Catastrophe.
 The Difficulty Rating of the Finale is always _d = 4_.
 
-Then, the Players will Sketch additional Scenes that describe the events that will lead to the Finale.
+Then, the players will Sketch additional Scenes that describe the events that will lead to the Finale.
 Each new Scene must be a Precursor of an existing Scene.
 The Difficulty Rating of the new Scene is always one less than that of the existing Scene and must be greater than zero.
 
+A Scene that is a Precursor of the Finale is a _Primary Scene_.
+The Difficulty Rating of a Primary Scene is _d = 3_.
+A Scene that is a Precursor of a Primary Scene is a _Secondary Scene_.
+The Difficulty Rating of a Secondary Scene is _d = 2_.
+A Scene that is a Precursor of a Secondary Scene is a Tertiary Scene. The Difficulty Rating of a Tertiary Scene is _d = 1_.
+
 __Example__
 
-```
-Destroy the Death Star (4)
-|- Engage the enemy fighters (3)
-|- Use The Force (3)
-|  |- Train to become a Jedi (2)
-|- Find a critical weakness (3)
-   |- Rescue Princess Leia (2)
-   |- Deliver the schematics to the rebels (2)
-      |- Find Obi-Wan Kenobi (1)
-```
+<!-- After they [Receive a Prophecy](#receive-a-prophecy), The players [Write an Outline](#write-an-outline).
+  - The players first Sketch the Finale.
+    Because it is the Finale, its Difficulty Rating is _d = 4_.
+     -  The players Sketch two Primary Scenes called `Primary Scene 1` and
+        `Primary Scene 2`. Both Scenes are Primary Scenes, so the Difficulty Rating of both Scenes is _d = 3_.
+        - The players decide to dig a bit deeper.
+          They Sketch two Precursors of `Primary Scene 2` called `Secondary Scene 2.1` and `Secondary Scene 2.2`.
+          Both Scenes are Secondary Scenes, so the Difficulty Rating of both Scenes is _d = 2_.
+           - Again, the players decide to dig deeper.
+             They Sketch a Precursor of `Secondary Scene 2.2` called `Tertiary Scene 2.2.1`.   
+             Because it is a Tertiary Scene, its Difficulty Rating is _d = 1_.
+     - The players then return their attention to the Finale.
+       They Sketch a third Primary Scene called `Primary Scene 3`.
+       Because it is a Primary Scene, its Difficulty Rating is _d = 3_.
+        - Lastly, the players Sketch a Precursor of `Primary Scene 3` called `Secondary Scene 3.1`.
+          Because it is a Secondary Scene, its difficulty is _d = 2_. -->
 
+The players first Sketch the Finale.
+Because it is the Finale, its Difficulty Rating is _d = 4_.
+
+The players Sketch two Primary Scenes called `Primary Scene 1` and `Primary Scene 2`.
+Both Scenes are Primary Scenes, so the Difficulty Rating of both Scenes is _d = 3_.
+
+The players decide to dig a bit deeper.
+They Sketch two Precursors of `Primary Scene 2` called `Secondary Scene 2.1` and `Secondary Scene 2.2`.
+Because they are Secondary Scenes, the Difficulty Rating of both Scenes is _d = 2_.
+
+Again, the players decide to dig deeper.
+They Sketch a Precursor of `Secondary Scene 2.2` called `Tertiary Scene 2.2.1`.   
+Because it is a Tertiary Scene, its Difficulty Rating is _d = 1_.
+
+The players then return their attention to the Finale.
+They Sketch a third Primary Scene called `Primary Scene 3`.
+Because it is a Primary Scene, its Difficulty Rating is _d = 3_.
+
+Lastly, the players Sketch a Precursor of `Primary Scene 3` called `Secondary Scene 3.1`.
+Because it is a Secondary Scene, its difficulty is _d = 2_.
+
+
+A tree view of the resulting Outline is:
+```
+Finale (4)
+|- Primary Scene 1 (3)
+|- Primary Scene 2 (3)
+|  |- Secondary Scene 2.1 (2)
+|  |- Secondary Scene 2.2 (2)
+|     |- Tertiary Scene 2.2.1 (1)
+|- Primary Scene 3 (3)
+   |- Secondary Scene 3.1 (2)
+```
 
 ### Tell the Story
 During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
