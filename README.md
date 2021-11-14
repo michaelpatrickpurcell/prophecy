@@ -4,7 +4,8 @@ During the game, the players receive a prophecy that describes an impending cata
 They create characters who inhabit that world, write an outline that describes how their characters will try to deal with the catastrophe, and tell the story of their characters' adventures.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
-These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to rules described in another section. When this happens, the reference will consist of a [hyperlink](#prophecy) to the target section. The link text will be the title of the target section.
+These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced.
+Occasionally, the rules described in one section will refer to rules described in another section. When this happens, the reference will consist of a [hyperlink](#prophecy) to the target section. The link text will be the title of the target section.
 
 ## Mechanics    
 _Mechanics_ are the systems that govern how players interact with the game.
@@ -111,6 +112,9 @@ The players will [Receive a Prophecy](#receive-a-prophecy) that describes an imp
 The fourth phase is about destiny.
 The players will [Tell the Story](#tell-the-story) of the Characters' adventures and discover how that story ends.
 
+The game should be tightly focused on the question of how the Characters will try to deal with the prophesied catastrophe.
+To encourage this, the story should consist of no more than eight Scenes and each Scene should be Performed in no more than eight minutes of real time.
+
 ### Receive a Prophecy
 During this phase, the players receive a _Prophecy_ that describes a _Catastrophe_ that is destined to wreak havoc on some fictional world.
 
@@ -156,14 +160,14 @@ __Example__
 
 A tree view of one possible Outline generated this way is:
 ```
-|- Finale (4)
-   |- Primary Scene 1 (3)
-   |- Primary Scene 2 (3)
-   |  |- Secondary Scene 2.1 (2)
-   |  |- Secondary Scene 2.2 (2)
-   |     |- Tertiary Scene 2.2.1 (1)
-   |- Primary Scene 3 (3)
-      |- Secondary Scene 3.1 (2)
+Finale (4)
+|- Primary Scene 1 (3)
+|- Primary Scene 2 (3)
+|  |- Secondary Scene 2.1 (2)
+|  |- Secondary Scene 2.2 (2)
+|     |- Tertiary Scene 2.2.1 (1)
+|- Primary Scene 3 (3)
+   |- Secondary Scene 3.1 (2)
 ```
 The numbers in parentheses indicate the Difficulty Rating of the corresponding Scenes.
 
@@ -182,23 +186,19 @@ This description should be informed by the pairs of Matching Aspects that the Ch
 If the Scene was resolved successfully, then the players should describe which pairs of Matching Aspects they were able to exploit.
 Otherwise, the players should describe what went wrong.
 
-## Time Limits
-The story should be tightly focused on the Finale.
-To encourage this kind of storytelling, the players should adhere to the following guiding principles:
-   - __Short Scenes__ -
-     Each Scene should be Performed in no more than eight minutes of real time.
-   - __Simple Structures__ -
-     The Outline should consist of no more than eight Scenes.
-
 ## Acknowledgements
 Thanks to everyone who helped refine the design of Prophecy:
   - Keydan Bruce
   - Farzana Choudhury
   - Michael Cromer
   - Dannielle Harden
+  - Andrew Hellyer
   - Sarah Hewat
   - Scott Joblin
+  - David McKenzie
+  - Paul Murray
   - Kira Purcell
   - Luke Purcell
   - Jo Stephenson
   - Brett Witty
+  - Bevis Worchester
