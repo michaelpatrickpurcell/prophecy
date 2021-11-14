@@ -48,7 +48,7 @@ Every Scene has the following components:
   - ___Objective___ -
     A narrative description of what the Characters are trying to accomplish during the Scene.
   - ___Difficulty Rating___ -
-    A number _1 <= d <= 4_ that describes how difficult it is for the Characters to accomplish the Scene's Objective.
+    A number that describes how difficult it is for the Characters to accomplish the Scene's Objective.
   - ___Outcome___ -
     A description of whether the Characters accomplish the Scene's Objective. If so, then the Outcome is a _Success_ and the Scene is resolved successfully. Otherwise, the Outcome is a _Failure_ and the Scene is resolved unsuccessfully.
   - ___Precursors___ -
@@ -88,15 +88,15 @@ The players make a _Check_ to determine the Outcome of each Scene. To make a Che
 
 __Example__
 
-The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of _d = 3_.
+The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of (`3`).
 The Players have identified three pairs of Matching Aspects while Performing the Scene.
 Two of the Scene's precursors were resolved successfully.
 Therefore, the Dice Pool consists of five dice.
 
 When rolled, these dice yield the values {`3`, `6`, `5`, `1`, `6`}.
-Because two of the dice yielded a value of `6`, two additional dice are added to the pool.
+Because two of the dice yielded a value of {`6`}, two additional dice are added to the pool.
 When rolled, these dice yield the values {`2`,`6`}.
-Because one of the dice yielded a value of `6`, one additional die is added to the pool.
+Because one of the dice yielded a value of {`6`}, one additional die is added to the pool.
 When rolled, this die yields the value {`4`}.
 So, this roll yields the values {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
 
@@ -142,7 +142,7 @@ The Outline describes a collection of Scenes that are arranged in a hierarchical
 To Write an Outline, the players will first Sketch a Scene called the _Finale_.
 The Finale will be the last Scene that the players Perform when they [Tell the Story](#tell-the-story).
 The Objective of the Finale should describe how the Characters intend to deal with the Catastrophe.
-The Difficulty Rating of the Finale is always _d = 4_.
+The Difficulty Rating of the Finale is always (`4`).
 
 Then, the players will Sketch additional Scenes that describe the events that will lead to the Finale.
 Each new Scene must be a Precursor of an existing Scene.
