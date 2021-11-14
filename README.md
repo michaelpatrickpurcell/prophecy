@@ -1,7 +1,7 @@
 # Prophecy
 Prophecy is a tabletop roleplaying game about fate and destiny.
 During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world.
-They create characters who inhabit that world, write an outline that describes how their characters will try to prevent the catastrophe, and tell the story of their characters' adventures.
+They create characters who inhabit that world, write an outline that describes how their characters will try to deal with the catastrophe, and tell the story of their characters' adventures.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
 These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced. Occasionally, the rules described in one section will refer to rules described in another section. When this happens, the reference will consist of a [hyperlink](#prophecy) to the target section. The link text will be the title of the target section.
@@ -55,7 +55,7 @@ Every Scene has the following components:
     Other Scenes which, if resolved successfully, make it easier for the Characters to accomplish the Scene's Objective.
 
 #### Sketching Scenes
-The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the how the Characters will try to prevent the impending catastrophe. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
+The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the story that they will tell about the Characters. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
 <!-- __Example__
 
@@ -136,12 +136,12 @@ To Create Characters, each player will first choose a name for their Character a
 During the game additional Aspects can be Attached to a Character and existing Aspects can be modified to reflect how a Character changes in response to the events that occur as the players [Tell the Story](#tell-the-story).
 
 ### Write an Outline
-During this phase, the players will write an _Outline_ that describes how the Characters will try to prevent the Catastrophe.
+During this phase, the players will write an _Outline_ that describes how the Characters will try to deal with the Catastrophe.
 The Outline describes a collection of Scenes that are arranged in a hierarchical tree-like structure.
 
 To Write an Outline, the players will first Sketch a Scene called the _Finale_.
 The Finale will be the last Scene that the players Perform when they [Tell the Story](#tell-the-story).
-The Objective of the Finale should describe how the Characters intend to prevent the Catastrophe.
+The Objective of the Finale should describe how the Characters intend to deal with the Catastrophe.
 The Difficulty Rating of the Finale is always _d = 4_.
 
 Then, the players will Sketch additional Scenes that describe the events that will lead to the Finale.
@@ -154,42 +154,21 @@ A Scene that is a Precursor of a Secondary Scene is a _Tertiary Scene_.
 
 __Example__
 
-<!-- The players first Sketch the Finale.
-Because it is the Finale, its Difficulty Rating is _d = 4_.
-
-The players Sketch two Precursors of the Finale called `Primary Scene 1` and `Primary Scene 2`.
-Because they are Primary Scenes, the Difficulty Rating of both Scenes is _d = 3_.
-
-The players decide to dig a bit deeper.
-They Sketch two Precursors of `Primary Scene 2` called `Secondary Scene 2.1` and `Secondary Scene 2.2`.
-Because they are Secondary Scenes, the Difficulty Rating of both Scenes is _d = 2_.
-
-Again, the players decide to dig deeper.
-They Sketch a Precursor of `Secondary Scene 2.2` called `Tertiary Scene 2.2.1`.
-Because it is a Tertiary Scene, its Difficulty Rating is _d = 1_.
-
-The players then return their attention to the Finale.
-They Sketch a third Primary Scene called `Primary Scene 3`.
-Because it is a Primary Scene, its Difficulty Rating is _d = 3_.
-
-Lastly, the players Sketch a Precursor of `Primary Scene 3` called `Secondary Scene 3.1`.
-Because it is a Secondary Scene, its Difficulty Rating is _d = 2_. -->
-
 A tree view of one possible Outline generated this way is:
 ```
-Finale (4)
-|- Primary Scene 1 (3)
-|- Primary Scene 2 (3)
-|  |- Secondary Scene 2.1 (2)
-|  |- Secondary Scene 2.2 (2)
-|     |- Tertiary Scene 2.2.1 (1)
-|- Primary Scene 3 (3)
-   |- Secondary Scene 3.1 (2)
+|- Finale (4)
+   |- Primary Scene 1 (3)
+   |- Primary Scene 2 (3)
+   |  |- Secondary Scene 2.1 (2)
+   |  |- Secondary Scene 2.2 (2)
+   |     |- Tertiary Scene 2.2.1 (1)
+   |- Primary Scene 3 (3)
+      |- Secondary Scene 3.1 (2)
 ```
 The numbers in parentheses indicate the Difficulty Rating of the corresponding Scenes.
 
 ### Tell the Story
-During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to prevent the Catastrophe.
+During this phase, the players will tell the story of their Characters' adventures as they try to enact their plan to deal with the Catastrophe.
 While the overall structure of the story is established when the players [Write an Outline](#write-an-outline), when they Perform Scenes the players discover how the story unfolds and how the Characters are affected.
 
 To Tell the Story, the players will Perform the Scenes described in the Outline.
