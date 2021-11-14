@@ -22,7 +22,8 @@ A guard who appears in the story is an Object. If the Aspect "Sterling Reputatio
 Alternatively, it might indicate that he is independently wealthy. It might even be used ironically to indicate that he is known to accept bribes. -->
 
 #### Characters
-A _Character_ is a person who appears in the story and whose actions will be controlled by a single player throughout the game. Characters are Objects. As such, Aspects can be attached to Characters. An Aspect that is Attached to a Character is a _Character Aspect_.
+A _Character_ is a person who appears in the story and whose actions will be controlled by a single player throughout the game.
+An Aspect that is Attached to a Character is a _Character Aspect_.
 An Aspect that is Attached to any Object that is not a Character is an _Environment Aspect_.
 
 <!-- __Example__

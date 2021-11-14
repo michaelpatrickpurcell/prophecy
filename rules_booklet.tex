@@ -1,12 +1,24 @@
 \documentclass[12pt, a5paper, parskip=half-]{scrartcl}
-%\usepackage[pass]{geometry}
 \usepackage[pass]{geometry}
 \usepackage{fontspec}
-%\usepackage{parskip}
 \usepackage{dirtree}
+\usepackage{xcolor}
+\usepackage{graphicx}
+
 \renewcommand{\DTstyle}{\rmfamily}
 
 \usepackage{enumitem}
+\usepackage[pages=some, color=black]{background}
+\backgroundsetup{
+firstpage=true,
+color=black,
+opacity=1,
+angle=0,
+scale=1,
+contents = {%
+    \includegraphics[width=\paperwidth,height=\paperheight]{Images/booklet_cover_background.jpg}
+  }%
+}
 
 \title{Prophecy}
 \author{Michael Purcell}
@@ -16,30 +28,25 @@
 \begin{titlepage}
 		\enlargethispage{5\baselineskip}
 
-\setmainfont{Cinzel Decorative}
-
+         \setmainfont{Cinzel Decorative}
 		\centering{
 			{\fontsize{60}{72}\selectfont
-			pROpHecY}
+			{\textcolor{violet!75}{pROpHecY}}}
 		}
 		
 		\setmainfont{URWClassico}
-
 		\vspace{10mm}
-		\centering{\Large{A tabletop roleplaying game\\ \smallskip about fate and destiny}}
+		\centering{\Large{{\textcolor{lightgray}
+{A tabletop roleplaying game\\ \smallskip about fate and destiny}}}}
 
 		\vfill
-		\raggedright{\Large{Michael Purcell \hfill November 2021}}
-		\setmainfont{Cinzel Decorative}
+		\raggedright{\Large{{\textcolor{lightgray}{Michael Purcell \hfill November 2021}}}}
 
 \end{titlepage}
 
 
 %=========================================
-%\setmainfont{Cinzel Decorative}
-%\centering{\Huge pROpHecY}
-%\bigskip
-%
+
 \setmainfont{URWClassico}
 \normalsize
 \raggedright
@@ -54,11 +61,12 @@ These terms will be Capitalised when they appear in the text and \emph{Italicise
 %When this happens, the reference will consist of a hyperlink to the target section.
 %The link text will be the title of the target section.
 
+\newpage
+
 \section*{Mechanics}    
 \emph{Mechanics} are the systems that govern how players interact with the game.
 They provide a way for players to describe a fictional world by populating it with Objects and Aspects, compose a story set in that world by describing Scenes, and determine how that story plays out by making Checks.
 
-\newpage
 
 \subsection*{Objects and Aspects}
 An \emph{Object} is a person, place, or thing that appears in the story.
@@ -66,7 +74,7 @@ An \emph{Aspect} is a word or short phrase that describes something noteworthy a
 Each Aspect is \emph{Attached} to a single Object.
 
 \subsubsection*{Characters}
-A \emph{Character} is a person who appears in the story and whose actions will be controlled by a single player throughout the game. Characters are Objects. As such, Aspects can be attached to Characters. An Aspect that is Attached to a Character is a \emph{Character Aspect}.
+A \emph{Character} is a person who appears in the story and whose actions will be controlled by a single player throughout the game.  An Aspect that is Attached to a Character is a \emph{Character Aspect}.
 An Aspect that is Attached to any Object that is not a Character is an \emph{Environment Aspect}.
 
 \subsubsection*{Matching Aspects}
