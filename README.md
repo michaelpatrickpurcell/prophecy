@@ -7,6 +7,15 @@ Throughout these rules, a variety of common words are used as technical terms to
 These terms will be Capitalised when they appear in the text and _Italicised_ when they are first introduced.
 Occasionally, the rules described in one section will refer to rules described in another section. When this happens, the reference will consist of a [hyperlink](#prophecy) to the target section. The link text will be the title of the target section.
 
+## Materials
+To play the game, the players will need a few _Materials_ that they will use to take notes and generate random numbers.
+They will need:
+  - __Index Cards__ - Approximately fifty index cards should placed within easy reach of all players.
+  - __Sticky Notes__ -  Approximately one hundred sticky notes should placed within easy reach of all players.
+  - __Butcher Paper__	 One large sheet of butcher paper should be placed in the middle of the play area.  A whiteboard set up where all players can see it can be used instead if desired.
+  - __Markers__ - Each player should have a marker that they can use to write on the index cards, sticky notes, and butcher paper.
+  - __Dice__ Approximately twelve six-sided dice should be placed within easy reach of all players.
+
 ## Mechanics    
 _Mechanics_ are the systems that govern how players interact with the game.
 They provide a way for players to describe a fictional world by populating it with [Objects and Aspects](#objects-and-aspects), compose a story set in that world by describing [Scenes](#scenes), and determine how that story plays out by making [Checks](#checks).
@@ -15,6 +24,8 @@ They provide a way for players to describe a fictional world by populating it wi
 An _Object_ is a person, place, or thing that appears in the story.
 An _Aspect_ is a word or short phrase that describes something noteworthy about an Object.
 Each Aspect is _Attached_ to a single Object.
+
+Players should use an index card to represent each Object and a sticky note to represent each Aspect.  If an Aspect is Attached to an Object, then the players should stick the sticky note representing that Aspect to the index card representing that Object.
 
 <!-- __Example__
 
@@ -59,6 +70,10 @@ Every Scene has the following components:
 #### Sketching Scenes
 The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the story that they will tell about the Characters. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
+The players should use an oval drawn on the butcher paper to represent each Scene.
+The oval that represents a Scene should be labelled with that Scene's Objective and Difficulty Rating.  
+The players should draw lines connecting the oval that represents each Scene to the ovals that represent its Precursors.
+
 <!-- __Example__
 
 Ruth wants to cross the border between two neighbouring kingdoms. It is "Dusk" when she makes her way to a "Remote" border crossing on the outskirts of a small town. The border is defended by a garrison of soldiers from the "Local Militia" and the guard on duty when Ruth arrives is well-known to have a "Sterling Reputation". The garrison is on "High Alert" and it will be fairly difficult for Ruth to convince the guard to let her pass. The Difficulty Rating of the scene is _d = 3_. -->
@@ -67,6 +82,7 @@ Ruth wants to cross the border between two neighbouring kingdoms. It is "Dusk" w
 The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) of the Characters' adventures.
 To Perform a Scene the players will describe what happens during the Scene, determine the Outcome of the Scene (see [Checks](#checks)), and describe the narrative consequences of the Characters' actions.
 
+After performing each Scene, the players should cross out the oval representing that Scene on the butcher paper. If the Scene is resolved successfully, the players should place a die on the oval that represents that Scene's Parent.
 <!-- __Example__
 
 Test -->
@@ -85,8 +101,8 @@ The players make a _Check_ to determine the Outcome of each Scene. To make a Che
      Any die that yields a value of `4`, `5`, or `6` is a _Hit_.
      The _Result_ of a roll is the total number of Hits.
   4. __Determine the Outcome__ -
-     If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a _Success_, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
-     Otherwise, the Outcome is a _Failure_, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
+     If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a Success, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
+     Otherwise, the Outcome is a Failure, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
 
 __Example__
 
@@ -159,7 +175,7 @@ A Scene that is a Precursor of a Secondary Scene is a _Tertiary Scene_.
 
 __Example__
 
-A tree view of one possible Outline generated this way is:
+A tree view of one possible Outline is:
 ```
 Finale (4)
 |- Primary Scene 1 (3)

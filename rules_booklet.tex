@@ -1,27 +1,45 @@
 \documentclass[12pt, a5paper, parskip=half-]{scrartcl}
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=\baselineskip,
+  afterskip=-0.25\baselineskip
+]{section}
+
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=-0.25\baselineskip
+]{subsection}
+
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=-0.25\baselineskip
+]{subsubsection}
+
 \usepackage[pass]{geometry}
 \usepackage{fontspec}
 \usepackage{dirtree}
-\usepackage{xcolor}
-\usepackage{graphicx}
-
 \renewcommand{\DTstyle}{\rmfamily}
 
+\usepackage{xcolor}
+\usepackage{graphicx}
 \usepackage{enumitem}
-\usepackage[pages=some, color=black]{background}
-\backgroundsetup{
-firstpage=true,
-color=black,
-opacity=1,
-angle=0,
-scale=1,
-contents = {%
-    \includegraphics[width=\paperwidth,height=\paperheight]{Images/booklet_cover_background.jpg}
-  }%
-}
 
-\title{Prophecy}
-\author{Michael Purcell}
+\usepackage[pages=some, color=black]{background}
+%\backgroundsetup{
+%firstpage=true,
+%color=black,
+%opacity=1,
+%angle=0,
+%scale=1,
+%contents = {%
+%    \includegraphics[width=\paperwidth,height=\paperheight]{Images/booklet_cover_background.jpg}
+%  }%
+%}
+
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes}
 
 \begin{document}
 %=========================================
@@ -29,18 +47,29 @@ contents = {%
 		\enlargethispage{5\baselineskip}
 
          \setmainfont{Cinzel Decorative}
-		\centering{
+%		\centering{
+%			{\fontsize{60}{72}\selectfont
+%			{\textcolor{violet!75}{pROpHecY}}}
+%		}
+	    \centering{
 			{\fontsize{60}{72}\selectfont
-			{\textcolor{violet!75}{pROpHecY}}}
+			{\textcolor{black}{pROpHecY}}}
 		}
-		
+
+
 		\setmainfont{URWClassico}
 		\vspace{10mm}
-		\centering{\Large{{\textcolor{lightgray}
+%		\centering{\Large{{\textcolor{lightgray}
+%{A tabletop roleplaying game\\ \smallskip about fate and destiny}}}}
+		\centering{\Large{{\textcolor{black}
 {A tabletop roleplaying game\\ \smallskip about fate and destiny}}}}
 
+
+\includegraphics[scale=3.55]{Images/comet_diagram.pdf}
+
 		\vfill
-		\raggedright{\Large{{\textcolor{lightgray}{Michael Purcell \hfill November 2021}}}}
+%		\raggedright{\Large{{\textcolor{lightgray}{Michael Purcell \hfill November 2021}}}}
+		\raggedright{\Large{{\textcolor{black}{Michael Purcell \hfill November 2021}}}}
 
 \end{titlepage}
 
@@ -51,26 +80,35 @@ contents = {%
 \normalsize
 \raggedright
 \section*{Introduction}
-Prophecy is a tabletop roleplaying game about fate and destiny.
-During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world.
-They create characters who inhabit that world, write an outline that describes how their characters will try to deal with the catastrophe, and tell the story of their characters' adventures.
+Prophecy is a tabletop roleplaying game about fate and destiny. During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world. They create characters who inhabit that fictional world, write an outline that describes how their characters will try to deal with the catastrophe, and the the story of their characters' adventures.
 
-Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
-These terms will be Capitalised when they appear in the text and \emph{Italicised} when they are first introduced.
+Throughout these rules, a variety of common words are used as technical terms to describe how the game is played. These terms will be Capitalised when they appear in the text and \emph{Italicised} when they are first introduced.
 %Occasionally, the rules described in one section will refer to rules described in another section.
 %When this happens, the reference will consist of a hyperlink to the target section.
 %The link text will be the title of the target section.
+
+\section*{Materials}
+To play the game, the players will need a few \emph{Materials} that they will use to take notes and generate random numbers. They will need:
+\begin{description}[leftmargin=0pt]
+	\item[Index Cards] Approximately fifty index cards should placed within easy reach of all players. 
+	\item[Sticky Notes] Approximately one hundred sticky notes should placed within easy reach of all players.
+	\item[Butcher Paper]	 One large sheet of butcher paper should be placed in the middle of the play area.  A whiteboard set up where all players can see it can be used instead if desired.
+	\item[Markers] Each player should have a marker that they can use to write on the index cards, sticky notes, and butcher paper.
+	\item[Dice] Approximately twelve six-sided dice should be placed within easy reach of all players. 
+\end{description}
+
+\newpage
 
 \section*{Mechanics}    
 \emph{Mechanics} are the systems that govern how players interact with the game.
 They provide a way for players to describe a fictional world by populating it with Objects and Aspects, compose a story set in that world by describing Scenes, and determine how that story plays out by making Checks.
 
-\newpage
-
 \subsection*{Objects and Aspects}
 An \emph{Object} is a person, place, or thing that appears in the story.
 An \emph{Aspect} is a word or short phrase that describes something noteworthy about an Object.
 Each Aspect is \emph{Attached} to a single Object.
+
+The players should use an index card to represent each Object and a sticky note to represent each Aspect.  If an Aspect is Attached to an Object, then the players should stick the sticky note representing that Aspect to the index card representing that Object.
 
 \subsubsection*{Characters}
 A \emph{Character} is a person who appears in the story and whose actions will be controlled by a single player throughout the game.  An Aspect that is Attached to a Character is a \emph{Character Aspect}.
@@ -94,18 +132,23 @@ Every Scene has the following components:
   \item[\emph{Outcome}]
     A description of whether the Characters accomplish the Scene's Objective. If so, then the Outcome is a \emph{Success} and the Scene is resolved successfully. Otherwise, the Outcome is a \emph{Failure} and the Scene is resolved unsuccessfully.
   \item[\emph{Precursors}]
-    Other Scenes which, if resolved successfully, make it easier for the Characters to accomplish the Scene's Objective.
+    Other Scenes which, if resolved successfully, make it easier for the Characters to accomplish the Scene's Objective. A Scene is the \emph{Parent} of all of its Precursors.
 \end{description}
+
 
 \newpage
 
 \subsubsection*{Sketching Scenes}
 The players \emph{Sketch} Scenes when they Write an Outline describing the story that they will tell about the Characters. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
+The players should use an oval drawn on the butcher paper to represent each Scene. The oval that represents a Scene should be labelled with that Scene's Objective and Difficulty Rating.  The players should draw lines connecting the oval that represents each Scene to the ovals that represent its Precursors.
+
+
 \subsubsection*{Performing Scenes}
 The players \emph{Perform} Scenes when they Tell the Story of the Characters' adventures.
 To Perform a Scene the players will describe what happens during the Scene, determine the Outcome of the Scene (see Checks), and describe the narrative consequences of the Characters' actions.
 
+After performing each Scene, the players should cross out the oval representing that Scene on the butcher paper. If the Scene is resolved successfully, the players should place a die on the oval that represents that Scene's Parent.
 \newpage
 
 \subsection*{Checks}
@@ -123,8 +166,8 @@ The players make a \emph{Check} to determine the Outcome of each Scene. To make 
      Any die that yields a value of 4,5, or 6 is a \emph{Hit}.
      The \emph{Result} of a roll is the total number of Hits.
 \item[Determine the Outcome]
-     If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a \emph{Success}, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
-     Otherwise, the Outcome is a \emph{Failure}, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
+     If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a Success, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
+     Otherwise, the Outcome is a Failure, the Characters do not accomplish their Objective, and the Scene is resolved unsuccessfully.
  \end{description}
 
 \newpage
@@ -181,6 +224,9 @@ To Create Characters, each player will first choose a name for their Character a
    \item[Affiliation]
      An Aspect that describes the Character's connection with an organisation.
 \end{description}
+
+\bigskip
+
 During the game additional Aspects can be Attached to a Character and existing Aspects can be modified to reflect how a Character changes in response to the events that occur as the players Tell the Story.
 
 \newpage
@@ -202,23 +248,51 @@ A Scene that is a Precursor of the Finale is a \emph{Primary Scene}.
 A Scene that is a Precursor of a Primary Scene is a {Secondary Scene}.
 A Scene that is a Precursor of a Secondary Scene is a {Tertiary Scene}.
 
+%\newpage
+%
+%\subsubsection*{Example}
+%A tree view of one possible Outline generated this way is:
+%\medskip
+%\dirtree{%
+%  .1 Finale (4).
+%  .2 Primary Scene 1 (3).
+%  .2 Primary Scene 2 (3).
+%  .3 Secondary Scene 2.1 (2).
+%  .3 Secondary Scene 2.2 (2).
+%  .4 Tertiary Scene 2.2.1 (1).
+%  .2 Primary Scene 3 (3).
+%  .3 Secondary Scene 3.1 (2).
+%}
+%The numbers in parentheses indicate the Difficulty Rating of the corresponding Scenes.
+
 \newpage
-
 \subsubsection*{Example}
+A tree view of one possible Outline is:
+\smallskip
+\begin{center}
+\begin{tikzpicture}[every path/.style={ultra thick}, every node/.style={draw, rounded corners=2mm, minimum width=3cm}]
+\node (s1) at (0,0) {(4) Finale};
+\node (s11) at (-2,1.5) {(3) Scene 1};
+\node (s12) at (0,4.5) {(3) Scene 2};
+\node (s13) at (4,3) {(3) Scene 3};
+\node (s121) at (-2,7.5) {(2) Scene 2.1};
+\node (s122) at (2,6) {(2) Scene 2.2};
+\node (s131) at (4,9) {(2) Scene 3.1};
+\node (s1221) at (2,10.5) {(1) Scene 2.2.1};
 
-A tree view of one possible Outline generated this way is:
-\medskip
-\dirtree{%
-  .1 Finale (4).
-  .2 Primary Scene 1 (3).
-  .2 Primary Scene 2 (3).
-  .3 Secondary Scene 2.1 (2).
-  .3 Secondary Scene 2.2 (2).
-  .4 Tertiary Scene 2.2.1 (1).
-  .2 Primary Scene 3 (3).
-  .3 Secondary Scene 3.1 (2).
-}
-The numbers in parentheses indicate the Difficulty Rating of the corresponding Scenes.
+\draw[ultra thick, -{Latex}] (s11) -- (s1);
+\draw[ultra thick, -{Latex}] (s12) -- (s1);
+\draw[ultra thick, -{Latex}] (s13) -- (s1);
+\draw[ultra thick,-{Latex}] (s121) -- (-2, 6) -- (s12);
+\draw[ultra thick,-{Latex}] (s122) -- (s12);
+\draw[ultra thick,-{Latex}] (s131) -- (s13);
+\draw[ultra thick,-{Latex}] (s1221) -- (s122);
+\end{tikzpicture}
+\end{center}
+
+\bigskip
+
+The numbers in parentheses indicate the Difficulty Rating of the corresponding Scenes. This diagram implies an order in which the players might perform these Scenes, starting from the top with Scene 2.2.1 and progressing downwards to the Finale.
 
 \newpage
 
