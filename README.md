@@ -12,7 +12,7 @@ To play the game, the players will need a few _Materials_ that they will use to 
 They will need:
   - __Index Cards__ - Approximately fifty index cards should placed within easy reach of all players.
   - __Sticky Notes__ -  Approximately one hundred sticky notes should placed within easy reach of all players.
-  - __Butcher Paper__	 One large sheet of butcher paper should be placed in the middle of the play area.  A whiteboard set up where all players can see it can be used instead if desired.
+  - __Butcher Paper__	 One large sheet of butcher paper should be placed in the middle of the play area.  This is the _Story Board_. A whiteboard can be used instead if desired.
   - __Markers__ - Each player should have a marker that they can use to write on the index cards, sticky notes, and butcher paper.
   - __Dice__ Approximately twelve six-sided dice should be placed within easy reach of all players.
 
@@ -70,7 +70,7 @@ Every Scene has the following components:
 #### Sketching Scenes
 The players _Sketch_ Scenes when they [Write an Outline](#write-an-outline) describing the story that they will tell about the Characters. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
-The players should use an oval drawn on the butcher paper to represent each Scene.
+The players should use an oval drawn on the Story Board to represent each Scene.
 The oval that represents a Scene should be labelled with that Scene's Objective and Difficulty Rating.  
 The players should draw lines connecting the oval that represents each Scene to the ovals that represent its Precursors.
 
@@ -82,7 +82,7 @@ Ruth wants to cross the border between two neighbouring kingdoms. It is "Dusk" w
 The players _Perform_ Scenes when they [Tell the Story](#tell-the-story) of the Characters' adventures.
 To Perform a Scene the players will describe what happens during the Scene, determine the Outcome of the Scene (see [Checks](#checks)), and describe the narrative consequences of the Characters' actions.
 
-After performing each Scene, the players should cross out the oval representing that Scene on the butcher paper. If the Scene is resolved successfully, the players should place a die on the oval that represents that Scene's Parent.
+After performing each Scene, the players should cross out the oval representing that Scene on the Story Board. If the Scene is resolved successfully, the players should place a die on the oval that represents that Scene's Parent.
 <!-- __Example__
 
 Test -->
@@ -202,6 +202,62 @@ After the Outcome of a Scene has been determined, the players should describe th
 This description should be informed by the pairs of Matching Aspects that the Characters attempted to use to manipulate the Scene to their advantage.
 If the Scene was resolved successfully, then the players should describe which pairs of Matching Aspects they were able to exploit.
 Otherwise, the players should describe what went wrong.
+
+## The Moderator
+Optionally, one of the players can assume the role of _Moderator_. The Moderator's job is to help the other players play the game. This assistance can take a variety of forms: from answering questions about the rules, managing logistics,  to ensuring that everyone agrees about various details of the story.
+
+The Moderator should encourage the other players to tell an interesting story by asking them questions.  If the Moderator is curious about something in the story and wants to learn more,  then they should ask for more information.  Similarly, if the Moderator is confused then they should ask for clarification.
+
+Importantly, however, the Moderator's role is not prescriptive.  The Moderator should not narrate any part of the story. The Moderator can make suggestions or present alternatives, but ultimately the other players should decide what happens.
+
+## Modules
+The first thing that the players do in the game is Receive a Prophecy.  
+This is the inciting incident for everything that happens in the story.
+It's important!
+By describing the prophesied Catastrophe, the players establish the foundation on which the rest the game will be built.
+
+A _Module_ is a pre-written Prophecy designed  to help the players get started.
+Each Module describes a Catastrophe as it might be presented to Characters who are hearing the Prophecy for the first time.  The players should read the Module aloud when they Receive the Prophecy and create Objects and Aspects to populate the fictional world that it implies.
+
+### Return of the Dragon
+Long ago, in the first age of men, the world was filled with wonders.
+The people of that time thought themselves safe from the fury of the natural world.
+Then She came.
+The great Dragon emerged from the sea and laid waste to the land.
+Only the grandest works of those once great civilizations remain to mark their passage.
+
+Or so the story goes.
+Most scholars believe that the Dragon is a myth and that the Ancients were somehow responsible for their own demise.
+Others believe that while the Dragon was real, She must surely have died long ago.
+They are mistaken.
+
+After one thousand years of slumber, the Dragon wakes.
+The earth shakes as She begins to stir.
+The oceans froth and swell as She shakes off the last vestiges of sleep.
+Now we face the same fate as that which befell our forebears.
+
+### Deep Impact
+My fellow Americans, it is with a heavy heart that I come to you tonight.
+As you are doubtless aware, last year the initial survey conducted as a part of Project Spaceguard discovered a large Near Earth Object that was projected to collide with the Earth later this month.
+Ever since, the primary focus of this administration has been to prevent that from occurring. Earlier this evening, the director of Project Spaceguard informed me that we have failed.
+
+Now, we must shift our focus from preventing a collision to surviving its aftermath.
+Effective immediately, I am declaring a nationwide state of emergency.  National Guard units will be activated and deployed in support of local law enforcement.
+
+Going forward, the Federal Emergency Management Agency will be leading our response.
+I'll turn the microphone over to the director of that agency now and he can provide details about what you can expect.
+Goodnight and Godspeed.
+
+### She's Having a Baby
+Congratulations! It looks like you're at about eight weeks now.
+Everything looks great, both mum and baby are doing fine.
+So, We'll plan on seeing you again in about four weeks.
+
+While you're here I should tell you about the course that the hospital offers for new mums.
+It's a great way to learn about what to expect and a chance talk to other new parents about the whole experience.
+The teachers are all former maternity ward nurses and they really do a great job.
+
+I know that this can be overwhelming. If you have any concerns, please give us a call at any time.  OK?
 
 ## Acknowledgements
 Thanks to everyone who helped refine the design of Prophecy:

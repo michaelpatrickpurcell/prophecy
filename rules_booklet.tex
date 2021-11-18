@@ -1,4 +1,6 @@
 \documentclass[12pt, a5paper, parskip=half-]{scrartcl}
+
+% Adjust spacing before and after section headings
 \RedeclareSectionCommand[
   runin=false,
   beforeskip=\baselineskip,
@@ -17,16 +19,19 @@
   afterskip=-0.25\baselineskip
 ]{subsubsection}
 
-\usepackage[pass]{geometry}
-\usepackage{fontspec}
-\usepackage{dirtree}
-\renewcommand{\DTstyle}{\rmfamily}
+%\usepackage[pass]{geometry}
+\usepackage{fontspec} % Use system fonts.  Not compatible with pdflatex. Use XeLaTeX instead!
+ \newfontfamily\displayfont{Cinzel Decorative}
+%\setkomafont{section}{\large\displayfont\bfseries}
+%\setkomafont{subsection}{\displayfont\bfseries}
+%\setkomafont{subsubsection}{\displayfont\bfseries}
 
-\usepackage{xcolor}
-\usepackage{graphicx}
-\usepackage{enumitem}
 
-\usepackage[pages=some, color=black]{background}
+\usepackage{enumitem} % Adjust formatting of description environment items
+
+\usepackage{multicol} % Format list of playtesters in two columns
+
+%\usepackage[pages=some, color=black]{background}
 %\backgroundsetup{
 %firstpage=true,
 %color=black,
@@ -38,8 +43,81 @@
 %  }%
 %}
 
+%dice mini-diagrams
+\usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+
+\tikzset{die1/.pic={
+    	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] {};
+	}
+}
+
+\tikzset{die2/.pic={
+    	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, 0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  -0.1) {};
+	}
+}
+
+\tikzset{die3/.pic={
+    	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, 0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  -0.1) {};
+	}
+}
+
+\tikzset{die4/.pic={
+    	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, 0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, -0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1, 0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  -0.1) {};
+	}
+}
+
+\tikzset{die5/.pic={
+    	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, 0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  -0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, -0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  0.1) {};
+
+	}
+}
+
+\tikzset{die6/.pic={
+    	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
+     \node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, 0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  -0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, -0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  0.1) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  0) {};
+    	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, 0) {};
+
+	}
+}
+
+%fancy page numbers
+\renewcommand{\pagemark}
+{
+\begin{tikzpicture}[scale=0.2]
+%\node[draw, star, star points = 8, star point ratio = 0.5, rounded corners=0.8mm, minimum size=0.8cm, thick, rotate=35] (a) at (0,0) {};
+\node[draw, star, star points = 9, star point ratio = 0.5, rounded corners=1.25mm, minimum size=3.0cm, semithick, rotate=27.5, transform shape] (a) at (0,0) {};
+	\foreach \i in {0,1,2,3,4,5,6,7,8}
+		\node[draw, circle, semithick, transform shape, minimum size=0.45cm] (a\i) at (40*\i + 1:2.75cm) {};
+
+\node (b) at (0,0) {\arabic{page}};
+%\foreach \i in {0,1,2,3,4,5,6,7}
+%	\node[draw,circle,inner sep=0.5mm, thick] (\i) at (45*\i - 12.5:0.7) {};
+\node at (0,6.5) {};
+\end{tikzpicture}
+}
 
 \begin{document}
 %=========================================
@@ -47,14 +125,15 @@
 		\enlargethispage{5\baselineskip}
 
          \setmainfont{Cinzel Decorative}
-%		\centering{
-%			{\fontsize{60}{72}\selectfont
-%			{\textcolor{violet!75}{pROpHecY}}}
-%		}
 	    \centering{
 			{\fontsize{60}{72}\selectfont
 			{\textcolor{black}{pROpHecY}}}
 		}
+%         \setmainfont{Muli}
+%	    \centering{
+%			{\fontsize{60}{72}\selectfont
+%			{\textcolor{black}{PROPHECY}}}
+%		}
 
 
 		\setmainfont{URWClassico}
@@ -64,10 +143,12 @@
 		\centering{\Large{{\textcolor{black}
 {A tabletop roleplaying game\\ \smallskip about fate and destiny}}}}
 
+\vfill
 
-\includegraphics[scale=3.55]{Images/comet_diagram.pdf}
+\includegraphics[scale=3.85]{Images/comet_diagram.pdf}
 
 		\vfill
+		
 %		\raggedright{\Large{{\textcolor{lightgray}{Michael Purcell \hfill November 2021}}}}
 		\raggedright{\Large{{\textcolor{black}{Michael Purcell \hfill November 2021}}}}
 
@@ -77,6 +158,7 @@
 %=========================================
 
 \setmainfont{URWClassico}
+%\setmainfont{Muli}
 \normalsize
 \raggedright
 \section*{Introduction}
@@ -92,8 +174,8 @@ To play the game, the players will need a few \emph{Materials} that they will us
 \begin{description}[leftmargin=0pt]
 	\item[Index Cards] Approximately fifty index cards should placed within easy reach of all players. 
 	\item[Sticky Notes] Approximately one hundred sticky notes should placed within easy reach of all players.
-	\item[Butcher Paper]	 One large sheet of butcher paper should be placed in the middle of the play area.  A whiteboard set up where all players can see it can be used instead if desired.
-	\item[Markers] Each player should have a marker that they can use to write on the index cards, sticky notes, and butcher paper.
+	\item[Butcher Paper]	 One large sheet of butcher paper should be placed in the middle of the play area.  This is the \emph{Story Board}. A whiteboard can be used instead if desired.
+	\item[Markers] Each player should have a marker that they can use to write on the index cards, sticky notes, and Story Board.
 	\item[Dice] Approximately twelve six-sided dice should be placed within easy reach of all players. 
 \end{description}
 
@@ -141,14 +223,14 @@ Every Scene has the following components:
 \subsubsection*{Sketching Scenes}
 The players \emph{Sketch} Scenes when they Write an Outline describing the story that they will tell about the Characters. To Sketch a Scene the players will establish the Setting, define the Objective, and assign the Difficulty Rating for the Scene.
 
-The players should use an oval drawn on the butcher paper to represent each Scene. The oval that represents a Scene should be labelled with that Scene's Objective and Difficulty Rating.  The players should draw lines connecting the oval that represents each Scene to the ovals that represent its Precursors.
+The players should use an oval drawn on the Story Board to represent each Scene. The oval that represents a Scene should be labelled with that Scene's Objective and Difficulty Rating.  The players should draw lines connecting the oval that represents each Scene to the ovals that represent its Precursors.
 
 
 \subsubsection*{Performing Scenes}
 The players \emph{Perform} Scenes when they Tell the Story of the Characters' adventures.
 To Perform a Scene the players will describe what happens during the Scene, determine the Outcome of the Scene (see Checks), and describe the narrative consequences of the Characters' actions.
 
-After performing each Scene, the players should cross out the oval representing that Scene on the butcher paper. If the Scene is resolved successfully, the players should place a die on the oval that represents that Scene's Parent.
+After performing each Scene, the players should cross out the oval representing that Scene on the Story Board. If the Scene is resolved successfully, the players should place a die on the oval that represents that Scene's Parent.
 \newpage
 
 \subsection*{Checks}
@@ -160,10 +242,10 @@ The players make a \emph{Check} to determine the Outcome of each Scene. To make 
      In addition, one die is added to the dice pool for each of the current Scene's Precursors that was resolved successfully.
  \item[Roll the Dice]
      The dice in the dice pool are exploding dice.
-     That is, for every die that yields a value of `6` one additional die is added to the dice pool.
+     That is, for every die that yields \tikz[baseline=-0.35em]{\pic {die6};} one additional die is added to the dice pool.
 \item[Compute the Result]
-     Any die that yields a value of 1, 2, or 3 is a \emph{Miss}.
-     Any die that yields a value of 4,5, or 6 is a \emph{Hit}.
+     Any die that yields \tikz[baseline=-0.35em]{\pic {die1};}, \tikz[baseline=-0.35em]{\pic {die2};}, or \tikz[baseline=-0.35em]{\pic {die3};} is a \emph{Miss}.
+     Any die that yields \tikz[baseline=-0.35em]{\pic {die4};}, \tikz[baseline=-0.35em]{\pic {die5};}, or \tikz[baseline=-0.35em]{\pic {die6};} is a \emph{Hit}.
      The \emph{Result} of a roll is the total number of Hits.
 \item[Determine the Outcome]
      If the Result of the players' roll meets or exceeds the Scene's Difficulty Rating, then the Outcome is a Success, the Characters accomplish the Scene's Objective, and the Scene is resolved successfully.
@@ -176,14 +258,14 @@ The players make a \emph{Check} to determine the Outcome of each Scene. To make 
 The Players are making a Check to determine the Outcome of a Scene that has a Difficulty Rating of (3).
 The Players have identified three pairs of Matching Aspects while Performing the Scene.
 Two of the Scene's precursors were resolved successfully.
-Therefore, the Dice Pool consists of five dice.
+Therefore, the dice pool consists of five dice.
 
-When rolled, these dice yield the values {3, 6, 5, 1, 6}.
-Because two of the dice yielded a value of {6}, two additional dice are added to the pool.
-When rolled, these dice yield the values {2,6}.
-Because one of the dice yielded a value of {6}, one additional die is added to the pool.
-When rolled, this die yields the value {4}.
-So, this roll yields the values {3, 6, 5, 1, 6, 2, 6, 4}.
+When rolled, these dice yield \tikz[baseline=-0.35em]{\pic {die3};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die5};}, \tikz[baseline=-0.35em]{\pic {die1};},  \tikz[baseline=-0.35em]{\pic {die6};}.% the values {3, 6, 5, 1, 6}. %
+Because two of the dice yielded \tikz[baseline=-0.35em]{\pic {die6};}, two additional dice are added to the dice pool.
+When rolled, these dice yield \tikz[baseline=-0.35em]{\pic {die2};}, \tikz[baseline=-0.35em]{\pic {die6};}.%{2,6}.
+Because one of the dice yielded \tikz[baseline=-0.35em]{\pic {die6};}, one additional die is added to the dice pool.
+When rolled, this die yields \tikz[baseline=-0.35em]{\pic {die4};}.
+Altogether this roll yields \tikz[baseline=-0.35em]{\pic {die3};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die5};}, \tikz[baseline=-0.35em]{\pic {die1};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die2};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die4};}.%{3, 6, 5, 1, 6, 2, 6, 4}.
 
 The Result of this roll is five Hits. This Result exceeds the Difficulty Rating of the Scene so the Outcome of the Check is a Success.   
 
@@ -253,6 +335,8 @@ A Scene that is a Precursor of a Secondary Scene is a {Tertiary Scene}.
 %\subsubsection*{Example}
 %A tree view of one possible Outline generated this way is:
 %\medskip
+%\usepackage{dirtree}
+%\renewcommand{\DTstyle}{\rmfamily}
 %\dirtree{%
 %  .1 Finale (4).
 %  .2 Primary Scene 1 (3).
@@ -270,7 +354,7 @@ A Scene that is a Precursor of a Secondary Scene is a {Tertiary Scene}.
 A tree view of one possible Outline is:
 \smallskip
 \begin{center}
-\begin{tikzpicture}[every path/.style={ultra thick}, every node/.style={draw, rounded corners=2mm, minimum width=3cm}]
+\begin{tikzpicture}[every path/.style={very thick}, every node/.style={draw, rounded corners=2mm, minimum width=3cm}]
 \node (s1) at (0,0) {(4) Finale};
 \node (s11) at (-2,1.5) {(3) Scene 1};
 \node (s12) at (0,4.5) {(3) Scene 2};
@@ -280,17 +364,15 @@ A tree view of one possible Outline is:
 \node (s131) at (4,9) {(2) Scene 3.1};
 \node (s1221) at (2,10.5) {(1) Scene 2.2.1};
 
-\draw[ultra thick, -{Latex}] (s11) -- (s1);
-\draw[ultra thick, -{Latex}] (s12) -- (s1);
-\draw[ultra thick, -{Latex}] (s13) -- (s1);
-\draw[ultra thick,-{Latex}] (s121) -- (-2, 6) -- (s12);
-\draw[ultra thick,-{Latex}] (s122) -- (s12);
-\draw[ultra thick,-{Latex}] (s131) -- (s13);
-\draw[ultra thick,-{Latex}] (s1221) -- (s122);
+\draw[very thick, -{Latex}] (s11) -- (s1);
+\draw[very thick, -{Latex}] (s12) -- (s1);
+\draw[very thick, -{Latex}] (s13) -- (s1);
+\draw[very thick,-{Latex}] (s121) -- (-2, 6) -- (s12);
+\draw[very thick,-{Latex}] (s122) -- (s12);
+\draw[very thick,-{Latex}] (s131) -- (s13);
+\draw[very thick,-{Latex}] (s1221) -- (s122);
 \end{tikzpicture}
 \end{center}
-
-\bigskip
 
 The numbers in parentheses indicate the Difficulty Rating of the corresponding Scenes. This diagram implies an order in which the players might perform these Scenes, starting from the top with Scene 2.2.1 and progressing downwards to the Finale.
 
@@ -313,8 +395,80 @@ Otherwise, the players should describe what went wrong.
 
 \newpage
 
+\section*{The Moderator}
+Optionally, one of the players can assume the role of \emph{Moderator}. The Moderator's job is to help the other players play the game. This assistance can take a variety of forms: from answering questions about the rules, managing logistics,  to ensuring that everyone agrees about various details of the story.
+
+The Moderator should encourage the other players to tell an interesting story by asking them questions.  If the Moderator is curious about something in the story and wants to learn more,  then they should ask for more information.  Similarly, if the Moderator is confused then they should ask for clarification.
+
+Importantly, however, the Moderator's role is not prescriptive.  The Moderator should not narrate any part of the story. The Moderator can make suggestions or present alternatives, but ultimately the other players should decide what happens.
+
+\newpage
+
+\section*{Modules}
+The first thing that the players do in the game is Receive a Prophecy.  
+This is the inciting incident for everything that happens in the story.
+It's important!
+By describing the prophesied Catastrophe, the players establish the foundation on which the rest the game will be built.
+
+A \emph{Module} is a pre-written Prophecy designed  to help the players get started.
+Each Module describes a Catastrophe as it might be presented to Characters who are hearing the Prophecy for the first time.  The players should read the Module aloud when they Receive the Prophecy and create Objects and Aspects to populate the fictional world that it implies.
+
+\subsection*{Return of the Dragon}
+Long ago, in the first age of men, the world was filled with wonders. 
+The people of that time thought themselves safe from the fury of the natural world.
+Then She came.
+The great Dragon emerged from the sea and laid waste to the land.
+Only the grandest works of those once great civilizations remain to mark their passage.
+
+Or so the story goes.
+Most scholars believe that the Dragon is a myth and that the Ancients were somehow responsible for their own demise.
+Others believe that while the Dragon was real, She must surely have died long ago.
+They are mistaken. 
+
+After one thousand years of slumber, the Dragon wakes. 
+The earth shakes as She begins to stir.
+The oceans froth and swell as She shakes off the last vestiges of sleep.
+Now we face the same fate as that which befell our forebears.
+
+\newpage
+
+%\phantom{a}
+%\vfill
+%\begin{center}
+%This page intentionally left blank.
+%\end{center}
+%\vfill
+%\phantom{a}
+
+\subsection*{Deep Impact}
+My fellow Americans, it is with a heavy heart that I come to you tonight. 
+As you are doubtless aware, last year the initial survey conducted as a part of Project Spaceguard discovered a large Near Earth Object that was projected to collide with the Earth later this month.
+Ever since, the primary focus of this administration has been to prevent that from occurring. Earlier this evening, the director of Project Spaceguard informed me that we have failed.
+
+Now, we must shift our focus from preventing a collision to surviving its aftermath.
+Effective immediately, I am declaring a nationwide state of emergency.  National Guard units will be activated and deployed in support of local law enforcement. 
+
+Going forward, the Federal Emergency Management Agency will be leading our response.
+I'll turn the microphone over to the director of that agency now and he can provide details about what you can expect.
+Goodnight and Godspeed.
+
+
+\subsection*{She's Having a Baby}
+Congratulations! It looks like you're at about eight weeks now.
+Everything looks great, both mum and baby are doing fine. 
+So, We'll plan on seeing you again in about four weeks.
+
+While you're here I should tell you about the course that the hospital offers for new mums.
+It's a great way to learn about what to expect and a chance talk to other new parents about the whole experience. 
+The teachers are all former maternity ward nurses and they really do a great job.
+
+I know that this can be overwhelming. If you have any concerns, please give us a call at any time.  OK?
+
+\newpage
+
 \section*{Acknowledgements}
 Thanks to everyone who helped refine the design of Prophecy:
+\begin{multicols}{2}
 \begin{itemize}
   \item Keydan Bruce
   \item Farzana Choudhury
@@ -330,6 +484,7 @@ Thanks to everyone who helped refine the design of Prophecy:
   \item Jo Stephenson
   \item Brett Witty
   \item Bevis Worchester
+  
 \end{itemize}
-
+\end{multicols}
 \end{document}
