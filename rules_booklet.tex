@@ -21,10 +21,11 @@
 
 %\usepackage[pass]{geometry}
 \usepackage{fontspec} % Use system fonts.  Not compatible with pdflatex. Use XeLaTeX instead!
- \newfontfamily\displayfont{Cinzel Decorative}
-%\setkomafont{section}{\large\displayfont\bfseries}
-%\setkomafont{subsection}{\displayfont\bfseries}
-%\setkomafont{subsubsection}{\displayfont\bfseries}
+\usepackage{cinzel}
+ \newfontfamily\displayfont{Cinzel}
+\setkomafont{section}{\large\cinzel\bfseries}
+\setkomafont{subsection}{\cinzel\bfseries}
+\setkomafont{subsubsection}{\cinzel\bfseries}
 
 
 \usepackage{enumitem} % Adjust formatting of description environment items
@@ -162,7 +163,7 @@
 \normalsize
 \raggedright
 \section*{Introduction}
-Prophecy is a tabletop roleplaying game about fate and destiny. During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world. They create characters who inhabit that fictional world, write an outline that describes how their characters will try to deal with the catastrophe, and the the story of their characters' adventures.
+Prophecy is a tabletop roleplaying game about fate and destiny. During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world. They create characters who inhabit that fictional world, write an outline that describes how their characters will try to deal with the catastrophe, and tell the story of their characters' adventures.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played. These terms will be Capitalised when they appear in the text and \emph{Italicised} when they are first introduced.
 %Occasionally, the rules described in one section will refer to rules described in another section.
@@ -170,7 +171,7 @@ Throughout these rules, a variety of common words are used as technical terms to
 %The link text will be the title of the target section.
 
 \section*{Materials}
-To play the game, the players will need a few \emph{Materials} that they will use to take notes and generate random numbers. They will need:
+To play the game, the players will need a few materials that they will use to take notes and generate random numbers. They will need:
 \begin{description}[leftmargin=0pt]
 	\item[Index Cards] Approximately fifty index cards should placed within easy reach of all players. 
 	\item[Sticky Notes] Approximately one hundred sticky notes should placed within easy reach of all players.
@@ -431,14 +432,6 @@ The oceans froth and swell as She shakes off the last vestiges of sleep.
 Now we face the same fate as that which befell our forebears.
 
 \newpage
-
-%\phantom{a}
-%\vfill
-%\begin{center}
-%This page intentionally left blank.
-%\end{center}
-%\vfill
-%\phantom{a}
 
 \subsection*{Deep Impact}
 My fellow Americans, it is with a heavy heart that I come to you tonight. 
