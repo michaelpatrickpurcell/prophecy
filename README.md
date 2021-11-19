@@ -1,7 +1,7 @@
 # Prophecy
 A tabletop roleplaying game about fate and destiny.
 
-##Introduction
+## Introduction
 Prophecy is a game for three to six players that can be played in less than three hours.
 During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world.
 They create characters who inhabit that fictional world, write an outline that describes how their characters will try to deal with the catastrophe, and tell the story of their characters' adventures.
