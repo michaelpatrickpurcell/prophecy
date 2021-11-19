@@ -219,7 +219,7 @@ The moderator should encourage the other players to tell an interesting story by
 Importantly, however, the moderator's role is not prescriptive.  The moderator should not narrate any part of the story. The moderator can make suggestions or present alternatives, but ultimately the other players should decide what happens.
 
 ## Modules
-The first thing that the players do in the game is [Receive a Prophecy](receive-a-prophecy).  
+The first thing that the players do in the game is [Receive a Prophecy](#receive-a-prophecy).  
 This is the inciting incident for everything that happens in the story.
 It's important!
 By describing the prophesied catastrophe, the players establish the foundation on which the rest the game will be built.
