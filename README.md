@@ -142,14 +142,16 @@ The fourth phase is about destiny.
 The players will:
   - [Tell the Story](#tell-the-story) - The story describes the Characters' adventures as they try to deal with the catastrophe.
 
-The game should be tightly focused on the question of how the characters will try to deal with the prophesied catastrophe.
-To encourage this, the story should consist of no more than eight scenes and each scene should be performed in no more than eight minutes of real time.
+The game should be tightly focused on the question of how the characters will try to deal with the catastrophe.
+The story should consist of no more than eight scenes and each scene should be performed in less than eight minutes.
 
 ### Receive a Prophecy
 During this phase, the players receive a prophecy that describes an impending catastrophe that is destined to wreak havoc on some fictional world.
 
 The players should describe the the world in which the story is set and the nature of the catastrophe.
 The catastrophe should be inevitable and significant and the effects of the catastrophe should be pervasive and disruptive.
+
+Several pre-written prophecies are provided as [Modules](#modules).
 
 ### Create Characters
 During this phase, each player will create a character.
@@ -223,7 +225,7 @@ This is the inciting incident for everything that happens in the story.
 It's important!
 By describing the prophesied catastrophe, the players establish the foundation on which the rest the game will be built.
 
-A _module_ is a pre-written Prophecy designed  to help the players get started.
+A _module_ is a pre-written prophecy designed  to help the players get started.
 Each module describes a catastrophe as it might be presented to characters who are hearing the prophecy for the first time.  The players should read the module aloud and populate the world that it implies with objects and aspects.
 
 ### Return of the Dragon
