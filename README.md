@@ -15,7 +15,9 @@ To play the game, the players will need a few materials that they will use to ta
 They will need:
   - __Index Cards__ - Approximately fifty index cards should be placed within easy reach of all players.
   - __Sticky Notes__ - Approximately one hundred sticky notes should be placed within easy reach of all players.
-  - __Butcher Paper__ - One large sheet of butcher paper should be placed in the middle of the play area.  This is the _story board_.
+  - __Butcher Paper__ - One large sheet of butcher paper should be placed in the middle of the play area.
+  A whiteboard can be used instead of desired.
+  This is the _story board_.
   - __Markers__ - Each player should have a marker that they can use to write on the index cards, sticky notes, and story board.
   - __Dice__ - Approximately twelve six-sided dice should be placed within easy reach of all players.
 
@@ -66,13 +68,16 @@ Every Scene has the following components:
   Other scenes which, if resolved successfully, make it easier for the characters to accomplish the scene's objective.
   A scene is the _parent_ of its precursors.
 
+The players should use an oval drawn on the story board to represent each scene.
+The players should use lines drawn on the story board to represent relationships between scenes.
+The players should draw a line connecting the oval representing each scene to the ovals that represent its precursors.
+
 #### Sketching Scenes
 The players _sketch_ scenes when they [Write an Outline](#write-an-outline).
 To sketch a scene the players will establish the setting, define the objective, and assign the difficulty rating for the scene.
 
-The players should use an oval drawn on the story board to represent each scene.
-The oval that represents a scene should be labelled with that scene's objective and difficulty rating.
-The players should draw lines connecting the oval that represents each scene to the ovals that represent its precursors.
+When they sketch a scene, the players should draw an oval on the story board to represent the scene, and label the oval with the scene's objective and difficulty rating.
+If the scene is a precursor to another scene, the players should draw a line on the story board connecting ovals that represent the two scenes.
 
 #### Performing Scenes
 The players _perform_ Scenes when they [Tell the Story](#tell-the-story).
