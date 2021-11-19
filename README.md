@@ -13,11 +13,11 @@ References to sections of the rules will consist of a [hyperlink](#prophecy) to 
 ## Materials
 To play the game, the players will need a few materials that they will use to take notes and determine outcomes.
 They will need:
-  - __Index Cards__  - Approximately fifty index cards should placed within easy reach of all players.
-  - __Sticky Notes__ - Approximately one hundred sticky notes should placed within easy reach of all players.
+  - __Index Cards__ - Approximately fifty index cards should be placed within easy reach of all players.
+  - __Sticky Notes__ - Approximately one hundred sticky notes should be placed within easy reach of all players.
   - __Butcher Paper__ - One large sheet of butcher paper should be placed in the middle of the play area.  This is the _story board_.
   - __Markers__ - Each player should have a marker that they can use to write on the index cards, sticky notes, and story board.
-  - __Dice__ -  Approximately twelve six-sided dice should be placed within easy reach of all players.
+  - __Dice__ - Approximately twelve six-sided dice should be placed within easy reach of all players.
 
 ## Mechanics    
 _Mechanics_ are the systems that govern how the players interact with the game.
@@ -64,7 +64,7 @@ Every Scene has the following components:
     A description of whether the characters accomplish the scene's objective. If so, then the outcome is a _success_.  If not, then the outcome is a _failure_.
   - ___Precursors___ -
   Other scenes which, if resolved successfully, make it easier for the characters to accomplish the scene's objective.
-  A scene is the _parent_ of all of its precursors.
+  A scene is the _parent_ of its precursors.
 
 #### Sketching Scenes
 The players _sketch_ scenes when they [Write an Outline](#write-an-outline).
@@ -96,12 +96,12 @@ To make a Check, the players will:
      The _result_ of a roll is the total number of hits.
   4. __Determine the Outcome__ -
      If the result of the players' roll meets or exceeds the scene's difficulty rating, then the outcome is a success.
-     The characters accomplish the scene's objective and the scene is resolved successfully.
+     The characters accomplish the scene's objective, and the scene is resolved successfully.
     Otherwise, the outcome is a failure.
     The characters do not accomplish their objective and the scene is resolved unsuccessfully.
 
 #### Example
-Suppose that the  the players are making a check to determine the outcome of a scene where the characters are trying to deal with the prophecy described in [Deep Impact](#deep-impact).
+Suppose that the players are making a check to determine the outcome of a scene where the characters are trying to deal with the prophecy described in [Deep Impact](#deep-impact).
 
 The objective of the scene is:
   - Sneak the children aboard a colony ship.
@@ -119,7 +119,6 @@ Two of the scene's precursors were resolved successfully. The objectives of thos
 
 So, the dice pool consists of five dice.
 
-
 When rolled, these dice yield {`3`, `6`, `5`, `1`, `6`}.
 Because two of the dice yielded {`6`}, two additional dice are added to the dice pool.
 When rolled, these dice yield the values {`2`,`6`}.
@@ -128,7 +127,7 @@ When rolled, this die yields {`4`}.
 Altogether, this roll yields {`3`, `6`, `5`, `1`, `6`, `2`, `6`, `4`}.
 
 The result of this roll is five hits, which exceeds the difficulty rating of the scene.
-Therefore, the outcome of the check is a success and the characters are able to sneak the children aboard a colony ship.
+Therefore, the outcome of the check is a success, and the characters are able to sneak the children aboard a colony ship.
 
 ## Gameplay
 The game is divided into four phases.
@@ -148,8 +147,8 @@ The story should consist of no more than eight scenes and each scene should be p
 ### Receive a Prophecy
 During this phase, the players receive a prophecy that describes an impending catastrophe that is destined to wreak havoc on some fictional world.
 
-The players should describe the the world in which the story is set and the nature of the catastrophe.
-The catastrophe should be inevitable and significant and the effects of the catastrophe should be pervasive and disruptive.
+The players should describe the world in which the story is set and the nature of the catastrophe.
+The catastrophe should be inevitable and significant, and the effects of the catastrophe should be pervasive and disruptive.
 
 Several pre-written prophecies are provided as [Modules](#modules).
 
@@ -189,7 +188,7 @@ This diagram depicts one possible outline for a story about how characters might
 ```
 Defeat the Dragon in Battle (4)
 |- Recruit Allies to Fight the Dragon (3)
-|- Lure the Dragon Into a Trap (3)
+|- Lure the Dragon into a Trap (3)
 |  |- Figure Out What the Dragon Wants (2)
 |  |- Locate the Dragon's Lair (2)
 |- Discover the Dragon's Weakness (3)
@@ -213,9 +212,9 @@ If the scene was resolved successfully, then the players should describe which p
 Otherwise, the players should describe what went wrong.
 
 ## The Moderator
-Optionally, one of the players can assume the role of _moderator_. The moderator's job is to help the other players play the game. This assistance can take a variety of forms: from answering questions about the rules, managing logistics,  to ensuring that everyone agrees about various details of the story.
+Optionally, one of the players can assume the role of _moderator_. The moderator's job is to help the other players play the game. This assistance can take a variety of forms: from answering questions about the rules, managing logistics, to ensuring that everyone agrees about various details of the story.
 
-The moderator should encourage the other players to tell an interesting story by asking them questions.  If the moderator is curious about something in the story and wants to learn more,  then they should ask for more information.  Similarly, if the moderator is confused then they should ask for clarification.
+The moderator should encourage the other players to tell an interesting story by asking them questions. If the moderator is curious about something in the story and wants to learn more, then they should ask for more information.  Similarly, if the moderator is confused then they should ask for clarification.
 
 Importantly, however, the moderator's role is not prescriptive.  The moderator should not narrate any part of the story. The moderator can make suggestions or present alternatives, but ultimately the other players should decide what happens.
 
@@ -225,7 +224,7 @@ This is the inciting incident for everything that happens in the story.
 It's important!
 By describing the prophesied catastrophe, the players establish the foundation on which the rest the game will be built.
 
-A _module_ is a pre-written prophecy designed  to help the players get started.
+A _module_ is a pre-written prophecy designed to help the players get started.
 Each module describes a catastrophe as it might be presented to characters who are hearing the prophecy for the first time.  The players should read the module aloud and populate the world that it implies with objects and aspects.
 
 ### Return of the Dragon
@@ -261,11 +260,11 @@ Goodnight and Godspeed.
 ### She's Having a Baby
 Congratulations! It looks like you're at about eight weeks now.
 Everything looks great, both mum and bub are doing fine.
-So, We'll plan on seeing you again in about four weeks.
+So, we'll plan on seeing you again in about four weeks.
 
 While you're here I should tell you about the course that the hospital offers for new parents.
 It's a great way to learn about what to expect and a chance talk to other new parents about the whole experience.
-The teachers are all former maternity ward nurses and they really do a great job.
+The teachers are all former maternity ward nurses, and they really do a great job.
 
 I know that this can be overwhelming.
 If you have any concerns, please give us a call at any time.
