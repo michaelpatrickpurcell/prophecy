@@ -68,9 +68,8 @@ Every Scene has the following components:
   Other scenes which, if resolved successfully, make it easier for the characters to accomplish the scene's objective.
   A scene is the _parent_ of its precursors.
 
-The players should use an oval drawn on the story board to represent each scene.
-The players should use lines drawn on the story board to represent relationships between scenes.
-The players should draw a line connecting the oval that represents each scene to the oval that represents each of its precursors.
+The players should ovals drawn on the story board to represent each scene and lines to represent relationships between scenes.
+The players should draw lines connecting the oval that represents each scene to the ovals that represent its precursors.
 
 #### Sketching Scenes
 The players _sketch_ scenes when they [Write an Outline](#write-an-outline).
@@ -222,6 +221,12 @@ Optionally, one of the players can assume the role of _moderator_. The moderator
 The moderator should encourage the other players to tell an interesting story by asking them questions. If the moderator is curious about something in the story and wants to learn more, then they should ask for more information.  Similarly, if the moderator is confused then they should ask for clarification.
 
 Importantly, however, the moderator's role is not prescriptive.  The moderator should not narrate any part of the story. The moderator can make suggestions or present alternatives, but ultimately the other players should decide what happens.
+
+Finally, the moderator should act as a timekeeper.
+The moderator should start a timer when the other players begin to perform a scene.
+At the end of eight minutes, or if the other the other players are starting to struggle to make contributions, the moderator should suggest that it may be time to move on.
+By keeping the game moving, the moderator can help to ensure that the story stays tightly focused on the characters and their attempts to deal with the effects of the catastrophe.
+
 
 ## Modules
 The first thing that the players do in the game is [Receive a Prophecy](#receive-a-prophecy).  
