@@ -70,7 +70,7 @@ Every Scene has the following components:
 
 The players should use an oval drawn on the story board to represent each scene.
 The players should use lines drawn on the story board to represent relationships between scenes.
-The players should draw a line connecting the oval representing each scene to the ovals that represent its precursors.
+The players should draw a line connecting the oval that represents each scene to the oval that represents each of its precursors.
 
 #### Sketching Scenes
 The players _sketch_ scenes when they [Write an Outline](#write-an-outline).
