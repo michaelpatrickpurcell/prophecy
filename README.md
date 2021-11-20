@@ -38,10 +38,6 @@ A _character_ is a person who appears in the story and whose actions will be con
 An aspect that is attached to a character is a _character aspect_.
 An aspect that is attached to any object that is not a character is an _environment aspect_.
 
-A _Character_ is a person who appears in the story and whose actions will be controlled by a single player throughout the game.
-An Aspect that is Attached to a Character is a _Character Aspect_.
-An Aspect that is Attached to any Object that is not a Character is an _Environment Aspect_.
-
 #### Matching Aspects
 A pair of _matching aspects_ is a set of two aspects, one character aspect and one environment aspect, that together allow the characters to manipulate a scene to their advantage.
 
