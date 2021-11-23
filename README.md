@@ -1,6 +1,6 @@
 # Prophecy: A tabletop roleplaying game about fate and destiny.
 
-This is draft version 0.2
+This is draft version 0.2. The [booklet](#rules_booklet.pdf) contains this same information as this markdown file but is easier to read and print.
 
 ## Introduction
 Prophecy is a GM-less roleplaying game for three to six people that can be played in under three hours.
