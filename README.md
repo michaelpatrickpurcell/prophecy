@@ -1,5 +1,4 @@
-# Prophecy
-A tabletop roleplaying game about fate and destiny.
+# Prophecy: A tabletop roleplaying game about fate and destiny.
 
 This is draft version 0.2
 
