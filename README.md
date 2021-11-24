@@ -1,6 +1,7 @@
 # Prophecy: A tabletop roleplaying game about fate and destiny.
 
-This is draft version 0.2. The [rules booklet](rules_booklet.pdf) contains this same information as this markdown file but is easier to read and print.
+This is draft version 0.2.
+The [rules booklet](rules_booklet.pdf) contains the same information as this markdown file but is easier to read and print.
 
 ## Introduction
 Prophecy is a GM-less roleplaying game for three to six people that can be played in under three hours.
@@ -420,6 +421,6 @@ The following tools were used to create this booklet:
 
 The fonts used in this booklet are URW Classico and Cinzel.
 
-__Contact__: [prophecy.ttrpg@gmail.com](mailto:prophecy.ttrpg@gmail.com)
+Contact: [prophecy.ttrpg@gmail.com](mailto:prophecy.ttrpg@gmail.com)
 
 This work is licensed under a ""CC BY 4.0" license.
