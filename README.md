@@ -10,7 +10,7 @@ They then create characters who inhabit that world, write an outline that descri
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
 These terms will be _italicised_ when they are first introduced.
-References to sections of the rules will be written in the same font as the [Section Headings](#introduction).
+A reference to a section of the rules will be a [hyperlink](#introduction) to the target section.
 
 ### Materials
 To play the game the players will need a few materials that they will use to take notes and determine outcomes. They will need:

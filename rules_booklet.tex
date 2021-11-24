@@ -35,6 +35,9 @@
 
 \usepackage[type={CC}, version={4.0}, modifier={by}]{doclicense}
 
+
+%\usepackage{scrlayer-scrpage}
+%\chead*{\normalfont \footnotesize Draft Version 0.2}
 % Add a color background to the title page
 %\usepackage[pages=some, color=black]{background}
 %\backgroundsetup{
@@ -120,6 +123,24 @@
 	\end{tikzpicture}
 }
 
+\usepackage{fancyhdr}
+\fancypagestyle{titleheader}{%
+	\fancyhead{}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+	\chead{\footnotesize Draft Version 0.2}
+}
+
+\fancypagestyle{bodyheaderfooter}{%
+	\fancyhead{}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+	\chead{\footnotesize Draft Version 0.2}
+	\cfoot{\pagemark}
+}
+
+\pagestyle{bodyheaderfooter}
+
 \usepackage[hidelinks]{hyperref} % This should usually be the last package loaded before \begin{document}
 \usepackage[xspace]{ellipsis} % This package is one of the few packages that must be loaded after hyperref
 \begin{document}
@@ -127,21 +148,21 @@
 %=========================================
 
 \begin{titlepage}
+	\thispagestyle{titleheader}
 		\enlargethispage{5\baselineskip} % Move the bottom line (author and date) down a bit
 
-%         \setmainfont{Cinzel Decorative}
-%	    \centering{
-%			{\fontsize{60}{72}\selectfont
-%			{\textcolor{black}{pROpHecY}}}
-%		}
+         \setmainfont{Cinzel Decorative}
 	    \centering{
 			{\fontsize{60}{72}\selectfont
-			{\textcolor{black}{\cinzel P{\itshape{RO}}P{\itshape{H}}EC{\itshape{Y}}}}}
+			{\textcolor{black}{pROpHecY}}}
 		}
-
+%	    \centering{
+%			{\fontsize{60}{72}\selectfont
+%			{\textcolor{black}{\cinzel P{\itshape{RO}}P{\itshape{H}}EC{\itshape{Y}}}}}
+%		}
 
 		\setmainfont{URWClassico}
-		\vspace{7.5mm}
+		\vspace{5mm}
 		\centering{\Large{{\textcolor{black}{A tabletop roleplaying game \\ \smallskip about fate and destiny}}}}
 
 		\vfill
@@ -151,8 +172,7 @@
 		\vfill
 		
 %		\raggedright{\Large{{\textcolor{black}{Michael Purcell \hfill Version 0.2}}}}
-		\Large{{\textcolor{black}{Draft Version 0.2}}}\\
-		\Large{{\textcolor{black}{Michael Purcell}}}
+		\Large{{\textcolor{black}{Michael Purcell}}}\\
 \end{titlepage}
 
 %=========================================
@@ -618,7 +638,7 @@ Right?
 
 \newpage
 
-\thispagestyle{empty}
+\thispagestyle{titleheader}
 \enlargethispage{5\baselineskip} % Move the bottom line down a bit
 
 \section*{Acknowledgements} \label{section:acknowledgements}
