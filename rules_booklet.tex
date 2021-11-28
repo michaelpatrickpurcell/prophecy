@@ -1,4 +1,12 @@
 \documentclass[12pt, a5paper, parskip=half-]{scrartcl}
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta}
+\usetikzlibrary{shapes}
+\usetikzlibrary{calc}
+\usetikzlibrary{decorations.pathmorphing}
+
+\usepackage[skins]{tcolorbox}
+
 \usepackage[bmargin=2.5cm, lmargin=1.7cm, rmargin=1.7cm, tmargin=1.5cm]{geometry}
 
 % Adjust spacing before and after section headings
@@ -36,28 +44,9 @@
 
 \usepackage[type={CC}, version={4.0}, modifier={by}]{doclicense} % Add text and icons for creative commons license
 
-
-%\usepackage{scrlayer-scrpage}
-%\chead*{\normalfont \footnotesize Draft Version 0.2}
-% Add a color background to the title page
-%\usepackage[pages=some, color=black]{background}
-%\backgroundsetup{
-%firstpage=true,
-%color=black,
-%opacity=1,
-%angle=0,
-%scale=1,
-%contents = {%
-%    \includegraphics[width=\paperwidth,height=\paperheight]{Images/booklet_cover_background.jpg}
-%  }%
-%}
+\usepackage{contour}
 
 %dice mini-diagrams
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta}
-\usetikzlibrary{shapes}
-\usetikzlibrary{calc}
-\usetikzlibrary{decorations.pathmorphing}
 
 \tikzset{die1/.pic={
     	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
@@ -129,14 +118,22 @@
 	\fancyhead{}
 	\fancyfoot{}
 	\renewcommand{\headrulewidth}{0pt}
-	\chead{\footnotesize Draft Version 0.2}
+	\chead{\footnotesize Draft Version 0.3}
 }
+%
+\fancypagestyle{colortitleheader}{%
+	\fancyhead{}
+	\fancyfoot{}
+	\renewcommand{\headrulewidth}{0pt}
+	\chead{\footnotesize \textcolor{lightgray}{Draft Version 0.3}}
+}
+
 %
 \fancypagestyle{bodyheaderfooter}{%
 	\fancyhead{}
 	\fancyfoot{}
 	\renewcommand{\headrulewidth}{0pt}
-	\chead{\footnotesize Draft Version 0.2}
+	\chead{\footnotesize Draft Version 0.3}
 	\cfoot{\pagemark}
 }
 
@@ -147,38 +144,132 @@
 \begin{document}
 
 %=========================================
-
+% Color Title Page
 \begin{titlepage}
-	\thispagestyle{titleheader}
 		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
+
+		\begin{tikzpicture}[remember picture, overlay]
+		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
+%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
+%
+		\end{tikzpicture}
 
          \setmainfont{Cinzel Decorative}
 	    \centering{
-			{\fontsize{60}{72}\selectfont
-			{\textcolor{black}{pROpHecY}}}
+			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{pROpHecY}}
 		}
-%	    \centering{
-%			{\fontsize{60}{72}\selectfont
-%			{\textcolor{black}{\cinzel P{\itshape{RO}}P{\itshape{H}}EC{\itshape{Y}}}}}
-%		}
 
 		\setmainfont{URWClassico}
 		\vspace{5mm}
-		\centering{\Large{{\textcolor{black}{A tabletop roleplaying game \\ \smallskip about fate and destiny}}}}
+		\centering{\Large{\contour{black}{\textcolor{lightgray}{A tabletop roleplaying game}} \\ \smallskip \contour{black}{\textcolor{lightgray}{about fate and destiny}}}}
 
 		\vfill
 
-		\includegraphics[scale=3.85]{Images/comet_diagram.pdf}
+		\includegraphics[scale=3.81]{Images/comet_diagram_violet.pdf}
 
 		\vfill
 		
-		\Large{{\textcolor{black}{Michael Purcell}}}\\
-\end{titlepage}
+		\Large{\contour{black}{\textcolor{lightgray}{Michael Purcell}}}
 
+\end{titlepage}
+%
 %=========================================
 
+
+%=========================================
+% BW Title Page
+%\begin{titlepage}
+%	\thispagestyle{titleheader}
+%		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
+%		
+%         \setmainfont{Cinzel Decorative}
+%	    \centering{
+%			{\fontsize{60}{72}\selectfont
+%			{\textcolor{black}{pROpHecY}}}
+%		}
+%
+%		\setmainfont{URWClassico}
+%		\vspace{5mm}
+%		\centering{\Large{{\textcolor{black}{A tabletop roleplaying game \\ \smallskip about fate and destiny}}}}
+%
+%		\vfill
+%
+%		\includegraphics[scale=3.81]{Images/comet_diagram.pdf}
+%
+%		\vfill
+%		
+%		\Large{{\textcolor{black}{Michael Purcell}}}\\
+%\end{titlepage}
+
+%=========================================
 \setmainfont{URWClassico}
 \normalsize
+
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=-0.25\baselineskip
+]{section}
+
+\center
+
+\normalsize
+\thispagestyle{titleheader}
+
+\phantom{a}
+\vfill
+\begin{center} This page intentionally left blank \end{center}
+\vfill
+\phantom{a}
+
+\newpage
+\setcounter{page}{1}
+\section*{\huge \phantom{a} \hfill The Dragon Wakes \hfill \phantom{a}} \label{section:the-dragon-wakes}
+\vfill
+Long ago, in the first age of men,\\
+the world was filled with wonders. \\
+The people thought themselves safe \\
+from the fury of the natural world.
+
+\smallskip
+
+Then She came.
+
+\smallskip
+
+The Dragon emerged from the sea\\and laid waste to the land.\\
+Only the grandest works\\of those once great civilisations\\remain to mark their passage.
+
+\smallskip
+
+Or so the story goes.
+
+\smallskip
+
+Most scholars believe that\\the Dragon is a myth\\and that the Ancients were\\responsible for their own demise.
+%Others believe that while\\the Dragon was real,\\She must have died long ago.
+
+\smallskip
+
+They are mistaken. 
+
+\smallskip
+
+%After one thousand years of slumber,\\
+%the Dragon wakes. \\
+The earth shakes as She begins to stir.\\
+The oceans froth and swell as\\She shakes off the last vestiges of sleep.\\
+Now we face the same fate\\as that which befell our forebears.
+\vfill
+
+\newpage
+
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=-0.25\baselineskip
+]{section}
+
 \raggedright
 \section*{Introduction} \label{section:introduction}
 Prophecy is a GM-less roleplaying game for three to six people that can be played in under three hours.
@@ -459,7 +550,7 @@ Then, the players should sketch additional scenes that describe the events that 
 
 \subsubsection*{Sketch the Finale} \label{subsubsection:sketch-the-finale}
 The objective of the finale should describe how the characters intend to deal with the catastrophe.
-The difficulty rating of the finale is always (4).
+The difficulty rating of the finale is always (5).
 The finale will be the last scene that the players perform when they \hyperref[subsection:tell-the-story]{\cinzel \small Tell the Story}.
 
 \subsubsection*{Sketch Additional Scenes} \label{subsubsection:sketch-additional-scenes}
@@ -471,19 +562,19 @@ The objective for each new scene should be chosen such that, if the scene is res
 \newpage
 
 \subsubsection*{Example} \label{example:write-an-outline}
-Suppose that the players are writing an outline for a story about how the characters might try to deal with the prophecy described in \hyperref[subsection:return-of-the-dragon]{\cinzel \small Return of the Dragon}.  They decide that the finale will be an epic battle with the Dragon and that the other scenes will be about how the characters prepare for that confrontation.
+Suppose that the players are writing an outline for a story about how the characters might try to deal with the prophecy described in \hyperref[section:the-dragon-wakes]{\cinzel \small The Dragon Wakes}.  They decide that the finale will be an epic battle with the Dragon and that the other scenes will be about how the characters prepare for that confrontation.
 
 The outline that the players create might look something like the following diagram:
 \smallskip
 \begin{center}
 \begin{tikzpicture}[every path/.style={very thick}, every node/.style={draw, rounded corners=2mm, minimum width=3cm}]
-\node[text width=4cm, align=center] (s1) at (0,0) {(4) Defeat the Dragon in Battle};
-\node[text width=4cm, align=center]   (s11) at (-3,2) {(3) Recruit Allies to Fight the Dragon};
-\node[text width=4cm, align=center]  (s12) at (0,4) {(3) Lure the Dragon into a Trap};
-\node[text width=4cm, align=center]  (s13) at (3,2) {(3) Discover the Dragon's Weakness};
-\node[text width=4cm, align=center]  (s121) at (-3,6) {(2) Figure Out What the Dragon Wants};
-\node[text width=4cm, align=center] (s122) at (0,8) {(2) Locate the Dragon's Lair};
-\node[text width=4cm, align=center] (s131) at (3,6) {(2) Find Lost Stories About the Dragon};
+\node[text width=4cm, align=center] (s1) at (0,0) {(5) Defeat the Dragon in Battle};
+\node[text width=4cm, align=center]   (s11) at (-3,2) {(4) Recruit Allies to Fight the Dragon};
+\node[text width=4cm, align=center]  (s12) at (0,4) {(4) Lure the Dragon into a Trap};
+\node[text width=4cm, align=center]  (s13) at (3,2) {(4) Discover the Dragon's Weakness};
+\node[text width=4cm, align=center]  (s121) at (-3,6) {(3) Figure Out What the Dragon Wants};
+\node[text width=4cm, align=center] (s122) at (0,8) {(3) Locate the Dragon's Lair};
+\node[text width=4cm, align=center] (s131) at (3,6) {(3) Find Lost Stories About the Dragon};
 
 \draw[very thick, -{Latex}] (s11) -- (s1);
 \draw[very thick, -{Latex}] (s12) -- (s1);
@@ -541,22 +632,38 @@ By describing the catastrophe, the players establish the foundation on which the
 A \emph{module} is a pre-written prophecy designed to help the players get started.
 Each module describes a catastrophe as it might be presented to characters who are hearing the prophecy for the first time.  The players should read the module aloud and populate the world that it implies with objects and aspects.
 
-\subsection*{Return of the Dragon} \label{subsection:return-of-the-dragon}
-Long ago, in the first age of men, the world was filled with wonders. 
-The people of that time thought themselves safe from the fury of the natural world.
-Then She came.
-The great Dragon emerged from the sea and laid waste to the land.
-Only the grandest works of those once great civilisations remain to mark their passage.
+\subsection*{The Tachyonic Antitelephone} \label{subsection:the-tachyonic-antitelephone}
+I am, well \ldots I'm you.  That is, I was. Or, you will be.  Or, something like that. Anyway, I'm afraid that I've got some bad news. Really bad. You see, it turns out that the work that you did for DARPA last year was used to create something that we used to think impossible.
+They built a time machine. 
 
-Or so the story goes.
-Most scholars believe that the Dragon is a myth and that the Ancients were somehow responsible for their own demise.
-Others believe that while the Dragon was real, She must surely have died long ago.
-They are mistaken. 
+Fortunately, it's pretty limited.  It can only send messages back in time, and then only to times after they turned it on.  That's why I'm talking to you now instead of earlier when it might have done some good.
 
-After one thousand years of slumber, the Dragon wakes. 
-The earth shakes as She begins to stir.
-The oceans froth and swell as She shakes off the last vestiges of sleep.
-Now we face the same fate as that which befell our forebears.
+Unfortunately, it turns out that messing around with time is a bad idea.
+Really bad. It didn't take long before strange things started to happen.
+Then the Time Eaters came.
+
+It's too late for us. 
+Maybe, though, its not too late for you.
+If nothing else, you might be able to pass this message along in turn when you get here. 
+Eventually, one of us is sure to figure a way out of this mess.
+Right?
+
+%\subsection*{Return of the Dragon} \label{subsection:return-of-the-dragon}
+%Long ago, in the first age of men, the world was filled with wonders. 
+%The people of that time thought themselves safe from the fury of the natural world.
+%Then She came.
+%The great Dragon emerged from the sea and laid waste to the land.
+%Only the grandest works of those once great civilisations remain to mark their passage.
+%
+%Or so the story goes.
+%Most scholars believe that the Dragon is a myth and that the Ancients were somehow responsible for their own demise.
+%Others believe that while the Dragon was real, She must surely have died long ago.
+%They are mistaken. 
+%
+%After one thousand years of slumber, the Dragon wakes. 
+%The earth shakes as She begins to stir.
+%The oceans froth and swell as She shakes off the last vestiges of sleep.
+%Now we face the same fate as that which befell our forebears.
 
 \newpage
 
@@ -587,6 +694,17 @@ I know that this can be overwhelming.
 If you have any concerns, please give us a call at any time. 
 
 \newpage
+
+\subsection*{The Deluge \setmainfont{URWClassico}- From The King James Version of the Bible} \label{subsection:the-deluge}
+I will destroy man whom I have created from the face of the earth; both man, and beast, and the creeping thing, and the fowls of the air; for it repenteth me that I have made them.\\ 
+\vspace{0.5ex}\hspace{8cm} - Genesis 6:7
+
+And, behold, I, even I, do bring a flood of waters upon the earth, to destroy all flesh, wherein is the breath of life, from under heaven; and every thing that is in the earth shall die. \\
+\vspace{0.5ex}\hspace{8cm} - Genesis 6:17
+
+For yet seven days, and I will cause it to rain upon the earth forty days and forty nights; and every living substance that I have made will I destroy from off the face of the earth.\\
+\vspace{0.5ex}\hspace{8cm} - Genesis 7:4
+
 \subsection*{Unsafe at Any Speed \setmainfont{URWClassico} - By Paul Murray} \label{subsection:unsafe-at-any-speed}
 You know what this means don't you?
 That crackpot down in R\&D was right. 
@@ -605,36 +723,57 @@ I'm leaving!
 Maybe I'll go somewhere warm. 
 Somewhere with white-sand beaches, palm trees,  and no extradition treaty.
 
-\subsection*{The Deluge \setmainfont{URWClassico}- From The King James Version of the Bible} \label{subsection:the-deluge}
-I will destroy man whom I have created from the face of the earth; both man, and beast, and the creeping thing, and the fowls of the air; for it repenteth me that I have made them.\\ 
-\vspace{0.5ex}\hspace{8cm} - Genesis 6:7
-
-And, behold, I, even I, do bring a flood of waters upon the earth, to destroy all flesh, wherein is the breath of life, from under heaven; and every thing that is in the earth shall die. \\
-\vspace{0.5ex}\hspace{8cm} - Genesis 6:17
-
-For yet seven days, and I will cause it to rain upon the earth forty days and forty nights; and every living substance that I have made will I destroy from off the face of the earth.\\
-\vspace{0.5ex}\hspace{8cm} - Genesis 7:4
-
 \newpage
 
-\subsection*{The Tachyonic Antitelephone} \label{subsection:the-tachyonic-antitelephone}
-Is this thing on? I hope so.  If you're hearing this, then I imagine you must be asking yourself quite a few questions right now. I'm afraid that they'll have to wait; I don't have much time. Hah!
+%\subsection*{The Tachyonic Antitelephone} \label{subsection:the-tachyonic-antitelephone}
+%Is this thing on? I hope so.  If you're hearing this, then I imagine you must be asking yourself quite a few questions right now. I'm afraid that they'll have to wait; I don't have much time. Hah!
+%
+%I am, well \ldots I'm you.  That is, I was. Or, you will be.  Or, something like that. Anyway, I'm afraid that I've got some bad news. Really bad. You see, it turns out that the work that you did for the government last year was used to create something that we used to think impossible.
+%
+%They've built a time machine.  Fortunately, it's pretty limited.  It can only send messages back in time, and then only to times after they turned it on.  That's why I'm talking to you now instead of earlier when it might have done some good.
+%
+%Unfortunately, it turns out that messing around with time is a bad idea. Really bad. It didn't take long before strange things started to happen. Then the time eaters came.  Needless to say, they aren't here to say hello and welcome us to the neighbourhood. 
+%Rather, they seem to be some kind of pangalactic exterminators and they are very good at their job.
+%
+%It won't be long before the time eaters finish their work.
+%They've already killed ninety percent of the population and show no signs of stopping.
+%I've only managed to escape for this long because the fools who created this thing brought me in to help them fix the mess that they've made.  
+%
+%Alas, It's too late for us. Maybe, though, its not too late for you.
+%If nothing else, you might be able to pass this message along in turn when you get here. 
+%Eventually, one of us is sure to figure a way out of this mess.
+%Right?
+%
+%\newpage
 
-I am, well \ldots I'm you.  That is, I was. Or, you will be.  Or, something like that. Anyway, I'm afraid that I've got some bad news. Really bad. You see, it turns out that the work that you did for the government last year was used to create something that we used to think impossible.
+\subsection*{Dead Man's Switch  \setmainfont{URWClassico} - By Brett Witty} \label{subsection:dead-mans-switch}
+If you're hearing this, I am dead.
+But you probably already know that.
+I haven't contacted my fail-safe device for a week, and now it has automatically triggered.
+This message is part of the mechanism.
 
-They've built a time machine.  Fortunately, it's pretty limited.  It can only send messages back in time, and then only to times after they turned it on.  That's why I'm talking to you now instead of earlier when it might have done some good.
+Dead men tell no tales.
+Except for this one. 
+In twenty-four hours all your dirty little secrets are going to every press outlet in the country. 
+Every email, every recording, every video. 
+The entire trove.
 
-Unfortunately, it turns out that messing around with time is a bad idea. Really bad. It didn't take long before strange things started to happen. Then the time eaters came.  Needless to say, they aren't here to say hello and welcome us to the neighbourhood. 
-Rather, they seem to be some kind of pangalactic exterminators and they are very good at their job.
+See you in hell.
 
-It won't be long before the time eaters finish their work.
-They've already killed ninety percent of the population and show no signs of stopping.
-I've only managed to escape for this long because the fools who created this thing brought me in to help them fix the mess that they've made.  
+\subsection*{R'lyehian Rhapsody \setmainfont{URWClassico} - By David McKenzie} \label{subsection:rlyehian-rhapsody}
+The time is nigh.
+Soon the planets will be in alignment and we can harness their celestial power.
+With just a gentle push, we can release the Great Old One from his prison.
 
-Alas, It's too late for us. Maybe, though, its not too late for you.
-If nothing else, you might be able to pass this message along in turn when you get here. 
-Eventually, one of us is sure to figure a way out of this mess.
-Right?
+Much work remains; three rituals have yet to be performed.
+Those of you who have been called to serve know who you are and what you must do.  Go! We mustn't let this once-in-a-millennium opportunity go to waste.
+
+Now is the time to be strong in your faith.
+There will be those who oppose us.
+Those who are afraid.
+They must not be allowed to interfere.
+
+Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!
 
 \newpage
 
@@ -693,4 +832,32 @@ The fonts used in this booklet are URW Classico and Cinzel.
 
 Contact: \href{mailto:prophecy.ttrpg@gmail.com}{prophecy.ttrpg@gmail.com}\\
 \vspace{-2.5ex}\doclicenseText \hfill  \Huge{\doclicenseIcon}
+
+\newpage
+\normalsize
+\thispagestyle{titleheader}
+
+\phantom{a}
+\vfill
+\begin{center} This page intentionally left blank \end{center}
+\vfill
+\phantom{a}
+
+\newpage
+\normalsize
+\thispagestyle{titleheader}
+
+ 		\begin{tikzpicture}[remember picture, overlay]
+		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
+%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
+%
+		\end{tikzpicture}
+
+
+%\phantom{a}
+%\vfill
+%\begin{center} This page intentionally left blank \end{center}
+%\vfill
+%\phantom{a}
+
 \end{document}
