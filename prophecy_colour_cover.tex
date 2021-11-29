@@ -1,0 +1,39 @@
+\documentclass[12pt, a5paper, parskip=half-]{scrartcl}
+\usepackage{tikz}
+
+\usepackage[bmargin=2.5cm, lmargin=1.7cm, rmargin=1.7cm, tmargin=1.5cm]{geometry}
+
+\usepackage{fontspec} % Use system fonts.  Not compatible with pdflatex. Use XeLaTeX instead!
+
+\usepackage[skins]{tcolorbox}
+\usepackage{contour}
+
+\begin{document}
+\begin{titlepage}
+		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
+
+		\begin{tikzpicture}[remember picture, overlay]
+		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
+%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
+%
+		\end{tikzpicture}
+
+         \setmainfont{Cinzel Decorative}
+	    \centering{
+			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{pROpHecY}}
+		}
+
+		\setmainfont{URWClassico}
+		\vspace{5mm}
+		\centering{\Large{\contour{black}{\textcolor{lightgray}{A tabletop roleplaying game}} \\ \smallskip \contour{black}{\textcolor{lightgray}{about fate and destiny}}}}
+
+		\vfill
+
+		\includegraphics[scale=3.81]{Images/comet_diagram_violet.pdf}
+
+		\vfill
+		
+		\Large{\contour{black}{\textcolor{lightgray}{Michael Purcell}}}
+
+\end{titlepage}
+\end{document}
