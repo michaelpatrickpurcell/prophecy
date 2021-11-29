@@ -1,55 +1,31 @@
 \documentclass[12pt, a5paper, parskip=half-, footheight=1.4cm]{scrartcl}
+
+\usepackage{scrlayer-scrpage} % Manage headers and footers in Koma-Script document classes
+
+\usepackage[bmargin=2.5cm, lmargin=1.7cm, rmargin=1.7cm, tmargin=1.5cm, footskip=2cm]{geometry} % Set margins and footer placement
+
 \usepackage{tikz}
-\usetikzlibrary{arrows.meta}
-\usetikzlibrary{shapes}
-\usetikzlibrary{calc}
-\usetikzlibrary{decorations.pathmorphing}
+\usetikzlibrary{arrows.meta} % Customize arrowheads in in Write the Outline example
+\usetikzlibrary{shapes} % Draw the node in the fancy \pagemark
 
-\usepackage[skins]{tcolorbox}
+\usepackage[skins]{tcolorbox} % Add background image to tikz node in color cover
 
-\usepackage[bmargin=2.5cm, lmargin=1.7cm, rmargin=1.7cm, tmargin=1.5cm, footskip=2cm]{geometry}
-%\usepackage[print]{booklet}
-%\special{landscape}
-
-% Adjust spacing before and after section headings
-\RedeclareSectionCommand[
-  runin=false,
-  beforeskip=0.5\baselineskip,
-  afterskip=-0.25\baselineskip
-]{section}
-
-\RedeclareSectionCommand[
-  runin=false,
-  beforeskip=0.5\baselineskip,
-  afterskip=-0.25\baselineskip
-]{subsection}
-
-\RedeclareSectionCommand[
-  runin=false,
-  beforeskip=0.5\baselineskip,
-  afterskip=-0.25\baselineskip
-]{subsubsection}
-
-%\usepackage[pass]{geometry}
 \usepackage{fontspec} % Use system fonts.  Not compatible with pdflatex. Use XeLaTeX instead!
-\usepackage{cinzel}
+\usepackage{cinzel} % I haven't been able to get the cinzel font on my machine to display bold weight. This one works.
  \newfontfamily\displayfont{Cinzel}
 \setkomafont{section}{\large\cinzel\bfseries}
 \setkomafont{subsection}{\cinzel\bfseries}
 \setkomafont{subsubsection}{\small\cinzel\bfseries}
 
-
 \usepackage{enumitem} % Adjust formatting of description environment items
-\usepackage{calc}
-
 \usepackage{multicol} % Format list of playtesters in two columns
 
 \usepackage[type={CC}, version={4.0}, modifier={by}]{doclicense} % Add text and icons for creative commons license
 
-\usepackage{contour}
+\usepackage[hidelinks]{hyperref} % Add hyperlinks to the pdf file. This should usually be the last package loaded before \begin{document}
+\usepackage[xspace]{ellipsis} % Properly typeset ellipses. This package is one of the few packages that must be loaded after hyperref
 
 %dice mini-diagrams
-
 \tikzset{die1/.pic={
     	\node[draw, very thick,minimum size=1em, rounded corners=1mm] {};
     	\node[draw, fill=black, circle, inner sep=0.65pt] {};
@@ -87,7 +63,6 @@
     	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  -0.1) {};
     	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, -0.1) {};
     	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  0.1) {};
-
 	}
 }
 
@@ -99,114 +74,125 @@
     	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  0.1) {};
     	\node[draw, fill=black, circle, inner sep=0.65pt] at (-0.1,  0) {};
     	\node[draw, fill=black, circle, inner sep=0.65pt] at (0.1, 0) {};
-
 	}
 }
 
-%fancy page numbers
+\newcommand{\dieone}{\tikz[baseline=-0.35em]{\pic {die1};}}
+\newcommand{\dietwo}{\tikz[baseline=-0.35em]{\pic {die2};}}
+\newcommand{\diethree}{\tikz[baseline=-0.35em]{\pic {die3};}}
+\newcommand{\diefour}{\tikz[baseline=-0.35em]{\pic {die4};}}
+\newcommand{\diefive}{\tikz[baseline=-0.35em]{\pic {die5};}}
+\newcommand{\diesix}{\tikz[baseline=-0.35em]{\pic {die6};}}
+
+% Define command to set value of a variable that contains the version number
+% This is meant to mimic the syntax used for the built-in \title{} and \author{} commands.
+\makeatletter
+\newcommand{\version}[1]{\newcommand{\@version}{#1}}
+\makeatother
+
+%Define a fancy \pagemark with some decoration around the page number.
 \renewcommand{\pagemark}{
 	\begin{tikzpicture}[scale=0.2]
 		\node[draw, star, star points = 9, star point ratio = 0.5, rounded corners=1.25mm, minimum size=3.0cm, semithick, rotate=27.5, transform shape] (a) at (0,0) {};
 		\foreach \i in {0,1,2,3,4,5,6,7,8}
 			\node[draw, circle, semithick, transform shape, minimum size=0.45cm] (a\i) at (40*\i + 1:2.75cm) {};
-
 		\node (b) at (0,0) {\arabic{page}};
-%		\node at (0,6.5) {}; % Add some white space at the top to make the image render a bit lower.
 	\end{tikzpicture}
 }
 
-\usepackage{scrlayer-scrpage}
+% Set header and footer text
 \clearpairofpagestyles
-\chead*{\normalshape \footnotesize Draft Version 0.3}
+\makeatletter
+\chead*{\normalshape \footnotesize \footnotesize Draft Version \@version}
+\makeatother
 \cfoot{\normalshape \pagemark}
 
+% Adjust spacing before and after section headings
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=-0.25\baselineskip
+]{section}
 
-%\usepackage{fancyhdr}
-%\fancypagestyle{titleheader}{%
-%	\fancyhead{}
-%	\fancyfoot{}
-%	\renewcommand{\headrulewidth}{0pt}
-%	\chead{\footnotesize Draft Version 0.3}
-%}
-%%
-%\fancypagestyle{colortitleheader}{%
-%	\fancyhead{}
-%	\fancyfoot{}
-%	\renewcommand{\headrulewidth}{0pt}
-%	\chead{\footnotesize \textcolor{lightgray}{Draft Version 0.3}}
-%}
-%
-%%
-%\fancypagestyle{bodyheaderfooter}{%
-%	\fancyhead{}
-%	\fancyfoot{}
-%	\renewcommand{\headrulewidth}{0pt}
-%	\chead{\footnotesize Draft Version 0.3}
-%	\cfoot{\pagemark}
-%}
-%
-%\pagestyle{bodyheaderfooter}
+% Adjust spacing before and after subsection headings
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=-0.25\baselineskip
+]{subsection}
 
-\usepackage{pdfpages}
+% Adjust spacing before and after subsubsection headings
+\RedeclareSectionCommand[
+  runin=false,
+  beforeskip=0.5\baselineskip,
+  afterskip=-0.25\baselineskip
+]{subsubsection}
 
-\usepackage[hidelinks]{hyperref} % This should usually be the last package loaded before \begin{document}
-\usepackage[xspace]{ellipsis} % This package is one of the few packages that must be loaded after hyperref
+
+\title{pROpHecY}
+\subtitle{A tabletop roleplaying game \\ \smallskip about fate and destiny}
+\author{Michael Purcell}
+\version{0.3}
 
 \begin{document}
 
 % Colour Cover
-\begin{titlepage}
-		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
-
-		\begin{tikzpicture}[remember picture, overlay]
-		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
-%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
-%
-		\end{tikzpicture}
-
-         \setmainfont{Cinzel Decorative}
-	    \centering{
-			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{pROpHecY}}
-		}
-
-		\setmainfont{URWClassico}
-		\vspace{5mm}
-		\centering{\Large{\contour{black}{\textcolor{lightgray}{A tabletop roleplaying game}} \\ \smallskip \contour{black}{\textcolor{lightgray}{about fate and destiny}}}}
-
-		\vfill
-
-		\includegraphics[scale=3.81]{Images/comet_diagram_violet.pdf}
-
-		\vfill
-		
-		\Large{\contour{black}{\textcolor{lightgray}{Michael Purcell}}}
-
-\end{titlepage}
-
-% BW Cover
 %\begin{titlepage}
-%	\thispagestyle{plain}
+%		\makeatletter
+%		\thispagestyle{plain}
 %		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
-%		
+%
+%		\begin{tikzpicture}[remember picture, overlay]
+%		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
+%%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
+%%
+%		\end{tikzpicture}
+%
 %         \setmainfont{Cinzel Decorative}
 %	    \centering{
-%			{\fontsize{60}{72}\selectfont
-%			{\textcolor{black}{pROpHecY}}}
+%			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{\@title}}
 %		}
-%
 %
 %		\setmainfont{URWClassico}
 %		\vspace{5mm}
-%		\centering{\Large{{\textcolor{black}{A tabletop roleplaying game \\ \smallskip about fate and destiny}}}}
+%		\centering{\Large{{\textcolor{lightgray}{\@subtitle}}}}
 %
 %		\vfill
 %
-%		\includegraphics[scale=3.81]{Images/comet_diagram_black.pdf}
+%		\includegraphics[scale=3.81]{Images/comet_diagram_violet.pdf}
 %
 %		\vfill
 %		
-%		\Large{{\textcolor{black}{Michael Purcell}}}\\
+%		\Large{{\textcolor{lightgray}{\@author}}}
+%		\makeatother
 %\end{titlepage}
+
+% BW Cover
+\begin{titlepage}
+	\makeatletter
+	\thispagestyle{plain}
+		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
+		
+         \setmainfont{Cinzel Decorative}
+	    \centering{
+			{\fontsize{60}{72}\selectfont
+			{\textcolor{black}{\@title}}}
+		}
+
+
+		\setmainfont{URWClassico}
+		\vspace{5mm}
+		\centering{\Large{{\textcolor{black}{\@subtitle}}}}
+
+		\vfill
+
+		\includegraphics[scale=3.81]{Images/comet_diagram_black.pdf}
+
+		\vfill
+		
+		\Large{{\textcolor{black}{\@author}}}\\
+		\makeatother
+\end{titlepage}
 
 
 \setmainfont{URWClassico}
@@ -222,7 +208,9 @@
 
 \setcounter{page}{1}
 \section*{\huge \phantom{a} \hfill The Dragon Wakes \hfill \phantom{a}} \label{section:the-dragon-wakes}
+
 \bigskip
+
 Long ago, in the first age of men,\\
 the world was filled with wonders. \\
 The people thought themselves safe \\
@@ -234,8 +222,11 @@ Then She came.
 
 \medskip
 
-The Dragon emerged from the sea\\and laid waste to the land.\\
-Only the grandest works\\of those once great civilisations\\remain to mark their passage.
+The Dragon emerged from the sea\\
+and laid waste to the land.\\
+Only the grandest works\\
+of those once great civilisations\\
+remain to mark their passage.
 
 \medskip
 
@@ -243,8 +234,10 @@ Or so the story goes.
 
 \medskip
 
-Most scholars believe that\\the Dragon is a myth\\and that the Ancients were\\responsible for their own demise.
-%Others believe that while\\the Dragon was real,\\She must have died long ago.
+Most scholars believe that\\
+the Dragon is a myth\\
+and that the Ancients were\\
+responsible for their own demise.
 
 \medskip
 
@@ -252,11 +245,12 @@ They are mistaken.
 
 \medskip
 
-%After one thousand years of slumber,\\
-%the Dragon wakes. \\
 The earth shakes as She begins to stir.\\
-The oceans froth and swell as\\She shakes off the last vestiges of sleep.\\
-Now we face the same fate\\as that which befell our forebears.
+The oceans froth and swell as\\
+She shakes off the last vestiges of sleep.\\
+Now we face the same fate\\
+as that which befell our forebears.
+
 \vfill
 
 \newpage
@@ -272,14 +266,16 @@ Now we face the same fate\\as that which befell our forebears.
 Prophecy is a GM-less roleplaying game for three to six people that can be played in under three hours.
 During the game, the players receive a prophecy that describes an impending catastrophe for some fictional world and tell a story about characters whose lives will be affected by that catastrophe. 
 
-The players first decide the basic outline of the story,describing events that are fated to occur.  They then fill in the details of the story, describing how the characters try to shape their destiny.
+The players first decide the basic outline of the story, describing events that are fated to occur. 
+ They then fill in the details of the story, describing how the characters try to shape their destiny.
 
 Throughout these rules, a variety of common words are used as technical terms to describe how the game is played.
 These terms will be \emph{italicised} when they are first introduced.
 References to sections of the rules will be written in the same font as the \hyperref[section:introduction]{\cinzel \small Section Headings}.
 
 \subsection*{Materials} \label{subsection:materials}
-To play the game the players will need a few materials that they will use to take notes and determine outcomes. They will need:
+To play the game the players will need a few materials that they will use to take notes and determine outcomes.
+They will need:
 \begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\space]
 	\item[Index Cards:] Approximately fifty index cards should be placed within easy reach of all players. 
 	\item[Sticky Notes:] Approximately one hundred sticky notes should be placed within easy reach of all players.
@@ -432,10 +428,10 @@ To make a check, the players will:
      In addition, one die is added to the pool for each of the current scene's precursors that was resolved successfully.
  \item[Roll the Dice:]
      The dice are exploding dice.
-     That is, for every die that yields \tikz[baseline=-0.35em]{\pic {die6};} another die is added to the pool.
+     That is, for every die that yields \diesix\ another die is added to the pool.
 \item[Compute the Result:]
-     Any die that yields \tikz[baseline=-0.35em]{\pic {die1};}, \tikz[baseline=-0.35em]{\pic {die2};}, or \tikz[baseline=-0.35em]{\pic {die3};} is a \emph{miss}.
-     Any die that yields \tikz[baseline=-0.35em]{\pic {die4};}, \tikz[baseline=-0.35em]{\pic {die5};}, or \tikz[baseline=-0.35em]{\pic {die6};} is a \emph{hit}.
+     Any die that yields \dieone, \dietwo, or \diethree\ is a \emph{miss}.
+     Any die that yields \diefour, \diefive, or \diesix\ is a \emph{hit}.
      The \emph{result} of a roll is the total number of hits.
 \item[Determine the Outcome:]
      If the result of the players' roll meets or exceeds the scene's difficulty rating, then the outcome is a success,
@@ -470,15 +466,15 @@ Two of the scene's precursors were resolved successfully. The objectives of thos
 \vspace{1ex}
 So, the dice pool initially consists of five dice.
 
-When rolled, these dice yield \tikz[baseline=-0.35em]{\pic {die3};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die5};}, \tikz[baseline=-0.35em]{\pic {die1};},  \tikz[baseline=-0.35em]{\pic {die6};}.% the values {3, 6, 5, 1, 6}. %
-\ Because two dice yielded \tikz[baseline=-0.35em]{\pic {die6};}, two dice are added to the pool.
-When rolled, these dice yield \tikz[baseline=-0.35em]{\pic {die2};}, \tikz[baseline=-0.35em]{\pic {die6};}.%{2,6}.
-\ Because one die yielded \tikz[baseline=-0.35em]{\pic {die6};}, another die is added to the pool.
-When rolled, this die yields \tikz[baseline=-0.35em]{\pic {die4};}.
+When rolled, these dice yield \diethree, \diesix, \diefive, \dieone, \diesix.% the values {3, 6, 5, 1, 6}. %
+\ Because two dice yielded \diesix, two dice are added to the pool.
+When rolled, these dice yield \dietwo, \diesix.%{2,6}.
+\ Because one die yielded \diesix, another die is added to the pool.
+When rolled, this die yields \diefour.
 
-Altogether, the final roll yields \tikz[baseline=-0.35em]{\pic {die3};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die5};}, \tikz[baseline=-0.35em]{\pic {die1};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die2};}, \tikz[baseline=-0.35em]{\pic {die6};}, \tikz[baseline=-0.35em]{\pic {die4};}.%{3, 6, 5, 1, 6, 2, 6, 4}.
+Altogether, the final roll yields \diethree, \diesix, \diefive, \dieone, \diesix, \dietwo, \diesix, \diefour.%{3, 6, 5, 1, 6, 2, 6, 4}.
 
-Because five dice yielded \tikz[baseline=-0.35em]{\pic {die4};},  \tikz[baseline=-0.35em]{\pic {die5};}, or \tikz[baseline=-0.35em]{\pic {die6};}, the result of this roll is five hits.
+Because five dice yielded \diefour, \diefive, or \diesix, the result of this roll is five hits.
 As this exceeds the difficulty rating of the scene, the outcome of the check is a success.
 The characters are able to smuggle the children aboard a colony ship.
 
@@ -646,23 +642,6 @@ If nothing else, you might be able to pass this message along in turn when you g
 Eventually, one of us is sure to figure a way out of this mess.
 Right?
 
-%\subsection*{Return of the Dragon} \label{subsection:return-of-the-dragon}
-%Long ago, in the first age of men, the world was filled with wonders. 
-%The people of that time thought themselves safe from the fury of the natural world.
-%Then She came.
-%The great Dragon emerged from the sea and laid waste to the land.
-%Only the grandest works of those once great civilisations remain to mark their passage.
-%
-%Or so the story goes.
-%Most scholars believe that the Dragon is a myth and that the Ancients were somehow responsible for their own demise.
-%Others believe that while the Dragon was real, She must surely have died long ago.
-%They are mistaken. 
-%
-%After one thousand years of slumber, the Dragon wakes. 
-%The earth shakes as She begins to stir.
-%The oceans froth and swell as She shakes off the last vestiges of sleep.
-%Now we face the same fate as that which befell our forebears.
-
 \newpage
 
 \subsection*{Project Spaceguard} \label{subsection:project-spaceguard}
@@ -723,27 +702,6 @@ Somewhere with white-sand beaches, palm trees,  and no extradition treaty.
 
 \newpage
 
-%\subsection*{The Tachyonic Antitelephone} \label{subsection:the-tachyonic-antitelephone}
-%Is this thing on? I hope so.  If you're hearing this, then I imagine you must be asking yourself quite a few questions right now. I'm afraid that they'll have to wait; I don't have much time. Hah!
-%
-%I am, well \ldots I'm you.  That is, I was. Or, you will be.  Or, something like that. Anyway, I'm afraid that I've got some bad news. Really bad. You see, it turns out that the work that you did for the government last year was used to create something that we used to think impossible.
-%
-%They've built a time machine.  Fortunately, it's pretty limited.  It can only send messages back in time, and then only to times after they turned it on.  That's why I'm talking to you now instead of earlier when it might have done some good.
-%
-%Unfortunately, it turns out that messing around with time is a bad idea. Really bad. It didn't take long before strange things started to happen. Then the time eaters came.  Needless to say, they aren't here to say hello and welcome us to the neighbourhood. 
-%Rather, they seem to be some kind of pangalactic exterminators and they are very good at their job.
-%
-%It won't be long before the time eaters finish their work.
-%They've already killed ninety percent of the population and show no signs of stopping.
-%I've only managed to escape for this long because the fools who created this thing brought me in to help them fix the mess that they've made.  
-%
-%Alas, It's too late for us. Maybe, though, its not too late for you.
-%If nothing else, you might be able to pass this message along in turn when you get here. 
-%Eventually, one of us is sure to figure a way out of this mess.
-%Right?
-%
-%\newpage
-
 \subsection*{Dead Man's Switch  \setmainfont{URWClassico} - Submitted by Brett Witty} \label{subsection:dead-mans-switch}
 If you're hearing this, I am dead.
 But you probably already know that.
@@ -775,7 +733,6 @@ Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!
 
 \newpage
 
-%\thispagestyle{titleheader}
 \thispagestyle{plain}
 \enlargethispage{3.5\baselineskip} % Move the bottom line down a bit
 
@@ -786,7 +743,7 @@ The creation of this booklet was made possible by a plethora of readily availabl
 \subsection*{Playtesters} \label{subsection:playtesters}
 The following people helped to refine the design of Prophecy:\vspace{-1.75ex}
 \begin{multicols}{2}
-\begin{itemize}[noitemsep,nolistsep,  leftmargin=0.68cm,topsep=-1ex]%\widthof{\hspace{0.4cm}}]
+\begin{itemize}[noitemsep,nolistsep,  leftmargin=0.68cm,topsep=-1ex]
   \item Keydan Bruce
   \item Farzana Choudhury
   \item Michael Cromer
@@ -800,7 +757,6 @@ The following people helped to refine the design of Prophecy:\vspace{-1.75ex}
   \item Luke Purcell
   \item Jo Stephenson
   \item Brett Witty
-%  \item[]
 \end{itemize}
 \end{multicols}
 
@@ -812,7 +768,6 @@ The following games influenced the design of Prophecy:
 	\item[Our Last Best Hope:] Theme and narrative focus.
 	\item[10 Candles:] Session modules.
 	\item[Microscope:] Non-linear storytelling.
-%	\item[X-Card:] Safety tools
 \end{description}
 \vspace{1ex}
 \hyperref[subsection:safety-tools]{\cinzel \small Safety Tools} is based on the X-Card by John Stavropoulus.
