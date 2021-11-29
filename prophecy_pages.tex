@@ -154,31 +154,59 @@
 
 \begin{document}
 
-\includepdf{prophecy_colour_cover}
-
+% Colour Cover
 %\begin{titlepage}
-%	\thispagestyle{plain}
 %		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
-%		
+%
+%		\begin{tikzpicture}[remember picture, overlay]
+%		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
+%%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
+%%
+%		\end{tikzpicture}
+%
 %         \setmainfont{Cinzel Decorative}
 %	    \centering{
-%			{\fontsize{60}{72}\selectfont
-%			{\textcolor{black}{pROpHecY}}}
+%			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{pROpHecY}}
 %		}
-%
 %
 %		\setmainfont{URWClassico}
 %		\vspace{5mm}
-%		\centering{\Large{{\textcolor{black}{A tabletop roleplaying game \\ \smallskip about fate and destiny}}}}
+%		\centering{\Large{\contour{black}{\textcolor{lightgray}{A tabletop roleplaying game}} \\ \smallskip \contour{black}{\textcolor{lightgray}{about fate and destiny}}}}
 %
 %		\vfill
 %
-%		\includegraphics[scale=3.81]{Images/comet_diagram.pdf}
+%		\includegraphics[scale=3.81]{Images/comet_diagram_violet.pdf}
 %
 %		\vfill
 %		
-%		\Large{{\textcolor{black}{Michael Purcell}}}\\
+%		\Large{\contour{black}{\textcolor{lightgray}{Michael Purcell}}}
+%
 %\end{titlepage}
+
+% BW Cover
+\begin{titlepage}
+	\thispagestyle{plain}
+		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
+		
+         \setmainfont{Cinzel Decorative}
+	    \centering{
+			{\fontsize{60}{72}\selectfont
+			{\textcolor{black}{pROpHecY}}}
+		}
+
+
+		\setmainfont{URWClassico}
+		\vspace{5mm}
+		\centering{\Large{{\textcolor{black}{A tabletop roleplaying game \\ \smallskip about fate and destiny}}}}
+
+		\vfill
+
+		\includegraphics[scale=3.81]{Images/comet_diagram.pdf}
+
+		\vfill
+		
+		\Large{{\textcolor{black}{Michael Purcell}}}\\
+\end{titlepage}
 
 
 \setmainfont{URWClassico}
