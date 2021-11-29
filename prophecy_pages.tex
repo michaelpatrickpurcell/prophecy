@@ -1,4 +1,4 @@
-\documentclass[12pt, a5paper, parskip=half-]{scrartcl}
+\documentclass[12pt, a5paper, parskip=half-, footheight=1.4cm]{scrartcl}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
 \usetikzlibrary{shapes}
@@ -7,7 +7,9 @@
 
 \usepackage[skins]{tcolorbox}
 
-\usepackage[bmargin=2.5cm, lmargin=1.7cm, rmargin=1.7cm, tmargin=1.5cm]{geometry}
+\usepackage[bmargin=2.5cm, lmargin=1.7cm, rmargin=1.7cm, tmargin=1.5cm, footskip=2cm]{geometry}
+%\usepackage[print]{booklet}
+%\special{landscape}
 
 % Adjust spacing before and after section headings
 \RedeclareSectionCommand[
@@ -113,43 +115,49 @@
 	\end{tikzpicture}
 }
 
-\usepackage{fancyhdr}
-\fancypagestyle{titleheader}{%
-	\fancyhead{}
-	\fancyfoot{}
-	\renewcommand{\headrulewidth}{0pt}
-	\chead{\footnotesize Draft Version 0.3}
-}
-%
-\fancypagestyle{colortitleheader}{%
-	\fancyhead{}
-	\fancyfoot{}
-	\renewcommand{\headrulewidth}{0pt}
-	\chead{\footnotesize \textcolor{lightgray}{Draft Version 0.3}}
-}
+\usepackage{scrlayer-scrpage}
+\clearpairofpagestyles
+\chead*{\normalshape \footnotesize Draft Version 0.3}
+\cfoot{\normalshape \pagemark}
 
-%
-\fancypagestyle{bodyheaderfooter}{%
-	\fancyhead{}
-	\fancyfoot{}
-	\renewcommand{\headrulewidth}{0pt}
-	\chead{\footnotesize Draft Version 0.3}
-	\cfoot{\pagemark}
-}
 
-\pagestyle{bodyheaderfooter}
+%\usepackage{fancyhdr}
+%\fancypagestyle{titleheader}{%
+%	\fancyhead{}
+%	\fancyfoot{}
+%	\renewcommand{\headrulewidth}{0pt}
+%	\chead{\footnotesize Draft Version 0.3}
+%}
+%%
+%\fancypagestyle{colortitleheader}{%
+%	\fancyhead{}
+%	\fancyfoot{}
+%	\renewcommand{\headrulewidth}{0pt}
+%	\chead{\footnotesize \textcolor{lightgray}{Draft Version 0.3}}
+%}
+%
+%%
+%\fancypagestyle{bodyheaderfooter}{%
+%	\fancyhead{}
+%	\fancyfoot{}
+%	\renewcommand{\headrulewidth}{0pt}
+%	\chead{\footnotesize Draft Version 0.3}
+%	\cfoot{\pagemark}
+%}
+%
+%\pagestyle{bodyheaderfooter}
 
 \usepackage{pdfpages}
 
 \usepackage[hidelinks]{hyperref} % This should usually be the last package loaded before \begin{document}
 \usepackage[xspace]{ellipsis} % This package is one of the few packages that must be loaded after hyperref
-\begin{document}
 
+\begin{document}
 
 \includepdf{prophecy_colour_cover}
 
 %\begin{titlepage}
-%	\thispagestyle{titleheader}
+%	\thispagestyle{plain}
 %		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
 %		
 %         \setmainfont{Cinzel Decorative}
@@ -739,7 +747,8 @@ Ph'nglui mglw'nafh Cthulhu R'lyeh wgah'nagl fhtagn!
 
 \newpage
 
-\thispagestyle{titleheader}
+%\thispagestyle{titleheader}
+\thispagestyle{plain}
 \enlargethispage{3.5\baselineskip} % Move the bottom line down a bit
 
 \section*{Acknowledgements} \label{section:acknowledgements}
