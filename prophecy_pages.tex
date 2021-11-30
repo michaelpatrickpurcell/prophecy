@@ -128,7 +128,14 @@
   afterskip=-0.25\baselineskip
 ]{subsubsection}
 
+% Adjust formatting of description environment
+\setlist[description]{labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\space}
 
+% Adjust formatting of itemize environment
+%itemize environments should be followed immediately by a \vspace{1ex} command.
+\setlist[itemize]{noitemsep,nolistsep,  leftmargin=0.68cm,topsep=-1ex}
+
+% Set some environment variables for use in the title page
 \title{pROpHecY}
 \subtitle{A tabletop roleplaying game \\ \smallskip about fate and destiny}
 \author{Michael Purcell}
@@ -137,62 +144,62 @@
 \begin{document}
 
 % Colour Cover
-%\begin{titlepage}
-%		\makeatletter
-%		\thispagestyle{plain}
-%		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
-%
-%		\begin{tikzpicture}[remember picture, overlay]
-%		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
-%%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
-%%
-%		\end{tikzpicture}
-%
-%         \setmainfont{Cinzel Decorative}
-%	    \centering{
-%			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{\@title}}
-%		}
-%
-%		\setmainfont{URWClassico}
-%		\vspace{5mm}
-%		\centering{\Large{{\textcolor{lightgray}{\@subtitle}}}}
-%
-%		\vfill
-%
-%		\includegraphics[scale=3.81]{Images/comet_diagram_violet.pdf}
-%
-%		\vfill
-%		
-%		\Large{{\textcolor{lightgray}{\@author}}}
-%		\makeatother
-%\end{titlepage}
-
-% BW Cover
 \begin{titlepage}
-	\makeatletter
-	\thispagestyle{plain}
+		\makeatletter
+		\thispagestyle{plain}
 		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
-		
+
+		\begin{tikzpicture}[remember picture, overlay]
+		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
+%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
+%
+		\end{tikzpicture}
+
          \setmainfont{Cinzel Decorative}
 	    \centering{
-			{\fontsize{60}{72}\selectfont
-			{\textcolor{black}{\@title}}}
+			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{\@title}}
 		}
-
 
 		\setmainfont{URWClassico}
 		\vspace{5mm}
-		\centering{\Large{{\textcolor{black}{\@subtitle}}}}
+		\centering{\Large{{\textcolor{lightgray}{\@subtitle}}}}
 
 		\vfill
 
-		\includegraphics[scale=3.81]{Images/comet_diagram_black.pdf}
+		\includegraphics[scale=3.81]{Images/comet_diagram_violet.pdf}
 
 		\vfill
 		
-		\Large{{\textcolor{black}{\@author}}}\\
+		\Large{{\textcolor{lightgray}{\@author}}}
 		\makeatother
 \end{titlepage}
+
+% BW Cover
+%\begin{titlepage}
+%	\makeatletter
+%	\thispagestyle{plain}
+%		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
+%		
+%         \setmainfont{Cinzel Decorative}
+%	    \centering{
+%			{\fontsize{60}{72}\selectfont
+%			{\textcolor{black}{\@title}}}
+%		}
+%
+%
+%		\setmainfont{URWClassico}
+%		\vspace{5mm}
+%		\centering{\Large{{\textcolor{black}{\@subtitle}}}}
+%
+%		\vfill
+%
+%		\includegraphics[scale=3.81]{Images/comet_diagram_black.pdf}
+%
+%		\vfill
+%		
+%		\Large{{\textcolor{black}{\@author}}}\\
+%		\makeatother
+%\end{titlepage}
 
 
 \setmainfont{URWClassico}
@@ -276,7 +283,7 @@ References to sections of the rules will be written in the same font as the \hyp
 \subsection*{Materials} \label{subsection:materials}
 To play the game the players will need a few materials that they will use to take notes and determine outcomes.
 They will need:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\space]
+\begin{description}
 	\item[Index Cards:] Approximately fifty index cards should be placed within easy reach of all players. 
 	\item[Sticky Notes:] Approximately one hundred sticky notes should be placed within easy reach of all players.
 	\item[Butcher Paper:] One large sheet of butcher paper should be placed in the middle of the play area.  A whiteboard can be used instead if desired. This is the \emph{story board}. 
@@ -328,9 +335,9 @@ Note that, within the framework of the game, characters are objects.
 So, aspects can be attached to characters.
 An aspect that is attached to a character is a \emph{character~aspect}.
 
-\subsubsection*{Environment} \label{subsubsectioon:environment}
+\subsubsection*{Environment} \label{subsubsection:environment}
 Any object that is not a character is a part of the \emph{environment}.
-Note that, within the framework of the game, most of the people who appear in the game are not characters.
+Note that, within the framework of the game, most of the people who appear in the story are not characters.
 They are part of the environment. 
 An aspect that is attached to any part of the environment is an \emph{environment~aspect}.
 
@@ -349,7 +356,7 @@ One of the characters, Ruth,  is trying to infiltrate a government lab where dan
 
 Several aspects are attached to Ruth, including:\vspace{-1.75ex}
 \begin{multicols}{2}
-\begin{itemize}[noitemsep,nolistsep,  leftmargin=0.68cm]
+\begin{itemize}
   \item DARPA research scientist
   \item Independently wealthy
   \item Acerbic wit
@@ -359,14 +366,14 @@ Several aspects are attached to Ruth, including:\vspace{-1.75ex}
 \vspace{-2ex}
 Several aspects are attached to the guard, including:\vspace{-1.75ex}
 \begin{multicols}{2}
-\begin{itemize}[noitemsep,nolistsep,  leftmargin=0.68cm]
+\begin{itemize}
 	\item Overworked
 	\item Underpaid
 \end{itemize}
 \end{multicols}
 \vspace{-2ex}
 The players identify a candidate pair of aspects:
-\begin{itemize}[leftmargin=0.68cm, noitemsep,topsep=-1ex]
+\begin{itemize}
 	\item Independently wealthy / Underpaid.
 \end{itemize}
 \vspace{1ex}
@@ -378,7 +385,7 @@ After some discussion, the players agree that together these two aspects suggest
 \subsection*{Scenes} \label{subsection:scenes}
 A \emph{scene} is a part of the story that describes the events that happen at a single time and place.
 Every scene has the following components:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\space]
+\begin{description}
   \item[Setting:]
   The time and place at which the scene occurs and the objects and aspects that appear in the scene.
   \item[Objective:]
@@ -404,7 +411,7 @@ The players \emph{sketch} scenes when they \hyperref[subsection:write-an-outline
 To sketch a scene the players will establish the setting, define the objective, and assign the difficulty rating for the scene.
 
 When they sketch a scene, the players should draw an oval on the story board to represent the scene, and label the oval with the scene's objective and difficulty rating.
-If the scene is a precursor to an existing scene, then the players should draw a line on the story board connecting the ovals that represent the two scenes.
+If the scene is a precursor to an existing scene, then the players should draw a line on the story board connecting the two scenes.
 
 \subsubsection*{Performing Scenes} \label{subsubsection:performing-scenes}
 The players \emph{perform} scenes when they \hyperref[subsection:tell-the-story]{\cinzel \small Tell the Story}.
@@ -421,7 +428,7 @@ After performing each scene, the players should cross out the oval representing 
 \subsection*{Checks} \label{subsection:checks}
 The players make a \emph{check} to determine the outcome of each scene.
 To make a check, the players will:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\space]%[leftmargin=0pt]
+\begin{description}
 \item[Assemble a Dice Pool:]
      A dice pool is made up of one or more six-sided dice.
      One die is added to the pool for each pair of matching aspects that characters could use to manipulate the scene to their advantage.
@@ -445,21 +452,21 @@ Optionally, the players can keep track of the reason that each die was added to 
 Suppose that the players are making a check to determine the outcome of a scene where the characters are trying to deal with the prophecy described in \hyperref[subsection:project-spaceguard]{\cinzel \small Project Spaceguard}.
 
 The objective of the scene is:
-\begin{itemize}[leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, noitemsep,topsep=-1ex]
+\begin{itemize}
 \item Smuggle the children aboard a colony ship.
 \end{itemize}
 \vspace{1ex}
 The difficulty rating of the scene is (4). 
 
 The players identify three pairs of matching aspects that the characters can use to manipulate the scene to their advantage:
-\begin{itemize}[leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, noitemsep, topsep=-1ex]
+\begin{itemize}
 \item Defence contractor / Built by the lowest bidder,
 \item Armed and dangerous / I'm a doctor not a soldier,
 \item Expert hacker / It's a UNIX system!
 \end{itemize}
 \vspace{1ex}
 Two of the scene's precursors were resolved successfully. The objectives of those scenes were:
-\begin{itemize}[leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, nosep, topsep=-1ex]
+\begin{itemize}
 \item Befriend one of the flight controllers,
 \item Steal a set of crew uniforms.
 \end{itemize}
@@ -484,7 +491,7 @@ The characters are able to smuggle the children aboard a colony ship.
 The game is divided into four phases.
 The first three phases are about fate.
 The players will:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\cinzel\small\space]
+\begin{description}[font=\normalfont\textbullet\bfseries\cinzel\small\space]
   \item[{\hyperref[subsection:receive-a-prophecy]{Receive a Prophecy}:}] The prophecy describes an impending catastrophe for some fictional world.
   \item[{\hyperref[subsection:create-characters]{Create Characters}:}] The characters inhabit the fictional world that the players create.
   \item[{\hyperref[subsection:write-an-outline]{Write an Outline}:}] The outline describes the story that the players will tell about the characters.
@@ -492,7 +499,7 @@ The players will:
 
 The fourth phase is about destiny.
 The players will:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\cinzel\small\space]
+\begin{description}[font=\normalfont\textbullet\bfseries\cinzel\small\space]
 	\item[{\hyperref[subsection:tell-the-story]{Tell the Story}:}] The story describes the characters' adventures as they try to deal with the catastrophe.
 \end{description}
 
@@ -516,7 +523,7 @@ During this phase, each player will create a character.
 Later in the game, the players will assume the identities of these characters when they perform scenes.
 
 Each player should first choose a name for their character and then attach one aspect from each of the following categories to their character:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\bfseries\space]
+\begin{description}
    \item[Occupation:]
      An aspect that describes the character's profession, hobbies, or other interests.
    \item[Physical Characteristic:]
@@ -743,7 +750,7 @@ The creation of this booklet was made possible by a plethora of readily availabl
 \subsection*{Playtesters} \label{subsection:playtesters}
 The following people helped to refine the design of Prophecy:\vspace{-1.75ex}
 \begin{multicols}{2}
-\begin{itemize}[noitemsep,nolistsep,  leftmargin=0.68cm,topsep=-1ex]
+\begin{itemize}
   \item Keydan Bruce
   \item Farzana Choudhury
   \item Michael Cromer
@@ -762,7 +769,7 @@ The following people helped to refine the design of Prophecy:\vspace{-1.75ex}
 
 \subsection*{Influences} \label{subsection:influences}
 The following games influenced the design of Prophecy:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\space, noitemsep, topsep=-1ex]
+\begin{description}[font=\normalfont\textbullet\space, noitemsep, topsep=-1ex]
 	\item[Fate:] Aspects and Objects.
 	\item[Fiasco:] Scenes and scene-level resolution.
 	\item[Our Last Best Hope:] Theme and narrative focus.
@@ -774,7 +781,7 @@ The following games influenced the design of Prophecy:
 
 \subsection*{Design Tools} \label{subsection:design-tools}
 The following tools were used to create this booklet:
-\begin{description}[labelindent=0.25cm, leftmargin=\widthof{\hspace{0.25cm}\textbullet\space}, font=\normalfont\textbullet\space, noitemsep, topsep=-1ex]
+\begin{description}[font=\normalfont\textbullet\space, noitemsep, topsep=-1ex]
 	\item[XeLaTeX:] Typesetting and layout.
 	\item[TikZ:] Diagrams and art.
 \end{description}
