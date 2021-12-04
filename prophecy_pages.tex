@@ -12,15 +12,13 @@
 
 \usepackage{fontspec} % Use system fonts.  Not compatible with pdflatex. Use XeLaTeX instead!
 \usepackage{cinzel} % I haven't been able to get the cinzel font on my machine to display bold weight. This one works.
- \newfontfamily\displayfont{Cinzel}
-\setkomafont{section}{\large\cinzel\bfseries}
-\setkomafont{subsection}{\cinzel\bfseries}
-\setkomafont{subsubsection}{\small\cinzel\bfseries}
 
 \usepackage{enumitem} % Adjust formatting of description environment items
 \usepackage{multicol} % Format list of playtesters in two columns
 
 \usepackage[type={CC}, version={4.0}, modifier={by}]{doclicense} % Add text and icons for creative commons license
+
+\usepackage{eso-pic}
 
 \usepackage[hidelinks]{hyperref} % Add hyperlinks to the pdf file. This should usually be the last package loaded before \begin{document}
 \usepackage[xspace]{ellipsis} % Properly typeset ellipses. This package is one of the few packages that must be loaded after hyperref
@@ -135,11 +133,21 @@
 %itemize environments should be followed immediately by a \vspace{1ex} command.
 \setlist[itemize]{noitemsep,nolistsep,  leftmargin=0.68cm,topsep=-1ex}
 
+\setkomafont{section}{\color{violet!75}\large\cinzel\bfseries}
+\setkomafont{subsection}{\color{violet!75}\cinzel\bfseries}
+\setkomafont{subsubsection}{\color{violet!75}\small\cinzel\bfseries}
+
+%\setkomafont{section}{\large\cinzel\bfseries}
+%\setkomafont{subsection}{\cinzel\bfseries}
+%\setkomafont{subsubsection}{\small\cinzel\bfseries}
+
+\definecolor{paper}{HTML}{F1EBDB}
+
 % Set some environment variables for use in the title page
 \title{pROpHecY}
 \subtitle{A tabletop roleplaying game \\ \smallskip about fate and destiny}
 \author{Michael Purcell}
-\version{1.0}
+\version{1.1}
 
 \begin{document}
 
@@ -149,12 +157,14 @@
 		\thispagestyle{plain}
 		\enlargethispage{3.5\baselineskip} % Move the bottom line (author and date) down a bit
 
+	\AddToShipoutPictureBG*{
 		\begin{tikzpicture}[remember picture, overlay]
-		\draw[fill stretch image=Images/black_marble_texture_vertical.png]  (current page.south west) rectangle (current page.north east);
-%		\draw[fill=black]  (current page.south west) rectangle (current page.north east);
-%
+			\draw[fill stretch image=Images/black_marble_texture_vertical.jpg]  (current page.south west) rectangle (current page.north east);
 		\end{tikzpicture}
+	}
 
+%		\pagecolor{black}		
+		
          \setmainfont{Cinzel Decorative}
 	    \centering{
 			{\fontsize{60}{72}\selectfont \textcolor{violet!75}{\@title}}
@@ -163,6 +173,7 @@
 		\setmainfont{URWClassico}
 		\vspace{5mm}
 		\centering{\Large{{\textcolor{lightgray}{\@subtitle}}}}
+
 
 		\vfill
 
@@ -200,20 +211,28 @@
 %		\Large{{\textcolor{black}{\@author}}}\\
 %		\makeatother
 %\end{titlepage}
-
-
+%
 \setmainfont{URWClassico}
 \normalsize
 
-\RedeclareSectionCommand[
-  runin=false,
-  beforeskip=0.5\baselineskip,
-  afterskip=-0.25\baselineskip
-]{section}
+\AddToShipoutPictureBG{
+	\begin{tikzpicture}[remember picture, overlay]
+		\draw[fill stretch image=Images/paper_texture_vertical.jpg]  (current page.south west) rectangle (current page.north east);
+	\end{tikzpicture}
+}
+
+%\pagecolor{paper}
+
+%\RedeclareSectionCommand[
+%  runin=false,
+%  beforeskip=0.5\baselineskip,
+%  afterskip=-0.25\baselineskip
+%]{section}
 
 \center
 
 \setcounter{page}{1}
+\phantom{a}
 \section*{\huge \phantom{a} \hfill The Dragon Wakes \hfill \phantom{a}} \label{section:the-dragon-wakes}
 
 \bigskip
@@ -679,7 +698,7 @@ If you have any concerns, please give us a call at any time.
 
 \newpage
 
-\subsection*{The Deluge \setmainfont{URWClassico}- From The King James Version of the Bible} \label{subsection:the-deluge}
+\subsection*{The Deluge \setmainfont{URWClassico}\textcolor{black}{ - From The King James Version of the Bible}} \label{subsection:the-deluge}
 I will destroy man whom I have created from the face of the earth; both man, and beast, and the creeping thing, and the fowls of the air; for it repenteth me that I have made them.\\ 
 \vspace{0.5ex}\hspace{8cm} - Genesis 6:7
 
@@ -689,7 +708,7 @@ And, behold, I, even I, do bring a flood of waters upon the earth, to destroy al
 For yet seven days, and I will cause it to rain upon the earth forty days and forty nights; and every living substance that I have made will I destroy from off the face of the earth.\\
 \vspace{0.5ex}\hspace{8cm} - Genesis 7:4
 
-\subsection*{Unsafe at Any Speed \setmainfont{URWClassico} - Submitted by Paul Murray} \label{subsection:unsafe-at-any-speed}
+\subsection*{Unsafe at Any Speed \setmainfont{URWClassico}\textcolor{black}{ - Submitted by Paul Murray}} \label{subsection:unsafe-at-any-speed}
 You know what this means don't you?
 That crackpot down in R\&D was right. 
 Every Faraday Byron that we've sold in the past two years is a ticking time bomb.
@@ -709,7 +728,7 @@ Somewhere with white-sand beaches, palm trees,  and no extradition treaty.
 
 \newpage
 
-\subsection*{Dead Man's Switch  \setmainfont{URWClassico} - Submitted by Brett Witty} \label{subsection:dead-mans-switch}
+\subsection*{Dead Man's Switch  \setmainfont{URWClassico}\textcolor{black}{ - Submitted by Brett Witty}} \label{subsection:dead-mans-switch}
 If you're hearing this, I am dead.
 But you probably already know that.
 I haven't contacted my fail-safe device for a week, and now it has automatically triggered.
@@ -723,7 +742,7 @@ The entire trove.
 
 See you in hell.
 
-\subsection*{R'lyehian Rhapsody \setmainfont{URWClassico} - Submitted by David McKenzie} \label{subsection:rlyehian-rhapsody}
+\subsection*{R'lyehian Rhapsody \setmainfont{URWClassico}\textcolor{black}{ - Submitted by David McKenzie}} \label{subsection:rlyehian-rhapsody}
 The time is nigh.
 Soon the planets will be in alignment and we can harness their celestial power.
 With just a gentle push, we can release the Great Old One from its prison.

@@ -1,6 +1,6 @@
 # Prophecy: A tabletop roleplaying game about fate and destiny.
 
-This is draft version 0.3.
+This is draft version 1.1.
 
 See the [rules pages](prophecy_pages.pdf) for a typeset version of the rules designed to be read on screens. In this version, the section names that appear in the text are hyperlinks to the target sections of the rules.
 
